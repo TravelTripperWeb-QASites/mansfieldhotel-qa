@@ -1,0 +1,75 @@
+.navbar{
+	display:block; text-align: center; padding-bottom: 3.125rem;
+	background: linear-gradient(to bottom, black, transparent);
+	.navbar-brand{
+		padding: 0.5rem 0 0.938rem 0;
+		img{height:5.0rem;}
+	}
+	.navbar-nav{
+		border-top:solid 1px #fff; 
+		.nav-item{
+			&:first-child{
+				.nav-link{
+					padding-left:0rem;
+				}
+			}
+			&:last-child{
+				.nav-link{
+					padding-right:0rem;
+				}
+			}
+			.nav-link{
+				text-transform: uppercase;
+				color: $white;
+				padding: 0.938rem 1.250rem;
+				font-family: $brg-font-regular;
+				font-size: $type-size-3;
+				letter-spacing: 0.125rem;
+			}
+			&.booknow{
+				.nav-link{
+					font-family: $site-font-medium;
+				}
+			}
+		}
+	}
+}
+.location-cta{
+	text-align:center;
+	h1{
+		padding:3.75rem 0 1.875rem;
+	}
+}
+.footer{
+	height:auto;
+}
+
+/*Button styles*/
+
+.link-btn{
+	font-family: $site-font-medium;
+	font-size: $type-size-2;
+	text-transform: uppercase;
+	color: $black;
+	border-bottom: solid 0.063rem $sub-heading-color;
+	padding-bottom: 0.5rem;
+	&:hover{
+		text-decoration: none;
+		color: $black;
+	}
+}
+
+/*Layout styles*/
+.packet{@extend .container;}
+.packet-fluid{@extend .container-fluid;}
+.packet, .packet-fluid{
+	.bar{
+		@extend .row;
+		.slice{
+			@extend .col;
+		}
+		.slice-4{
+			@extend .col-md-4;
+		}
+	}
+}
