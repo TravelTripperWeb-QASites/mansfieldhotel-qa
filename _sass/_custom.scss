@@ -1,3 +1,5 @@
+/*Custom Nav Bar here*/
+
 .navbar{
 	display:block; text-align: center; padding-bottom: 3.125rem;
 	background: linear-gradient(to bottom, black, transparent);
@@ -21,7 +23,7 @@
 			.nav-link{
 				text-transform: uppercase;
 				color: $white;
-				padding: 0.938rem 1.250rem;
+				padding: 0.938rem 1.05rem;
 				font-family: $brg-font-regular;
 				font-size: $type-size-3;
 				letter-spacing: 0.125rem;
@@ -34,14 +36,150 @@
 		}
 	}
 }
-.location-cta{
-	text-align:center;
-	h1{
-		padding:3.75rem 0 1.875rem;
-	}
-}
+
+
+/*Custom footer here*/
+
 .footer{
 	height:auto;
+	position: relative;
+	.custom-footer{
+		font-size: $type-size-2;
+		.text-left{
+			font-family: $brg-font-regular;
+		}
+		.text-center{
+			font-family: $site-font-medium;
+			text-transform: uppercase;
+			color: $text-color;
+			li{display: inline-block;
+				margin-bottom: 0rem;
+				a{
+					position: relative;
+					padding: 1.250rem 0rem;
+					color:$text-color;
+					text-decoration:none;
+					&:hover{
+						opacity:0.7;
+					}
+					&:after{
+						content: "";
+    					display: inline-block;
+						margin: 0 0.938rem;
+						width:0.063rem;
+						height:0.625rem;
+						background: $text-color;
+						border-right:solid 0.063rem $text-color; 
+					}
+				}
+				&:last-child{
+					a{
+						&:after{
+							content: "";
+							display: none;
+						}
+					}
+				}
+			}
+		}
+		.text-right{
+			img{width:50%;}
+		}
+	}
+}
+
+/*Carousel responsive styling here*/
+
+.carousel-item.active,
+	.carousel-item-next,
+	.carousel-item-prev {
+	  display: block;
+}
+#carouselHomebanner{
+	.carousel-control-prev, .carousel-control-next{
+			opacity: 1;
+			width:5%;
+			i{
+				border:solid 0.063rem $white;
+				border-radius:50%;
+				padding: 0 0.5rem 0.125rem;
+				font-size: 1.375rem;
+			}
+	}
+	.carousel-indicators{
+		left: 1.875rem;
+		bottom: 2.5rem;
+		display: block;
+		justify-content: inherit;
+    	padding-left: inherit;
+     	margin-right: inherit; 
+     	margin-left: inherit;
+		li{
+			max-width:0.313rem;
+			height: 0.313rem;
+			border-radius: 50%;
+			margin-bottom: 1rem;
+			&.active{
+				height: 0.5rem;
+				max-width: 0.5rem;
+				margin-left: 0.094rem;
+			}
+		}
+	}
+}
+
+/*BRG block styling*/
+
+.brg{
+	height:90px;
+	background-color: $main-heading-color;
+	.red-bg{
+		background-color: $sub-heading-color;
+		height: 7.5rem;
+		color: $white;
+		margin-top: -1.875rem;
+		h2{
+			position: absolute;
+			bottom: 0.6rem;
+			right: 1.250rem;
+		}
+	}
+	.rates{
+		margin: 22px 0 14px; padding: 0;
+		li{
+			display: inline-block; width: 49%; text-align: center; color: $white; font-family: $brg-font-regular; font-size: $type-size-4;position: relative;
+			p{
+				margin-bottom: 0;
+				position: absolute;
+				top: -12px;
+				right: calc(50% - 100px);
+				span{
+					font-size:$type-size-11; padding-left:1.875rem; 
+				}
+			}
+			.bar{
+				text-align: left;
+				span{
+					text-decoration: line-through;
+				}
+			}
+		}
+	}
+	.booknow{
+		background-color: $dark-bg;
+		@extend .w-100;
+		@extend .h-100;
+		display: table;
+		a{
+			display: table-cell; text-align: center; vertical-align: middle;
+			font-family: $site-font-medium;
+			color:$white;
+			text-decoration: none;
+			text-transform: uppercase;
+			font-size: $type-size-6;
+			letter-spacing: 0.125em;
+		}
+	}
 }
 
 /*Button styles*/
@@ -60,7 +198,8 @@
 }
 
 /*Layout styles*/
-.packet{@extend .container;}
+
+.packet{@extend .container; max-width: 1020px;}
 .packet-fluid{@extend .container-fluid;}
 .packet, .packet-fluid{
 	.bar{
@@ -71,5 +210,104 @@
 		.slice-4{
 			@extend .col-md-4;
 		}
+		.slice-3{
+			@extend .col-md-3;
+		}
+		.slice-2{
+			@extend .col-md-2;
+		}
+		.slice-8{
+			@extend .col-md-8;
+		}
+		.slice-7{
+			@extend .col-md-7;
+		}
+		.slice-6{
+			@extend .col-md-6;
+		}
 	}
 }
+
+/*Home Intro section*/
+
+.intro{
+	background: url(/assets/images/homepage/intro-bg.jpg) #ffffff no-repeat left bottom;
+	text-align: center;
+	.symbol{
+		margin:6.25rem auto 1rem;
+		width:4rem;
+		img{
+			width:100%;
+		}
+	}
+	p{
+		line-height: 1.9rem;
+		margin-bottom: 1.8rem;
+	}
+	.reviews{
+		margin: 22.5rem 0;
+		@extend .w-100;
+		h3{
+			font-size: $type-size-4;
+			font-family: $headings-bold-condensed-font;
+			color: $sub-heading-color;
+			text-transform: uppercase;
+			letter-spacing: 0.125rem;
+		}
+		.carousel-item{
+			min-height:200px;
+			height:auto;
+			p,i{color:$black;}
+			p{
+				font-family: $site-font-light;
+				font-size: $type-size-9;
+			}
+		}
+		.carousel-caption{
+			top:20px; bottom: inherit;
+		}
+		.carousel-indicators{
+			bottom:-30px;
+			color:$black;
+			li{
+				max-width:0.313rem;
+				height: 0.313rem;
+				border-radius: 50%;
+				margin-bottom: 1rem;
+				background-color: $black;
+				margin-left: 0.625rem;
+				margin-right: 0.625rem;
+				&.active{
+					max-width:0.6rem;
+					height: 0.6rem;
+					border:solid 0.188rem $black;
+					margin-top: -0.15rem;
+					background-color: $white;
+				}
+			}
+		}
+	}
+}
+
+/*Rooms & Suites Section*/
+
+.rooms-suites{
+	@extend .container-fluid;
+	background-color: $dark-bg;
+	.heading-block{
+		max-width: 1320px;
+		margin: 0 auto;
+		background-color: $dark-bg;
+	}
+}
+
+/*Other styling*/
+
+.location-cta{
+	text-align:center;
+	h1{
+		padding:3.75rem 0 1.875rem;
+	}
+}
+
+

@@ -3,12 +3,14 @@ main:
     url: /
   - title: Rooms
     url: /
-  - title: Offers
+  - title: M Bar
     url: /
+  - title: Specials
+    url: /
+  - title: Meetings & Events
+    url: 
   - title: Location
     url: /
-  - title: Events
-    url: 
   - title: Gallery
     url: /
   - title: Contact

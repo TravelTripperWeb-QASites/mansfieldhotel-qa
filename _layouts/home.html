@@ -1,5 +1,59 @@
 ---
 layout: default
 ---
-
+{% include homeBanner-carousel.html %}
+<section class="intro py-5">
+	<div class="packet">
+		<div class="bar">
+			<div class="slice-6">
+				<div class="symbol"><img src="../assets/images/homepage/crest.png" alt="Crest" /></div> 
+				<h1>Welcome to<br>The Mansfield Hotel</h1>
+				<p>The historic landmark 126-room Mansfield Hotel enjoys a prime location in the heart of the city on 44th Street between Fifth and Sixth Avenues. Broadway theatres, fine restaurants, shopping, and celebrated sites are all within a short walking distance.</p>
+				<a class="link-btn">Our Storied Past</a>
+			</div>
+			<div class="slice-6">
+				<img src="../assets/images/homepage/facade.jpg" alt="The Mansfield Hotel"/> 
+			</div>
+		</div>
+	</div>
+	<div class="reviews">
+		<h3>Reviews</h3>
+		<div id="carouselReviews" class="carousel slide" data-ride="carousel">
+		  <ol class="carousel-indicators">
+			<li data-target="#carouselReviews" data-slide-to="0" class="active"></li>
+			<li data-target="#carouselReviews" data-slide-to="1"></li>
+			<li data-target="#carouselReviews" data-slide-to="2"></li>
+		  </ol>
+		  <div class="carousel-inner" role="listbox">
+			<div class="carousel-item active">
+			  <div class="carousel-caption">
+				<p>“I wouldn’t stay anywhere else when I’m in New York on business or pleasure. It’s so convenient and the views of the city are breathtaking.”</p>
+				<i>- Jessica Trossach, Scotland</i>
+			  </div>
+			</div>
+			<div class="carousel-item">
+			  <div class="carousel-caption">
+				<p>“I wouldn’t stay anywhere else when I’m in New York on business or pleasure. It’s so convenient and the views of the city are breathtaking.”</p>
+				<i>- Jessica Trossach, Scotland</i>
+			  </div>
+			</div>
+			<div class="carousel-item">
+			  <div class="carousel-caption">
+				<p>“I wouldn’t stay anywhere else when I’m in New York on business or pleasure. It’s so convenient and the views of the city are breathtaking.”</p>
+				<i>- Jessica Trossach, Scotland</i>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	</div>
+</section>
+<section class="rooms-suites">
+	<div class="heading-block">
+		<h3>Rooms & Suites</h3>
+		<h2>Luxury comes standard</h2>
+		<p>Sed quid est quod in hac causa maxime homines admirentur et reprehendant meum consilium, cum ego idem antea multa decreverim, que magis ad hominis dignitatem quam ad rei publicae necessitatem pertinerent? Supplicationem quindecim dierum decrevi sententia mea. Rei publicae satis erat tot dierum quot.</p>
+		<a href="#">Browse Rooms & Suites</a>
+		
+	</div>
+</section>
 {% include location.html %}
