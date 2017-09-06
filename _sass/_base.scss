@@ -35,7 +35,11 @@ h2 {
 }
 
 h3 {
-  font-size: $type-size-5;
+	font-size: $type-size-4;
+	font-family: $headings-bold-condensed-font;
+	color: $sub-heading-color;
+	text-transform: uppercase;
+	letter-spacing: 0.125rem;
 }
 
 h4 {
