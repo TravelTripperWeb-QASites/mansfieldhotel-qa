@@ -516,6 +516,45 @@
 	}
 }
 
+.gallery-cta{
+	background: url(/assets/images/homepage/gallery-cta.jpg) no-repeat top left;
+	background-size: cover;
+	height:38.625rem; 
+	.overlay{
+		background-color:rgba(0,0,0,0.6);
+		width: 100%;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		text-align: center;
+		h1{
+			color:$white;
+			background: rgba(37, 20, 20, 0.8);
+			padding: 3.125rem 5.625rem;
+			display: inline-block;
+			margin: 15.5% auto;
+			border-bottom:solid 0.125rem $white;
+			box-shadow: 0px 0.2rem 0 $black;
+			outline: 0.063rem solid $white;
+			outline-offset: 0.125rem
+		}
+		a{
+			font-family: $site-font-medium;
+			text-transform: uppercase;
+			color: $dark-bg;
+			font-size: $type-size-2;
+			background: $white;
+			padding: 0.938rem 1.250rem;
+			position: absolute;
+			left: calc(50% - 5.625rem);
+			width:11.250rem;
+			bottom: calc(50% - 5.813rem);
+		}
+	}
+}
+
 /*Other styling*/
 
 .location-cta{
