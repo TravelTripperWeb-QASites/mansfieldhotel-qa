@@ -12,7 +12,14 @@
 
 	@extend .packet-fluid;
 	max-width:1320px;
-	background: #fff;
+	background: white;
+	margin-bottom: 2rem;
+	z-index: 2;
+	@include media-breakpoint-up(lg) { 
+	    margin-bottom: -5.5rem;
+	    margin-top: -5.5rem;
+	    
+			}
 	.details-row{
 		@extend .bar;
 	}
@@ -20,11 +27,19 @@
 		color:$main-heading-color;
 	}
 	.details-col{
-		@extend .slice-3;		
+		@extend .col-md-6;
+		@extend .col-lg-3;	
+		text-align:center;
+		@include media-breakpoint-up(md) { 
+			text-align:left;
+		}	
+
 		position:relative;		
 		.details{
 			border-right:1px solid $lighter-gray;
 			padding-left: 1.2rem;
+
+
 		}
 	}
 	p{
@@ -38,11 +53,13 @@
 		letter-spacing: .1rem;
 	}
 	.logo-container{
-	background: $main-heading-color;
+		
+	 	background: $main-heading-color;
 	.logo{
 			    width: 14.5rem;
 			    margin: 2rem 0;
 			    display:block;
+			    margin-left: -2.5rem;
 		}
 		
 		.social-container{
@@ -52,15 +69,20 @@
 			    background: #ededed;
 			    bottom: 0;
 			    max-width: 60px;
+			    text-align: center;
 
 			a{
 				color:  $main-heading-color;
 			    display: block;
-			    padding: 0 1rem;
-			    margin: .5rem 0;
+			    padding: 0 1.2rem;
+			    margin: .7rem 0;
 			    
 			}
 		}	
 	}
 	
 }	
+
+.map-wrap{
+	min-height:31rem;
+}

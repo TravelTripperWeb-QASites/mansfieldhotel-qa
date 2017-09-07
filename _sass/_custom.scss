@@ -584,8 +584,18 @@
 
 .location-cta{
 	text-align:center;
+	background: url(/assets/images/homepage/cta-bg.jpg) no-repeat top left;
+	background-size: cover;
+	padding:3.75rem 1rem;
+	@include media-breakpoint-up(lg) { 
+	padding:3.75rem 1rem 9.75rem 1rem;
+	}
+	
+
 	h1{
-		padding:3.75rem 0 1.875rem;
+		padding-bottom: 1rem;
+		margin:0;
+		
 	}
 }
 
