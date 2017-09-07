@@ -14,7 +14,7 @@
 		}
 	}
 	.navbar-nav{
-		border-top:solid 1px #fff; 
+		border-top:solid 0.063rem $white;
 		.nav-item{
 			&:first-child{
 				.nav-link{
@@ -57,6 +57,11 @@
 			}
 		}
 		.navbar-nav{
+			 border-color: rgba(255,255,255,0.6);
+			-webkit-transition: all 0.5s ease;
+			-moz-transition: all 0.5s ease;
+			-o-transition: all 0.5s ease;
+			transition: all 0.5s ease;
 			.nav-item{
 				.nav-link{
 					font-size:$type-size-1;
@@ -277,6 +282,7 @@
 }
 .intro{
 	background: url(/assets/images/homepage/intro-bg.jpg) #ffffff no-repeat left bottom;
+	background-size: contain;
 	text-align: center;
 	
 	p{
@@ -325,7 +331,7 @@
 
 .heading-block{
 	max-width: 1320px;
-	margin: -320px auto 0;
+	margin: -327px auto 0;
 	background-color: $dark-bg;
 	padding:60px 20px 0;
 	text-align: center;
@@ -584,6 +590,95 @@
 				display: block;
 			}
 		}
+	}
+	.carousel-control-prev, .carousel-control-next{
+			opacity: 1;
+			width:auto;
+			top:inherit;
+			bottom:2.5rem;
+			i{
+				border:solid 0.063rem $white;
+				border-radius:50%;
+				padding: 0rem 0.7rem 0.15rem;
+    			font-size: 1.875rem;
+				color: $white;
+			}
+		&:hover{
+			opacity:0.7;
+		}
+	}
+	.carousel-control-prev{
+		left:3.75rem;
+		right: inherit;
+	}
+	.carousel-control-next{
+		left:7.3rem;
+		right:inherit;
+	}
+	#carouselLocation{
+		.carousel-item{
+			height: 48.750rem;
+			background-size: cover !important;
+		}
+	}
+	#carouselLocation2{
+		.carousel-inner{
+			.carousel-item {
+				.content{
+					padding:0.575rem;
+					text-align: center;
+					h1{
+						font-size: $type-size-13;
+						font-family: $site-font-light;
+						&:after{
+							content: "";
+							width: 3.750rem;
+							height: 0.063rem;
+							margin: 1.5rem auto 2rem;
+							background: $black;
+							opacity: 0.5;
+							display: block;
+						}
+					}
+					p{
+						font-family:$brg-font-regular;
+						font-size:$type-size-3;
+						padding: 0 2.5rem 1rem;
+						letter-spacing: 0.063rem;
+					}
+				}
+				&.active{
+					.content{
+						&:nth-child(2){
+							background: rgba(80,5,3,0.85);
+							color: $white;
+							h1{
+								color:$white;
+								&:after{
+									background:$white;
+								}
+							}
+						}
+					}
+				}
+			}
+			
+.carousel-item-right.active,
+.carousel-item-next {
+  transform: translateX(33.33%);
+}
+
+.carousel-item-left.active, 
+.carousel-item-prev {
+  transform: translateX(-33.33%)
+}
+  
+.carousel-item-right,
+.carousel-item-left{ 
+  transform: translateX(0);
+}
+		}
+		
 	}
 }
 
