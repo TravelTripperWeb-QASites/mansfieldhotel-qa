@@ -12,17 +12,30 @@
 
 	@extend .packet-fluid;
 	max-width:1320px;
-	background: $body-color;
+	background: #fff;
 	.details-row{
-		@extend .bar
+		@extend .bar;
 	}
-	
+	h3{
+		color:$main-heading-color;
+	}
 	.details-col{
-		@extend .slice-3;
-		
-		position:relative;
-
-		
+		@extend .slice-3;		
+		position:relative;		
+		.details{
+			border-right:1px solid $lighter-gray;
+			padding-left: 1.2rem;
+		}
+	}
+	p{
+		font-family:$site-font-medium;
+		margin:0;
+	}
+	a{
+		color:$text-color;
+		font-family:$brg-font-regular;
+		font-size:$type-size-3;
+		letter-spacing: .1rem;
 	}
 	.logo-container{
 	background: $main-heading-color;
@@ -39,10 +52,14 @@
 			    background: #ededed;
 			    bottom: 0;
 			    max-width: 60px;
-			    
+
 			a{
-			color:  $main-heading-color;
-				}
+				color:  $main-heading-color;
+			    display: block;
+			    padding: 0 1rem;
+			    margin: .5rem 0;
+			    
+			}
 		}	
 	}
 	
