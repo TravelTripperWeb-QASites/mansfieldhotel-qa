@@ -6,16 +6,16 @@
 }
 
 .main-header-container{
-	@extend .container;
+	@extend .packet;
 	background: url(/assets/images/homepage/crest.png) no-repeat center -1.875rem $white;
 	background-size: 4.063rem;
 	margin-top: -2rem;
     z-index: 2;
 		.main-header-row{
-			@extend .row;
+			@extend .bar;
 		}	
 		.main-header-col{
-			@extend .col;
+			@extend .slice;
 			text-align: center;
 		    padding: 2.5rem 0;
 		    h2{
