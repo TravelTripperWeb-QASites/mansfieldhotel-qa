@@ -534,7 +534,7 @@
 			background: rgba(37, 20, 20, 0.8);
 			padding: 3.125rem 5.625rem;
 			display: inline-block;
-			margin: 15.5% auto;
+			margin: 13.75rem auto;
 			border-bottom:solid 0.125rem $white;
 			box-shadow: 0px 0.2rem 0 $black;
 			outline: 0.063rem solid $white;
@@ -551,6 +551,31 @@
 			left: calc(50% - 5.625rem);
 			width:11.250rem;
 			bottom: calc(50% - 5.813rem);
+		}
+	}
+}
+
+.location-carousel{
+	padding: 7.5rem 0;
+	background: $lighter-gray ;
+	.loc-content{
+		text-align: center;
+		padding:6rem;
+		h2{
+			font-family:$global-font-family;
+			font-size: $type-size-10;
+			letter-spacing: 0rem;
+			line-height: 2rem;
+			margin-top: 1rem;
+			&:after{
+				content: "";
+				width: 6.25rem;
+				height: 0.313rem;
+				margin: 1.5rem auto 2rem;
+				background: url(/assets/images/divider.png) repeat-x;
+				opacity: 0.5;
+				display: block;
+			}
 		}
 	}
 }
