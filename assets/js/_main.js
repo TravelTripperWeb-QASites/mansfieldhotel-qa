@@ -172,7 +172,7 @@ $(document).ready(function () {
 	//homeBannercarousel
 	$('.carousel').carousel();
 
-	$('#carouselHomebanner .carousel-item').css('max-height', window.innerHeight - 90);
+	$('#carouselHomebanner .carousel-item').css('height', window.innerHeight - 90);
 
 	//Locations Carousel
 	$('#carouselLocation.carousel, #carouselLocation2.carousel ').hover(function () { 

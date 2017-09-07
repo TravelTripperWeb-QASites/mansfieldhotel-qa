@@ -136,6 +136,9 @@
 	  display: block;
 }
 #carouselHomebanner{
+	.carousel-item{
+		background-size: cover !important;
+	}
 	.carousel-control-prev, .carousel-control-next{
 			opacity: 1;
 			width:5%;
