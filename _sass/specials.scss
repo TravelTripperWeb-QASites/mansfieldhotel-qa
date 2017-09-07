@@ -1,0 +1,41 @@
+.inner-hero-container{
+
+	@extend .bg-cover;
+
+
+}
+
+.main-header-container{
+	@extend .container;
+	background: url(/assets/images/homepage/crest.png) no-repeat center -1.875rem $white;
+	background-size: 4.063rem;
+	margin-top: -2rem;
+    z-index: 2;
+		.main-header-row{
+			@extend .row;
+		}	
+		.main-header-col{
+			@extend .col;
+			text-align: center;
+		    padding: 2.5rem 0;
+		    h2{
+		    	font-family: $site-font-regular;
+		    	font-size: $type-size-10;
+		    	color: $main-heading-color;
+		    	margin-bottom: 2rem;
+			    	&:after{
+					content: "";
+					width: 6.25rem;
+					height: 0.313rem;
+					margin: 1.5rem auto;
+					background: url(/assets/images/divider.png) repeat-x;
+					opacity: 0.5;
+					display: block;
+				}
+		    }
+		    p{
+		    	max-width: 56rem;
+		   		@extend .m-auto;
+		    }
+		}	
+}

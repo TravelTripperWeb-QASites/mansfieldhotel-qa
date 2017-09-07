@@ -78,6 +78,8 @@
 	position: relative;
 	.custom-footer{
 		font-size: $type-size-2;
+		height: 60px;
+        line-height: 60px;
 		.text-left{
 			font-family: $brg-font-regular;
 		}
@@ -368,6 +370,38 @@
 	}
 	
 }
+
+.item{
+				position: relative;
+				.overlay{
+					height: 2.188rem;
+					width: 100%;
+					position: absolute;
+					top:-1.875rem;
+					z-index: 999;
+					background: $panel-bg;
+					opacity: 0.85;
+				}
+				.bar{
+					background: $panel-bg;
+				}
+				img{
+					width:100%;
+				}
+				h2{font-family: $caption-font-family; padding: 0 1.875rem;}
+				p{font-family: $brg-font-regular; color: $rate-text-color; letter-spacing: 0.063rem;padding: 0 1.875rem;
+					span{
+						font-family:$site-font-medium;
+					}
+				}
+				color:$white;
+				a{display: block; color: $white; text-transform: uppercase; font-size:$type-size-2; font-family: $site-font-medium;text-align: center; letter-spacing:0.125rem; padding:0.85rem ; width: 100%;
+					&.active{
+						background: $sub-heading-color;
+					}
+				}
+	}
+
 .rooms-suites{
 	@extend .container-fluid;
 	background-color: $dark-bg;
@@ -401,34 +435,7 @@
 		.packet-fluid{
 			padding: 0.625rem 2.875rem 0;
 			.item{
-				position: relative;
-				.overlay{
-					height: 2.188rem;
-					width: 100%;
-					position: absolute;
-					top:-1.875rem;
-					z-index: 999;
-					background: $panel-bg;
-					opacity: 0.85;
-				}
-				.bar{
-					background: $panel-bg;
-				}
-				img{
-					width:100%;
-				}
-				h2{font-family: $caption-font-family; padding: 0 1.875rem;}
-				p{font-family: $brg-font-regular; color: $rate-text-color; letter-spacing: 0.063rem;padding: 0 1.875rem;
-					span{
-						font-family:$site-font-medium;
-					}
-				}
-				color:$white;
-				a{display: block; color: $white; text-transform: uppercase; font-size:$type-size-2; font-family: $site-font-medium;text-align: center; letter-spacing:0.125rem; padding:0.85rem ; width: 100%;
-					&.active{
-						background: $sub-heading-color;
-					}
-				}
+				@extend .item;
 			}
 		}
 	}
@@ -586,12 +593,8 @@
 	text-align:center;
 	background: url(/assets/images/homepage/cta-bg.jpg) no-repeat top left;
 	background-size: cover;
-	padding:3.75rem 1rem;
-	@include media-breakpoint-up(lg) { 
-	padding:3.75rem 1rem 9.75rem 1rem;
-	}
+	padding-top:3.75rem;
 	
-
 	h1{
 		padding-bottom: 1rem;
 		margin:0;
@@ -599,4 +602,9 @@
 	}
 }
 
+.bg-cover{
+	background-size:cover;
+	background-position : center center; 
+    background-repeat : no-repeat; 
 
+}

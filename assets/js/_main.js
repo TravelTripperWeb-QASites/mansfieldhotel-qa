@@ -7,7 +7,7 @@ $(document).ready(function () {
 	// START MAP FUNCTION 
     function initialize() {
                       
-    var myLatLng = { lat: 40.747399, lng: -73.986301 };
+    var myLatLng = { lat: 40.757757, lng: -73.980736 };
     var stylemap = [
   {
     "elementType": "geometry",
@@ -198,7 +198,7 @@ $(document).ready(function () {
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 15,
           styles: stylemap,                  
-          center: new google.maps.LatLng(40.747399, -73.986301),
+          center: new google.maps.LatLng(40.757757, -73.980736),
           scrollwheel: false,
           disableDefaultUI: true
         });
@@ -244,4 +244,19 @@ $(window).scroll(function() {
 	}else {
         $(".navbar").removeClass("resized");
     }
+
+
+
+
+});
+
+$(window).on("load", function() {
+
+
+   // banner-height start
+    var mheight = $(window).height();
+    var mwidth = $(window).width();
+    setTimeout( function() { $(".inner-hero-container").height(mheight - 30);}, 1000);
+// banner-height end
+
 });
