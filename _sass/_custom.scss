@@ -586,6 +586,14 @@
 	background: url(/assets/images/homepage/gallery-cta.jpg) no-repeat top left;
 	background-size: cover;
 	height:38.625rem; 
+	&.inner{
+		height:50rem;
+		.overlay{
+	    	a{
+	    		bottom: calc(50% - -0.4rem);
+	    	}
+	    }
+	}
 	.overlay{
 		background-color:rgba(0,0,0,0.6);
 		width: 100%;
