@@ -427,6 +427,7 @@
 	}
 	.bar{
 		background: $panel-bg;
+		height:10rem;
 	}
 	img{
 		width:100%;
@@ -438,7 +439,7 @@
 		}
 	}
 	color:$white;
-	a{display: block; color: $white; text-transform: uppercase; font-size:$type-size-2; font-family: $site-font-medium;text-align: center; letter-spacing:0.125rem; padding:0.85rem ; width: 100%;
+	a{display: block; color: $white; text-transform: uppercase; font-size:$type-size-2; font-family: $site-font-medium;text-align: center; letter-spacing:0.125rem; padding:1.07rem ; width: 100%;
 		&.active{
 			background: $sub-heading-color;
 		}
@@ -731,6 +732,23 @@
 }
 		}
 		
+	}
+}
+
+/*Rooms Listing*/
+
+.rooms-listing{
+	@extend .specials-listing;
+	.rooms-item{
+		@extend .special-item;
+		.bar{
+			background: $panel-bg !important;
+		}
+		.overlay{
+			background: $panel-bg !important;
+			opacity: 0.85;
+			top:-2.15rem;
+		}
 	}
 }
 
