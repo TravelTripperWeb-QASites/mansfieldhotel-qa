@@ -113,3 +113,16 @@
 .map-wrap{
 	min-height:31rem;
 }
+
+/* only info css */
+.footer{
+	.only-info-main{
+		//position: relative;
+    	//bottom: -618px;
+		.details-footer{
+		    margin-top: -177px;
+		    z-index:9;
+		}
+	}
+}
+

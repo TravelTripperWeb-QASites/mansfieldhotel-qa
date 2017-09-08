@@ -81,6 +81,7 @@ a {
   &:hover,
   &:active {
     outline: 0;
+    text-decoration:none;
   }
 }
 
@@ -119,7 +120,10 @@ nav {
   }
 
   a {
-    text-decoration: none;
+    text-decoration: none !important;
+    &:hover{
+      text-decoration: none !important;
+    }
   }
 
   /* override white-space for nested lists */
@@ -138,4 +142,23 @@ nav {
 
 svg:not(:root) {
   overflow: hidden;
+}
+
+/* buttons css */
+
+.common-btn{
+  font-family: $site-font-medium;
+  text-transform: uppercase;
+  font-size: $type-size-2;
+  padding: 0.938rem 2.5rem;
+  width:11.250rem;
+  letter-spacing:1px;
+  &.white{
+    background: $white;
+    color: $dark-bg;
+  }
+  &.red{
+    background: $sub-heading-color;
+    color:$white;
+  }
 }
