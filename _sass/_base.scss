@@ -153,6 +153,7 @@ svg:not(:root) {
   padding: 0.938rem 2.5rem;
   width:11.250rem;
   letter-spacing:1px;
+  border:0;
   &.white{
     background: $white;
     color: $dark-bg;

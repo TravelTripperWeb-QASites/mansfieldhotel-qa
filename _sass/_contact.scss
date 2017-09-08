@@ -1,3 +1,124 @@
 .contact-top{
 	margin-top: 0;
+	.details-col{
+		@extend .slice-4;
+	}
+	.social-media{
+		width:100%;
+		text-align:center;
+		padding:2.25rem 0 1.563rem 0;
+		ul{
+			margin:0;
+			padding:0;
+			li{
+				margin:0;
+				padding:0;
+				display:inline-block;
+				a{
+					padding:0 5px;
+				}
+			}
+		}
+	}
+}
+
+.top-content-main{
+	padding:3.75rem 0;
+    background:$background-color;
+    .form-part{
+        @extend .container;
+        max-width:850px;
+        text-align:center;
+        h4{
+            //color:$light-yellow;
+            padding-bottom:0.625rem;
+        }
+        p{
+            padding-bottom:1.25rem;
+            i{
+                //color:$grey;
+            }
+        }
+        .form-inline{
+            button{
+                &.black{
+                    margin:40px auto 80px;
+                }
+            }
+            .form-group{
+                padding:0 20px 20px;
+                margin-bottom: 0;
+                &.half{
+                    width:100%;
+                    @include media-breakpoint-up(md) { width:50%; }
+                }
+                &.full{
+                    width:100%;
+                }
+                &.three{
+                    width:100%;
+                    @include media-breakpoint-up(md) { width:33.33%; }
+                }
+                input{
+                    border-radius:0;
+                    //border:1px solid $light-blue;
+                    width:100%;
+                    //font-family:$primary-light-italic-font;
+                    font-size:14px;
+                    letter-spacing:1px;
+                    padding: 12px 16px;
+                    &.date{
+                        background:url(/assets/images/calendar-icon.png) 98% center no-repeat;
+                        padding: 10px 16px;
+                        @include media-breakpoint-up(md) { background:url(/assets/images/calendar-icon.png) 95% center no-repeat; }
+                    }
+                }
+                textarea{
+                    @extend input;
+                    min-height:140px;
+                    resize:none;
+                }
+                select{
+                    @extend input;
+                    padding: 0 16px;
+                    @include media-breakpoint-up(md) { margin:10px 0 0 0; }
+                }
+            }
+            button{
+                cursor:pointer;
+            }
+        }
+    }
+}
+.contact-form{
+    .form-inline{
+        display:inline-block;
+        width:100%;
+        float:left;
+        @include media-breakpoint-up(md) { width:50%; }
+        &.full{
+            width:100%;
+            float:none;
+        }
+        .form-group{
+            text-align:left;
+            select{
+                width:100% !important;
+                display:inline-block;
+                margin-bottom: 20px !important;
+                @include media-breakpoint-up(md) { 
+                    width:29.8% !important; 
+                    margin-right: 20px !important; 
+                }
+                @media only screen and (min-width: 768px) and (max-width: 860px)  {
+                    margin-right: 17px !important;
+                }
+                &:last-child{
+                    margin-right: 0 !important;
+                    margin-bottom: 0px !important;
+                    @include media-breakpoint-up(md) { margin-bottom: auto !important; }
+                }
+            }
+        }
+    }
 }
