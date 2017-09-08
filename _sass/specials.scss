@@ -68,8 +68,32 @@
 		color:$white;
 		.packet{
 			background: $dark-bg;	
+			padding-bottom: 4rem;
 			
 		}
+		h4{
+			margin:0;
+
+			&:after{
+				margin:2rem 0;
+			}
+
+		}
+		.terms{
+			font-family:$brg-font-regular;
+			font-size:$type-size-3;
+			margin: 1rem 0;
+		}
+		ul{
+			padding-left: 0.875rem;
+
+			li{
+				list-style-type: disc;
+			}
+		}
+		.link-btn{
+				color:$white;
+			}
 		.slice-3{
 			
 			a{
@@ -77,20 +101,25 @@
 				display:block;
 				text-align:center;
 				background:$mid-brown;
-				padding: 1rem 0;
+				padding: 1.3rem 0;
 				color:$white;
 				font-family:$site-font-medium;
 				font-size:$type-size-2;
 				text-transform: uppercase;
     			letter-spacing: .1rem;
-
+    			img{
+    				max-width:1.563rem;
+    				margin-right:.4rem;
+    			}
 				&:hover{
-					background: $dark-bg;
+					background: $panel-bg;
 				}
 			}
 			.booknow{
 				background:$trans-red ;
+				
 			}
+
 
 		}
 

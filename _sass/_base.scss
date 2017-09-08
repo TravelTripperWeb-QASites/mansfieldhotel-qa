@@ -43,7 +43,19 @@ h3 {
 }
 
 h4 {
-  font-size: $type-size-6;
+    font-family:$site-font-regular;
+    font-size: $type-size-10;
+    letter-spacing: .2rem;
+    line-height: 1.875rem;
+    &:after{
+      content:"";
+      width: 6.25rem;
+      height:0.313rem;
+      margin: 2.5rem auto;
+      background: url(/assets/images/divider-dark.png) repeat-x;
+      opacity:0.5;
+      display: block;
+    }
 }
 
 h5 {
