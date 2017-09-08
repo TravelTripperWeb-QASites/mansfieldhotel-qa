@@ -230,7 +230,7 @@ $(window).on("load", function () {
 	var mheight = $(window).height();
 	var mwidth = $(window).width();
 	setTimeout(function () {
-		$(".inner-hero-container").height(mheight - 30);
+		$(".inner-hero-container").height(mheight - 130);
 	}, 1000);
 	// banner-height end
 
