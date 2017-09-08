@@ -13,6 +13,11 @@
 			transition: all 0.5s ease;
 		}
 	}
+	.navbar-toggler{
+		i{
+			color:$white;
+		}
+	}
 	.navbar-nav{
 		border-top:solid 0.063rem $white;
 		.nav-item{
@@ -37,12 +42,18 @@
 				-moz-transition: all 0.5s ease;
 				-o-transition: all 0.5s ease;
 				transition: all 0.5s ease;
+				@include media-breakpoint-down(md) {
+					padding: 0.938rem 0rem;
+				}
 			}
 			&.booknow{
 				.nav-link{
 					font-family: $site-font-medium;
 				}
 			}
+		}
+		@include media-breakpoint-down(md) {
+			background: rgba(0,0,0,0.9);
 		}
 	}
 	&.resized{
@@ -148,6 +159,9 @@
 				padding: 0 0.5rem 0.125rem;
 				font-size: 1.375rem;
 			}
+			@include media-breakpoint-down(sm) {
+				width:15%;
+			}
 	}
 	.carousel-indicators{
 		left: 1.875rem;
@@ -186,6 +200,9 @@
 			bottom: 0.6rem;
 			right: 1.250rem;
 		}
+		@include media-breakpoint-down(md){
+			height:10.25rem;
+		}
 	}
 	.rates{
 		margin: 22px 0 14px; padding: 0;
@@ -221,6 +238,18 @@
 			text-transform: uppercase;
 			font-size: $type-size-6;
 			letter-spacing: 0.125em;
+		}
+	}
+	@include media-breakpoint-down(md) {
+		height: 8.375rem;
+		.booknow{
+			a{padding:10px 20px;}
+		}
+	}
+	@include media-breakpoint-down(sm) {
+		height: 11.375rem;
+		.booknow{
+			a{padding:10px 20px;}
 		}
 	}
 }
@@ -287,7 +316,6 @@
 	background: url(/assets/images/homepage/intro-bg.jpg) #ffffff no-repeat left bottom;
 	background-size: contain;
 	text-align: center;
-	
 	p{
 		line-height: 1.9rem;
 		margin-bottom: 1.8rem;
@@ -326,6 +354,11 @@
 					background-color: $white;
 				}
 			}
+		}
+	}
+	@include media-breakpoint-down(md) {
+		.facade{
+			width:100%;
 		}
 	}
 }
@@ -381,35 +414,35 @@
 }
 
 .item{
-				position: relative;
-				.overlay{
-					height: 2.188rem;
-					width: 100%;
-					position: absolute;
-					top:-1.875rem;
-					z-index: 999;
-					background: $panel-bg;
-					opacity: 0.85;
-				}
-				.bar{
-					background: $panel-bg;
-				}
-				img{
-					width:100%;
-				}
-				h2{font-family: $caption-font-family; padding: 0 1.875rem;}
-				p{font-family: $brg-font-regular; color: $rate-text-color; letter-spacing: 0.063rem;padding: 0 1.875rem;
-					span{
-						font-family:$site-font-medium;
-					}
-				}
-				color:$white;
-				a{display: block; color: $white; text-transform: uppercase; font-size:$type-size-2; font-family: $site-font-medium;text-align: center; letter-spacing:0.125rem; padding:0.85rem ; width: 100%;
-					&.active{
-						background: $sub-heading-color;
-					}
-				}
+	position: relative;
+	.overlay{
+		height: 2.188rem;
+		width: 100%;
+		position: absolute;
+		top:-1.875rem;
+		z-index: 999;
+		background: $panel-bg;
+		opacity: 0.85;
 	}
+	.bar{
+		background: $panel-bg;
+	}
+	img{
+		width:100%;
+	}
+	h2{font-family: $caption-font-family; padding: 0 1.875rem;}
+	p{font-family: $brg-font-regular; color: $rate-text-color; letter-spacing: 0.063rem;padding: 0 1.875rem;
+		span{
+			font-family:$site-font-medium;
+		}
+	}
+	color:$white;
+	a{display: block; color: $white; text-transform: uppercase; font-size:$type-size-2; font-family: $site-font-medium;text-align: center; letter-spacing:0.125rem; padding:0.85rem ; width: 100%;
+		&.active{
+			background: $sub-heading-color;
+		}
+	}
+}
 
 .rooms-suites{
 	@extend .container-fluid;
@@ -527,6 +560,19 @@
 			text-align: right;
 			img{
 				margin:1.875rem 3.750rem 3.750rem;
+			}
+		}
+		@include media-breakpoint-down(md) {
+			&:first-child{
+				img{
+					margin:0rem;
+				}
+			}
+			&:last-child{
+				text-align: right;
+				img{
+					margin:0rem;
+				}
 			}
 		}
 	}
