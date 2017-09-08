@@ -162,6 +162,8 @@ $rate-text-color			: #d8c093 !default;
 $dark-bg					: #251414 !default;
 $panel-bg					: #4a0706 !default;
 $border-color               : $lighter-gray !default;
+$light-brown                : #7d7572;
+$mid-brown                  : #3a2b2b;
 
 /*button default colors*/
 
@@ -183,7 +185,7 @@ $youtube-color              : #bb0000 !default;
 $link-color                 : $info-color !default;
 $link-color-hover           : mix(#000, $link-color, 25%) !default;
 $link-color-visited         : mix(#fff, $link-color, 25%) !default;
-
+$trans-red                  : rgba(237, 31, 25, .9);
 
 /*
    Other
