@@ -7,20 +7,46 @@
 //   line-height: 60px; /* Vertically center the text there */
 //   background-color: #f5f5f5;
 // }
+.newsletter-form{
+	max-width:26.250em;
+	@extend .m-auto;
+	input, button{
+		    border-radius: 0;
+		    letter-spacing: .1rem;	   		
 
+	}
+	input{
+		font-family:$brg-font-regular;
+		font-size:$type-size-3;
+		color:$light-brown;
+		font-style: italic;
+	}
+
+	button{
+		text-transform:uppercase;
+		background-color:$light-brown;
+		font-family:$site-font-medium;
+		font-size:$type-size-2 ;
+		color:$white;
+		text-transform:uppercase;
+		letter-spacing: .1rem;
+   		padding: 0 2rem;
+   		cursor:pointer;
+
+   		&:hover{
+   		background-color:$main-heading-color;
+   		}
+
+	}
+}
 .details-footer{
 
 	@extend .packet-fluid;
 	max-width:1320px;
-	background: white;
+	background: $white;
 	margin-top:4rem;
-	margin-bottom: 2rem;
 	z-index: 2;
-	@include media-breakpoint-up(lg) { 
-	    margin-bottom: -5.5rem;
-	    
-	    
-			}
+	
 	.details-row{
 		@extend .bar;
 	}
@@ -67,7 +93,7 @@
 			    position: absolute;
 			    right: 0;
 			    top: 0;
-			    background: #ededed;
+			    background: #d8d5d4;
 			    bottom: 0;
 			    max-width: 60px;
 			    text-align: center;

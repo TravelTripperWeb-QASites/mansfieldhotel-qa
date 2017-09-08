@@ -77,9 +77,10 @@
 	height:auto;
 	position: relative;
 	.custom-footer{
+		background:$lighter-gray;
 		font-size: $type-size-2;
-		height: 60px;
-        line-height: 60px;
+		height: 52px;
+    	line-height: 51px;
 		.text-left{
 			font-family: $brg-font-regular;
 		}
@@ -475,6 +476,8 @@
 		}
 	}
 }
+
+
 
 /*Bar Section*/
 
