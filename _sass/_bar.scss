@@ -1,0 +1,17 @@
+.bar-details{
+    background: $dark-bg;
+    .packet{
+        background: $white;
+    }
+    h4{
+     color: $main-heading-color;  
+
+        &:after{
+            margin-left:0;
+        }
+
+    }
+    .details{
+          height: 620px;;
+    }
+}
