@@ -13,8 +13,13 @@
 			transition: all 0.5s ease;
 		}
 	}
+	.navbar-toggler{
+		i{
+			color:$white;
+		}
+	}
 	.navbar-nav{
-		border-top:solid 1px #fff; 
+		border-top:solid 0.063rem $white;
 		.nav-item{
 			&:first-child{
 				.nav-link{
@@ -37,12 +42,18 @@
 				-moz-transition: all 0.5s ease;
 				-o-transition: all 0.5s ease;
 				transition: all 0.5s ease;
+				@include media-breakpoint-down(md) {
+					padding: 0.938rem 0rem;
+				}
 			}
 			&.booknow{
 				.nav-link{
 					font-family: $site-font-medium;
 				}
 			}
+		}
+		@include media-breakpoint-down(md) {
+			background: rgba(0,0,0,0.9);
 		}
 	}
 	&.resized{
@@ -57,6 +68,11 @@
 			}
 		}
 		.navbar-nav{
+			 border-color: rgba(255,255,255,0.6);
+			-webkit-transition: all 0.5s ease;
+			-moz-transition: all 0.5s ease;
+			-o-transition: all 0.5s ease;
+			transition: all 0.5s ease;
 			.nav-item{
 				.nav-link{
 					font-size:$type-size-1;
@@ -132,6 +148,9 @@
 	  display: block;
 }
 #carouselHomebanner{
+	.carousel-item{
+		background-size: cover !important;
+	}
 	.carousel-control-prev, .carousel-control-next{
 			opacity: 1;
 			width:5%;
@@ -140,6 +159,9 @@
 				border-radius:50%;
 				padding: 0 0.5rem 0.125rem;
 				font-size: 1.375rem;
+			}
+			@include media-breakpoint-down(sm) {
+				width:15%;
 			}
 	}
 	.carousel-indicators{
@@ -179,6 +201,9 @@
 			bottom: 0.6rem;
 			right: 1.250rem;
 		}
+		@include media-breakpoint-down(md){
+			height:10.25rem;
+		}
 	}
 	.rates{
 		margin: 22px 0 14px; padding: 0;
@@ -214,6 +239,18 @@
 			text-transform: uppercase;
 			font-size: $type-size-6;
 			letter-spacing: 0.125em;
+		}
+	}
+	@include media-breakpoint-down(md) {
+		height: 8.375rem;
+		.booknow{
+			a{padding:10px 20px;}
+		}
+	}
+	@include media-breakpoint-down(sm) {
+		height: 11.375rem;
+		.booknow{
+			a{padding:10px 20px;}
 		}
 	}
 }
@@ -278,8 +315,8 @@
 }
 .intro{
 	background: url(/assets/images/homepage/intro-bg.jpg) #ffffff no-repeat left bottom;
+	background-size: contain;
 	text-align: center;
-	
 	p{
 		line-height: 1.9rem;
 		margin-bottom: 1.8rem;
@@ -320,13 +357,18 @@
 			}
 		}
 	}
+	@include media-breakpoint-down(md) {
+		.facade{
+			width:100%;
+		}
+	}
 }
 
 /*Rooms & Suites Section*/
 
 .heading-block{
 	max-width: 1320px;
-	margin: -320px auto 0;
+	margin: -327px auto 0;
 	background-color: $dark-bg;
 	padding:60px 20px 0;
 	text-align: center;
@@ -373,35 +415,35 @@
 }
 
 .item{
-				position: relative;
-				.overlay{
-					height: 2.188rem;
-					width: 100%;
-					position: absolute;
-					top:-1.875rem;
-					z-index: 999;
-					background: $panel-bg;
-					opacity: 0.85;
-				}
-				.bar{
-					background: $panel-bg;
-				}
-				img{
-					width:100%;
-				}
-				h2{font-family: $caption-font-family; padding: 0 1.875rem;}
-				p{font-family: $brg-font-regular; color: $rate-text-color; letter-spacing: 0.063rem;padding: 0 1.875rem;
-					span{
-						font-family:$site-font-medium;
-					}
-				}
-				color:$white;
-				a{display: block; color: $white; text-transform: uppercase; font-size:$type-size-2; font-family: $site-font-medium;text-align: center; letter-spacing:0.125rem; padding:0.85rem ; width: 100%;
-					&.active{
-						background: $sub-heading-color;
-					}
-				}
+	position: relative;
+	.overlay{
+		height: 2.188rem;
+		width: 100%;
+		position: absolute;
+		top:-1.875rem;
+		z-index: 999;
+		background: $panel-bg;
+		opacity: 0.85;
 	}
+	.bar{
+		background: $panel-bg;
+	}
+	img{
+		width:100%;
+	}
+	h2{font-family: $caption-font-family; padding: 0 1.875rem;}
+	p{font-family: $brg-font-regular; color: $rate-text-color; letter-spacing: 0.063rem;padding: 0 1.875rem;
+		span{
+			font-family:$site-font-medium;
+		}
+	}
+	color:$white;
+	a{display: block; color: $white; text-transform: uppercase; font-size:$type-size-2; font-family: $site-font-medium;text-align: center; letter-spacing:0.125rem; padding:0.85rem ; width: 100%;
+		&.active{
+			background: $sub-heading-color;
+		}
+	}
+}
 
 .rooms-suites{
 	@extend .container-fluid;
@@ -523,6 +565,19 @@
 				margin:1.875rem 3.750rem 3.750rem;
 			}
 		}
+		@include media-breakpoint-down(md) {
+			&:first-child{
+				img{
+					margin:0rem;
+				}
+			}
+			&:last-child{
+				text-align: right;
+				img{
+					margin:0rem;
+				}
+			}
+		}
 	}
 }
 
@@ -587,6 +642,95 @@
 				display: block;
 			}
 		}
+	}
+	.carousel-control-prev, .carousel-control-next{
+			opacity: 1;
+			width:auto;
+			top:inherit;
+			bottom:2.5rem;
+			i{
+				border:solid 0.063rem $white;
+				border-radius:50%;
+				padding: 0rem 0.7rem 0.15rem;
+    			font-size: 1.875rem;
+				color: $white;
+			}
+		&:hover{
+			opacity:0.7;
+		}
+	}
+	.carousel-control-prev{
+		left:3.75rem;
+		right: inherit;
+	}
+	.carousel-control-next{
+		left:7.3rem;
+		right:inherit;
+	}
+	#carouselLocation{
+		.carousel-item{
+			height: 48.750rem;
+			background-size: cover !important;
+		}
+	}
+	#carouselLocation2{
+		.carousel-inner{
+			.carousel-item {
+				.content{
+					padding:0.575rem;
+					text-align: center;
+					h1{
+						font-size: $type-size-13;
+						font-family: $site-font-light;
+						&:after{
+							content: "";
+							width: 3.750rem;
+							height: 0.063rem;
+							margin: 1.5rem auto 2rem;
+							background: $black;
+							opacity: 0.5;
+							display: block;
+						}
+					}
+					p{
+						font-family:$brg-font-regular;
+						font-size:$type-size-3;
+						padding: 0 2.5rem 1rem;
+						letter-spacing: 0.063rem;
+					}
+				}
+				&.active{
+					.content{
+						&:nth-child(2){
+							background: rgba(80,5,3,0.85);
+							color: $white;
+							h1{
+								color:$white;
+								&:after{
+									background:$white;
+								}
+							}
+						}
+					}
+				}
+			}
+			
+.carousel-item-right.active,
+.carousel-item-next {
+  transform: translateX(33.33%);
+}
+
+.carousel-item-left.active, 
+.carousel-item-prev {
+  transform: translateX(-33.33%)
+}
+  
+.carousel-item-right,
+.carousel-item-left{ 
+  transform: translateX(0);
+}
+		}
+		
 	}
 }
 
