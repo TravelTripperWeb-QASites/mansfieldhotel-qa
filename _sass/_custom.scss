@@ -289,6 +289,9 @@
 		.slice-2{
 			@extend .col-md-2;
 		}
+		.slice-12{
+			@extend .col-md-12;
+		}
 		.slice-9{
 			@extend .col-md-9;
 		}
@@ -744,10 +747,46 @@
 		.bar{
 			background: $panel-bg !important;
 		}
+		position: relative;
 		.overlay{
 			background: $panel-bg !important;
 			opacity: 0.85;
 			top:-2.15rem;
+		}
+		&.full-width{
+			margin-bottom: 4rem;
+			.bar{
+				.slice-10{
+					position:relative;
+				}
+			}
+		}
+	}
+}
+
+/*Room Details*/
+.dark-bg{
+	background: $mid-dark-bg;
+	color: $white;
+}
+.room-details{
+	background: $white;
+	margin-top: -2rem;
+	.content{
+		padding: 1.875rem 2.5rem 4rem 1.875rem;
+		h4{
+			margin-top:0;
+			color:$main-heading-color;
+			&:after{
+				margin:1.8rem 0;
+			}
+		}
+		.link-btn{
+			text-decoration: none;
+			i{
+				padding-right:0.5rem;
+				color: $sub-heading-color;
+			}
 		}
 	}
 }
