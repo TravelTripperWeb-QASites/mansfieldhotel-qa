@@ -1010,6 +1010,16 @@
 	.carousel-control-prev, .carousel-control-next{
 		color:$dark-gray;
 	}
+	.carousel-indicators{
+		li{
+			background-color: $dark-gray !important;
+			&.active{
+				border-color: $dark-gray !important;	
+				background-color: $white !important;
+				height:0.62rem !important;
+			}
+		}
+	}
 }
 
 /*Other styling*/
@@ -1019,7 +1029,6 @@
 	background: url(/assets/images/homepage/cta-bg.jpg) no-repeat top left;
 	background-size: cover;
 	padding-top:3.75rem;
-	
 	h1{
 		padding-bottom: 1rem;
 		margin:0;
