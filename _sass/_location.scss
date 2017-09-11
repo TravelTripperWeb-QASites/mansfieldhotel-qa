@@ -1,8 +1,65 @@
 .location-details{
 
-  .address{
-   background: $trans-red;
-   color:$white;
+  .address, h3{
+      color:$white;
+
+      p{
+  	font-family:$brg-font-regular;
   }
 
+  }
+  
+
+}
+
+.location-list{
+
+	p{
+		font-family:$brg-font-regular;
+		margin:.8rem 0;
+		font-size:$type-size-3;
+
+	}
+}
+
+.banner-overlap-strip-loc{
+	h4{
+		&:after{
+			margin: 2rem 0;
+		}
+	}
+	.slice-6{
+		position:relative;
+		&:before{
+			position:absolute;
+			content:"";
+			background:$white;
+		    height:1.875rem;
+		    left: 0;
+		    right: 0;
+		    top: -1.875rem;
+		    z-index:2;
+			
+		}
+		
+
+	}
+	.slice-6:last-of-type{
+		    background:$trans-main-color;
+		&:before{
+			background:$trans-main-color;
+		}
+		&:after{
+			background:$trans-main-color;
+			position:absolute;
+			content:"";
+			height:1.875rem;
+		    left: 0;
+		    right: 0;
+		    bottom: -1.875rem;
+		    z-index:2;
+			
+		}
+	}
+	
 }
