@@ -5,4 +5,38 @@ description: "Gallery"
 permalink: /gallery/
 ---
 
-<section class="inner-hero-container" style="background-image:url(/assets/images/rooms/room-details-banner.jpg);"> </section>
+<section class="inner-hero-container" style="background-image:url(/assets/images/gallery/gallery-banner.jpg);"> </section>
+<div class="main-header-container pb-4 mb-2">
+  <div class="main-header-row">
+    <div class="main-header-col">
+    <h2>Image Gallery</h2>
+    <p>The Mansfield Hotel Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>  
+  </div>
+</div>
+<section class="gallery-wrapper"> 
+ <div class="gallery-listing">
+      <div class="container">
+        <ul class="sub-nav">
+          <li><a href="javascript:;" class="filter active"  data-filter="all" data-rel="all" >All</a></li>
+          <li><a href="javascript:;"  class="filter" data-rel="hotel">The Hotel</a></li>
+          <li><a href="javascript:;"  class="filter" data-rel="rooms">Rooms & Suites</a></li>
+          <li><a href="javascript:;"  class="filter" data-rel="dining">M Bar</a></li>
+          <li><a href="javascript:;"  class="filter" data-rel="location">Attractions</a></li>
+        </ul>
+      </div>
+      <div class="container no-padding gallery-wrap" id="lightgallery">
+        <div class="card-columns">
+          {% assign galleries = site.data._models.gallery %}
+          {% for gallery in galleries %} 
+			<div class="card item fancybox" data-filter="{{ gallery.category }}"  data-src="{{ gallery.gallery_image.url }}" data-sub-html="{{ gallery.image_caption }}">
+				<img src="{{ gallery.gallery_image.url }}" alt="{{gallery.image_caption}}" class="img-responsive"/>
+				<div class="overlay">
+					<div class="zoom-in"><img src="../assets/images/plus.png" alt="Zoom In"/></div>
+				</div>
+			</div>
+          {% endfor %}        
+       </div>
+      </div>
+    </div>
+</section>
