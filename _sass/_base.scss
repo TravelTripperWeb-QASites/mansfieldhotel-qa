@@ -32,6 +32,17 @@ h2 {
   text-transform: uppercase;
   line-height: 2rem;
   letter-spacing: 0.2rem;
+  &.title{
+		text-align: center; margin-bottom: 3.750rem; color: $sub-heading-color; font-size: $type-size-10;
+		&:before,&:after{
+			content: "";
+			width:80px;
+			background: url(/assets/images/divider.png) repeat-x center center;
+			height: 4px;
+			display: inline-block;
+			margin: 8px 20px;
+		}
+  }
 }
 
 h3 {
@@ -172,6 +183,14 @@ svg:not(:root) {
 .slice-8{@extend .col-md-8;}
 .slice-7{@extend .col-md-7;}
 .slice-6{@extend .col-md-6;}
+
+/*Form controls*/
+
+.form-control{
+	border-radius: 0;
+	-webkit-appearance: none;
+    -webkit-border-radius: 0px;
+}
 
 /* buttons css */
 
