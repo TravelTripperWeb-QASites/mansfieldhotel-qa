@@ -1,17 +1,17 @@
 main:
   - title: About
-    url: /
+    url: /about
   - title: Rooms
-    url: /
+    url: /rooms
   - title: M Bar
-    url: /
+    url: /m-bar
   - title: Specials
-    url: /
+    url: /specials
   - title: Meetings & Events
-    url: 
+    url: /meetings
   - title: Location
-    url: /
+    url: /location
   - title: Gallery
-    url: /
+    url: /gallery
   - title: Contact
-    url: /
+    url: /contact
