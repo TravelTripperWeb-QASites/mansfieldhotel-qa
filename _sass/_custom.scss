@@ -3,14 +3,14 @@
 .navbar{
 	display:block; text-align: center; padding-bottom: 3.125rem;
 	background: linear-gradient(to bottom, black, transparent);
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
 	.navbar-brand{
 		padding: 0.5rem 0 0.938rem 0;
 		img{
 			height:5.0rem;
-			-webkit-transition: all 0.5s ease;
-			-moz-transition: all 0.5s ease;
-			-o-transition: all 0.5s ease;
-			transition: all 0.5s ease;
 		}
 	}
 	.navbar-toggler{
@@ -38,15 +38,12 @@
 				font-family: $brg-font-regular;
 				font-size: $type-size-3;
 				letter-spacing: 0.125rem;
-				-webkit-transition: all 0.5s ease;
-				-moz-transition: all 0.5s ease;
-				-o-transition: all 0.5s ease;
-				transition: all 0.5s ease;
 				@include media-breakpoint-down(md) {
 					padding: 0.938rem 0rem;
 				}
 			}
 			&.booknow{
+				display: block;
 				.nav-link{
 					font-family: $site-font-medium;
 				}
@@ -56,32 +53,67 @@
 			background: rgba(0,0,0,0.9);
 		}
 	}
+	.booknow-resized{
+		display: none;
+	}
 	&.resized{
+		display: flex;
+		background: $white;
+		padding: 0rem;
+		box-shadow: 0 0px 10px rgba(0,0,0,0.2);
+		-webkit-transition: all 0.5s ease;
+		-moz-transition: all 0.5s ease;
+		-o-transition: all 0.5s ease;
+		transition: all 0.5s ease;
 		.navbar-brand{
-			padding:0.1rem 0 0.538rem;
+			@extend .slice-2;
+			background: $main-heading-color;
+			margin-right: 0rem;
+			padding:0.5rem 0;
 			img{
 				height:2.5rem;
-				-webkit-transition: all 0.5s ease;
-				-moz-transition: all 0.5s ease;
-				-o-transition: all 0.5s ease;
-				transition: all 0.5s ease;
 			}
 		}
 		.navbar-nav{
-			 border-color: rgba(255,255,255,0.6);
-			-webkit-transition: all 0.5s ease;
-			-moz-transition: all 0.5s ease;
-			-o-transition: all 0.5s ease;
-			transition: all 0.5s ease;
+			@extend .slice-8;
+			border: 0px;
+			padding: 0rem 2rem;
+			display: flex;
+   			flex-direction: row;
+			flex: inherit;
+			max-width: inherit;
+			border-color: rgba(255,255,255,0.6);
 			.nav-item{
+				list-style: none;
+				flex-grow: 1;
+				text-align: center;
 				.nav-link{
+					padding: 1.25rem 0.5rem;
+					display: block;
 					font-size:$type-size-1;
-					-webkit-transition: all 0.5s ease;
-					-moz-transition: all 0.5s ease;
-					-o-transition: all 0.5s ease;
-					transition: all 0.5s ease;
+					color: $black;
+				}
+				&.active{
+					.nav-link{
+						border-bottom:solid 1px $sub-heading-color;
+					}
+				}
+				&.booknow{
+					display: none;
 				}
 			}
+		}
+		
+		.booknow-resized{
+			@extend .slice-2;
+			display: block;
+			padding:1.23rem 0;
+			background: $sub-heading-color;
+			color:$white;
+			font-family: $brg-font-regular;
+			font-size: $type-size-1;
+			text-transform: uppercase;
+			letter-spacing: 0.125rem;
 		}
 	}
 }
@@ -267,40 +299,6 @@
 	&:hover{
 		text-decoration: none;
 		color: $black;
-	}
-}
-
-/*Layout styles*/
-
-.packet{@extend .container; max-width: 1020px;}
-.packet-fluid{@extend .container-fluid;}
-.packet, .packet-fluid{
-	.bar{
-		@extend .row;
-		.slice{
-			@extend .col;
-		}
-		.slice-4{
-			@extend .col-md-4;
-		}
-		.slice-3{
-			@extend .col-md-3;
-		}
-		.slice-2{
-			@extend .col-md-2;
-		}
-		.slice-9{
-			@extend .col-md-9;
-		}
-		.slice-8{
-			@extend .col-md-8;
-		}
-		.slice-7{
-			@extend .col-md-7;
-		}
-		.slice-6{
-			@extend .col-md-6;
-		}
 	}
 }
 
@@ -586,6 +584,14 @@
 	background: url(/assets/images/homepage/gallery-cta.jpg) no-repeat top left;
 	background-size: cover;
 	height:38.625rem; 
+	&.inner{
+		height:50rem;
+		.overlay{
+	    	a{
+	    		bottom: calc(50% - -0.4rem);
+	    	}
+	    }
+	}
 	.overlay{
 		background-color:rgba(0,0,0,0.6);
 		width: 100%;
@@ -744,10 +750,56 @@
 		.bar{
 			background: $panel-bg !important;
 		}
+		position: relative;
 		.overlay{
 			background: $panel-bg !important;
 			opacity: 0.85;
 			top:-2.15rem;
+		}
+		&.full-width{
+			margin-bottom: 4rem;
+			.bar{
+				.slice-10{
+					position:relative;
+				}
+			}
+		}
+	}
+}
+
+/*Room Details*/
+.dark-bg{
+	background: $mid-dark-bg;
+	color: $white;
+}
+.room-details{
+	background: $white;
+	margin-top: -2rem;
+	.content{
+		padding: 1.875rem 2.5rem 4rem 1.875rem;
+		h4{
+			margin-top:0;
+			color:$main-heading-color;
+			&:after{
+				margin:1.8rem 0;
+			}
+		}
+		.link-btn{
+			text-decoration: none;
+			i{
+				padding-right:0.5rem;
+				color: $sub-heading-color;
+			}
+		}
+	}
+	h5{
+		color:$white;
+		letter-spacing: 0.063rem;
+		margin:0.5rem 0.8rem 2rem;
+		span{
+			font-size: $type-size-6;
+			font-family: $brg-font-regular;
+			
 		}
 	}
 }

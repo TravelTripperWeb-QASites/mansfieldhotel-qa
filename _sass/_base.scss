@@ -60,7 +60,8 @@ h4 {
 }
 
 h5 {
-  font-size: $type-size-6;
+  font-size: $type-size-10;
+  font-family: $headings-bold-condensed-font;
 }
 
 h6 {
@@ -94,6 +95,7 @@ a {
   &:hover,
   &:active {
     outline: 0;
+    text-decoration:none;
   }
 }
 
@@ -132,7 +134,10 @@ nav {
   }
 
   a {
-    text-decoration: none;
+    text-decoration: none !important;
+    &:hover{
+      text-decoration: none !important;
+    }
   }
 
   /* override white-space for nested lists */
@@ -151,4 +156,39 @@ nav {
 
 svg:not(:root) {
   overflow: hidden;
+}
+
+/*Layout styles*/
+
+.packet{@extend .container; max-width: 1020px;}
+.packet-fluid{@extend .container-fluid;}
+.bar{@extend .row;}
+.slice{@extend .col;}
+.slice-4{@extend .col-md-4;}
+.slice-3{@extend .col-md-3;}
+.slice-2{@extend .col-md-2;}
+.slice-12{@extend .col-md-12;}
+.slice-9{@extend .col-md-9;}
+.slice-8{@extend .col-md-8;}
+.slice-7{@extend .col-md-7;}
+.slice-6{@extend .col-md-6;}
+
+/* buttons css */
+
+.common-btn{
+  font-family: $site-font-medium;
+  text-transform: uppercase;
+  font-size: $type-size-2;
+  padding: 0.938rem 2.5rem;
+  width:11.250rem;
+  letter-spacing:1px;
+  border:0;
+  &.white{
+    background: $white;
+    color: $dark-bg;
+  }
+  &.red{
+    background: $sub-heading-color;
+    color:$white;
+  }
 }
