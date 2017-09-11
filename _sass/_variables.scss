@@ -173,6 +173,7 @@ $success-color              : #62c462 !default;
 $warning-color              : #f89406 !default;
 $danger-color               : #ee5f5b !default;
 $info-color                 : #007a9c !default;
+$light-choco                : #443636;
 
 /* brands */
 $facebook-color             : #3b5998 !default;
@@ -188,6 +189,7 @@ $link-color-hover           : mix(#000, $link-color, 25%) !default;
 $link-color-visited         : mix(#fff, $link-color, 25%) !default;
 $trans-red                  : rgba(237, 31, 25, .9);
 $trans-main-color           : rgba(80, 5, 3, .9);
+$trans-choco                : rgba(37, 20, 20, .9);
 
 /*
    Other

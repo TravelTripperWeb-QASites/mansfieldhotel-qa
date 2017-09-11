@@ -1,0 +1,80 @@
+.event-spaces-tabs{
+
+	background:$background-color;
+
+	 .space-tabs{
+	 	h3{
+	 		font-size:$type-size-8;
+	 		padding: 1.3rem;
+	 	}
+	 	ol{
+	 		padding: 0;
+	 		border-bottom: 1px solid $light-gray;
+	 		margin-bottom: 2.5rem;
+	 		li{
+	 		 display: inline-block;	
+	 		 font-family:$site-font-medium;
+	 		 font-size:$type-size-2;
+	 		 color:$light-gray;
+	 		 text-transform:uppercase;
+	 		 cursor:pointer;
+	 		 margin: 0 .9rem;
+	 		 padding: .4rem;
+	 		 &.active{
+	 		 	 color:$dark-bg;
+	 		 }
+
+	 		}
+	 	}
+
+	 }
+	 .info{
+	 	background:$trans-choco;
+	 	color:$white;
+	 	}
+	 	p{
+	 		font-size:$type-size-3;
+	 		font-family:$brg-font-regular;
+	 		margin-bottom: 1.2rem;
+	 	}
+	 	h4{
+	 		font-size:$type-size-8;
+	 		margin: 1.2rem 0;
+	 		&:after{
+	 			display:none;
+	 		}
+
+	 	}
+	 	.slice-9{
+	 		padding: .3rem 2rem 2rem 2rem;
+	 		a{
+	 			color:$white;
+	 			font-size:$type-size-2 ;
+	 			display: inline-block;
+	 			border-bottom: solid 0.063rem $white;
+	 		}
+
+	 	}
+	 	.slice-3{
+	 		background:$light-choco;
+	 		border-left: 1px solid $white;
+	 		img{
+	 			max-width:4rem;
+	 			margin-top: 2.5rem;
+	 		}
+	 		h1{
+	 			margin: 0;
+	 			font-family:$site-font-light;
+	 			color:$white;
+	 		}
+	 	.common-btn{
+	 		    width: 100%;
+	 		    display:block;
+	 		    border-top: 1px solid $white;
+	 		    border-bottom: 1px solid $white;
+	 	}	
+	 	}
+
+
+}
+
