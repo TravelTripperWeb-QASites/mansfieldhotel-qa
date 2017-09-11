@@ -13,7 +13,7 @@ permalink: /room-details/
 			<div class="content">
 				<h4>The jennings deluxe suite</h4>
 				<p>The Mansfield's Deluxe Suite - The Jennings Apartment is approx. 420 square feet and features customized etched-glass French doors designed by Denise Amses of Amses Coma, a decorative fireplace, ebony-stained hardwood floors, and a separate parlor area. The suite includes one king-sized bed, which is complemented by luxurious linens, down comforter and pillow-topped mattress along with a spacious separate living area. The Deluxe Suite-The Jennings Apartment is appointed with customized robes, iHome Alarm Clock Radio for your iPod, two Dell Flat Panel LCD TVs, mini bar and Philosophy bath products. Perfect for the business traveler, this room is equipped with a writing desk and high-speed wireless internet access.</p>
-				<a href="#" class="link-btn"><i class="fa fa-camera"></i> View Room Image Gallery</a>
+				<a href="#" class="link-btn"><i class="camera"></i> <span>View Room Image Gallery</span></a>
 			</div>
 		</div>
 		<div class="slice-6 p-5 dark-bg">
@@ -30,40 +30,153 @@ permalink: /room-details/
 				<div class="form-group slice-6">
 					<label for="noofAdults">Adults</label>
 					<select class="form-control" id="noofAdults">
-					  <option>1</option>
-					  <option>2</option>
-					  <option>3</option>
-					  <option>4</option>
-					  <option>5</option>
+					  <option>00 Adults</option>
+					  <option>01 Adults</option>
+					  <option selected>02 Adults</option>
+					  <option>03 Adults</option>
 					</select>
 			    </div>
 			    <div class="form-group slice-6">
 					<label for="noofChildren">Children</label>
 					<select class="form-control" id="noofChildren">
-					  <option>1</option>
-					  <option>2</option>
-					  <option>3</option>
-					  <option>4</option>
-					  <option>5</option>
+					  <option>00 Children</option>
+					  <option>01 Children</option>
+					  <option>02 Children</option>
+					  <option>03 Children</option>
 					</select>
 			    </div>
+				<div class="slice-6"><button type="submit" class="btn-block">Book Now</button></div>
 				<div class="slice-6">
-					<button type="submit">Book Now</button>
+					<ul>
+						<li><a href="#"><i class="phone"></i> <span>Phone</span></a></li>
+						<li><a href="#"><i class="mail"></i> <span>Email</span></a></li>
+					</ul>
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
-<section class="packet-fluid bar-section m-0 p-0">
+<section class="packet-fluid amenities-section m-0 p-0">
   <div class="description-box">
-    <h3>M Bar</h3>
-    <h2>Beaux Art ambiance</h2>
-    <p>The M Bar is one of the most quintessential bars in midtown NYC. The beautiful venue is known for its classic cocktails and live music, featuring a domed skylight, mahogany bookshelves, Beaux Arts lighting, and comfortable lounge seating, creating an intimate and elegant atmosphere reminiscent of days gone by.</p>
-    <a href="#" class="link-btn">Join us for a drink</a> </div>
+    <h3>Amenities & Services</h3>
+	<ul>
+		<li>FREE WIFI</li>
+		<li>Complimentary Business Center</li>
+		<li>24-Hour Fitness Center</li>
+		<li>Luxurious Linens</li>
+		<li>Pillow Top Mattresses</li>
+		<li>Flat Panel LCD TV</li>
+		<li>Plush Microfiber/Terry Robes Upon Request</li>
+		<li>Beekman 1802 Bath Products</li>
+		<li>Room Service: 5:00pm-10:00pm</li>
+		<li>iHome Dual Alarm Clock Radio for iPod</li>
+		<li>Lodgenet Interactive On Demand Movies</li>
+		<li>Hair Dryer</li>
+		<li>Pet Friendly</li>
+	</ul>
+  </div>
   <div class="bar m-0">
-    <div class="slice-6 p-0 odd"> <img src="../assets/images/bar/bar1.jpg" alt="Bar" class="img-fluid"/> </div>
-    <div class="slice-6 p-0"> <img src="../assets/images/bar/bar2.jpg" alt="Bar" class="img-fluid"/> </div>
-    <div class="slice-6 p-0"> <img src="../assets/images/bar/bar3.jpg" alt="Bar" class="img-fluid"/> </div>
-    <div class="slice-6 p-0 odd"> <img src="../assets/images/bar/bar4.jpg" alt="Bar" class="img-fluid"/> </div>
+    <div class="slice-6 p-0"> <img src="../assets/images/amenities/amenity1.jpg" alt="Amenities" class="img-fluid"/></div>
+    <div class="slice-6 p-0">
+		<div class="caption one">Fitness Gym with Yoga Loft</div>
+   		<div class="caption two">Complimentary Business Centre</div>
+    	<img src="../assets/images/amenities/amenity2.jpg" alt="Amenities" class="img-fluid"/>
+    </div>
+    <div class="slice-6 p-0">
+    	<img src="../assets/images/amenities/amenity4.jpg" alt="Amenities" class="img-fluid"/>
+    	<div class="caption three">Mbar featuring live music, gourmet American cuisineand classic cocktails</div>
+   		<div class="caption four">The Club Room featuring daily news paper, vintage books, game pieces and fire place.</div>
+    </div>
+    <div class="slice-6 p-0"> <img src="../assets/images/amenities/amenity3.jpg" alt="Amenities" class="img-fluid"/></div>
+  </div>
+</section>
+<section class="rooms-carousel">
+  <h2 class="title">More Rooms & Suites</h2>
+  <div id="carouselRooms" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselRooms" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselRooms" data-slide-to="1"></li>
+      <li data-target="#carouselRooms" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+      <div class="carousel-item active">
+        <div class="packet-fluid">
+          <div class="bar m-1">
+            <div class="slice-6 item"> <img src="../assets/images/rooms-carousel/room1.jpg" alt="Room"/>
+              <div class="bar m-0">
+                <div class="slice-8 p-0">
+                  <div class="overlay"></div>
+                  <h2>Guest Room Petite</h2>
+                  <p>Tonight's Rate <span>$239</span></p>
+                </div>
+                <div class="slice-4 p-0"> <a href="#" class="active">Book Room</a> <a href="#">Room Details</a> <a href="#">View All Rooms</a> </div>
+              </div>
+            </div>
+            <div class="slice-6 item"> <img src="../assets/images/rooms-carousel/room1.jpg" alt="Room"/>
+              <div class="bar m-0">
+                <div class="slice-8 p-0">
+                  <div class="overlay"></div>
+                  <h2>Guest Room Petite</h2>
+                  <p>Tonight's Rate <span>$239</span></p>
+                </div>
+                <div class="slice-4 p-0"> <a href="#" class="active">Book Room</a> <a href="#">Room Details</a> <a href="#">View All Rooms</a> </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="packet-fluid">
+          <div class="bar m-1">
+            <div class="slice-6 item"> <img src="../assets/images/rooms-carousel/room1.jpg" alt="Room"/>
+              <div class="bar m-0">
+                <div class="slice-8 p-0">
+                  <div class="overlay"></div>
+                  <h2>Guest Room Petite</h2>
+                  <p>Tonight's Rate <span>$239</span></p>
+                </div>
+                <div class="slice-4 p-0"> <a href="#" class="active">Book Room</a> <a href="#">Room Details</a> <a href="#">View All Rooms</a> </div>
+              </div>
+            </div>
+            <div class="slice-6 item"> <img src="../assets/images/rooms-carousel/room1.jpg" alt="Room"/>
+              <div class="bar m-0">
+                <div class="slice-8 p-0">
+                  <div class="overlay"></div>
+                  <h2>Guest Room Petite</h2>
+                  <p>Tonight's Rate <span>$239</span></p>
+                </div>
+                <div class="slice-4 p-0"> <a href="#" class="active">Book Room</a> <a href="#">Room Details</a> <a href="#">View All Rooms</a> </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="packet-fluid">
+          <div class="bar m-1">
+            <div class="slice-6 item"> <img src="../assets/images/rooms-carousel/room1.jpg" alt="Room"/>
+              <div class="bar m-0">
+                <div class="slice-8 p-0">
+                  <div class="overlay"></div>
+                  <h2>Guest Room Petite</h2>
+                  <p>Tonight's Rate <span>$239</span></p>
+                </div>
+                <div class="slice-4 p-0"> <a href="#" class="active">Book Room</a> <a href="#">Room Details</a> <a href="#">View All Rooms</a> </div>
+              </div>
+            </div>
+            <div class="slice-6 item"> <img src="../assets/images/rooms-carousel/room1.jpg" alt="Room"/>
+              <div class="bar m-0">
+                <div class="slice-8 p-0">
+                  <div class="overlay"></div>
+                  <h2>Guest Room Petite</h2>
+                  <p>Tonight's Rate <span>$239</span></p>
+                </div>
+                <div class="slice-4 p-0"> <a href="#" class="active">Book Room</a> <a href="#">Room Details</a> <a href="#">View All Rooms</a> </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselRooms" role="button" data-slide="prev"> <i class="fa fa-angle-left" aria-hidden="true"></i> <span class="sr-only">Previous</span> </a> <a class="carousel-control-next" href="#carouselRooms" role="button" data-slide="next"> <i class="fa fa-angle-right" aria-hidden="true"></i> <span class="sr-only">Next</span> </a> </div>
   </div>
 </section>

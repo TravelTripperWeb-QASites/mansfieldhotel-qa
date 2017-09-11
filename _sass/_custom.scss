@@ -488,11 +488,6 @@
 	background-size: 4.063rem;
 	margin-top: 0;
 	padding-top: 3.75rem;
-	h2{ 
-		&.title{
-			text-align: center; margin-bottom: 3.750rem; color: $sub-heading-color; font-size: $type-size-10;
-		}
-	}
 	#carouselOffers{
 		@extend #carouselRooms;
 		.packet-fluid{
@@ -773,7 +768,8 @@
 	color: $white;
 }
 .room-details{
-	background: $white;
+	background: url(/assets/images/crest.png) no-repeat center bottom $white;
+	background-size: 20%;
 	margin-top: -2rem;
 	.content{
 		padding: 1.875rem 2.5rem 4rem 1.875rem;
@@ -785,10 +781,24 @@
 			}
 		}
 		.link-btn{
+			margin-top: 1.5rem;
 			text-decoration: none;
+			display: inline-block;
 			i{
-				padding-right:0.5rem;
-				color: $sub-heading-color;
+				display: block;
+				width:1.438rem;
+				height:1.063rem;
+				&.camera{
+					background: url(/assets/images/camera.png) no-repeat;
+					background-size: 80%;
+				}
+			}
+			span{
+				display:block;
+				margin-top: -1.2rem;
+				float: left;
+				margin-left: 2.063rem;
+				letter-spacing: 0.063rem;
 			}
 		}
 	}
@@ -796,11 +806,209 @@
 		color:$white;
 		letter-spacing: 0.063rem;
 		margin:0.5rem 0.8rem 2rem;
+		&:after{
+			content:"";
+			height: 5px;
+			background: url(/assets/images/brown-line.png) repeat-x;
+    		display: block;
+    		margin-top: 2rem;
+			
+		}
 		span{
 			font-size: $type-size-6;
 			font-family: $brg-font-regular;
-			
 		}
+	}
+	.form-group{
+		margin-bottom: 1.8rem;
+		label{
+			font-size: $type-size-2;
+			font-family: $site-font-medium;
+			letter-spacing: 0.125rem;
+			color:$rate-text-color;
+		}
+		.form-control{
+			background-color: $rate-text-color;
+			color:$mid-dark-bg;
+			font-family: $brg-font-regular;
+			font-size: $type-size-3;
+		}
+	}
+	button{
+		padding:0.625rem 0;
+		font-size: $type-size-3;
+		font-family: $site-font-medium;
+		letter-spacing: 0.063rem;
+		color:$mid-dark-bg;
+		text-transform: uppercase;
+		background-color: $white;
+		border: 0;
+	}
+	ul{
+		margin: 0.4rem 0; padding: 0;
+		li{
+			list-style: none;
+			display: inline-block;
+			text-align: left;
+			padding-right: 0.5rem;
+			a{
+				font-size: $type-size-2;
+				font-family: $site-font-medium;
+				color:$rate-text-color;
+				text-transform: uppercase;
+				i{
+					background-size:56% !important;
+					border-radius: 50%;
+					width:1.8rem;
+					height:1.8rem;
+					display: block;
+					&.phone{
+						background: url(/assets/images/phone.png) no-repeat $rate-text-color;
+						background-position: 0.407rem 0.3rem;
+					}
+					&.mail{
+						background: url(/assets/images/mail.png) no-repeat $rate-text-color;
+						background-position: 0.406rem 0.53rem;
+					}
+				}
+				span{
+					display: block;
+					margin-top: -1.375rem;
+					float: left;
+					margin-left: 2.063rem;
+					letter-spacing: 0.063rem;
+				}
+				&:hover{
+					opacity: 0.7;
+				}
+			}
+		}
+	}
+}
+
+/*Amenities Section*/
+
+.amenities-section{
+	@extend .bar-section;
+	background: $dark-bg;
+	.description-box{
+		background-image: none;
+		top:23%;
+		border-color:rgba(216,192,147,0.85);
+		text-align: center;
+		font-family: $brg-font-regular;
+		font-size: $type-size-3;
+		letter-spacing: 0.063rem;
+		h3{margin-top: 0;}
+		ul{
+			margin: 1rem 0 0; padding: 0;
+			li{
+				list-style: none;
+				margin-bottom: 0.7rem;
+			}
+		}
+	}
+	.slice-6{
+		&:first-child{
+			img{
+				margin:0;
+			}
+		}
+		&:last-child{
+			text-align: right;
+			img{
+				margin:0;
+			}
+		}
+		&:nth-child(2){
+			text-align: right;
+			img{
+				margin:3.750rem 3.750rem 1.875rem;
+			}
+		}
+		&:nth-child(3){
+			text-align: left;
+			img{
+				margin:1.875rem 3.750rem 3.750rem;
+			}
+		}
+		.caption{
+			color:$white;
+			font-family: $brg-font-regular;
+			font-size: $type-size-3;
+			position: absolute;
+			width:8.125rem;
+			i{
+				color:$light-gray;
+				padding: 0 0.313rem;
+			}
+			&.one{
+				top:5rem;
+				left:1.25rem;
+				background: url(/assets/images/left-arrow.png) no-repeat;
+				padding-left: 1.25rem;
+				text-align: left;
+				background-size: 0.438rem;
+				background-position: left 5px;
+			}
+			&.two{
+				top:11.25rem;
+				left:5rem;
+				background: url(/assets/images/right-arrow.png) no-repeat;
+				padding-right: 1.25rem;
+				text-align: right;
+				background-size: 0.438rem;
+				background-position: right 5px;
+			}
+			&.three{
+				bottom:10rem;
+				right:5.438rem;
+				background: url(/assets/images/left-arrow.png) no-repeat;
+				padding-left: 1.25rem;
+				text-align: left;
+				background-size: 0.438rem;
+				background-position: left 5px;
+			}
+			&.four{
+				bottom:1rem;
+				right:1.25rem;
+				background: url(/assets/images/right-arrow.png) no-repeat;
+				padding-right: 1.25rem;
+				text-align: right;
+				background-size: 0.438rem;
+				background-position: right 5px;
+				
+			}
+			@include media-breakpoint-down(md) {
+				display: none;
+			}
+		}
+		@include media-breakpoint-down(md) {
+			&:nth-child(2){
+				img{
+					margin:0rem;
+				}
+			}
+			&:nth-child(3){
+				text-align: right;
+				img{
+					margin:0rem;
+				}
+			}
+		}
+	}
+}
+
+/*Rooms Carousel*/
+
+.rooms-carousel{
+	@extend .rooms-suites;
+	background: url(/assets/images/homepage/crest.png) no-repeat center -1.875rem $white;
+	background-size: 4.063rem;
+	margin-top: 0;
+	padding-top: 3.75rem;
+	.carousel-control-prev, .carousel-control-next{
+		color:$dark-gray;
 	}
 }
 
