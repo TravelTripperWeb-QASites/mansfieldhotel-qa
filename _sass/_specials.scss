@@ -1,134 +1,116 @@
-.inner-hero-container{
-	@extend .bg-cover;
+.inner-hero-container {
+    @extend .bg-cover;
 }
-
-.main-header-container{
-	@extend .packet;
-	background: url(/assets/images/homepage/crest.png) no-repeat center -1.875rem $white;
-	background-size: 4.063rem;
-	margin-top: -2rem;
-    z-index: 2;
-		.main-header-row{
-			@extend .bar;
-		}	
-		.main-header-col{
-			@extend .slice;
-			text-align: center;
-		    padding: 2.5rem 0;
-		    h2{
-		    	font-family: $site-font-regular;
-		    	font-size: $type-size-10;
-		    	color: $main-heading-color;
-		    	margin-bottom: 2rem;
-			    	&:after{
-					content: "";
-					width: 6.25rem;
-					height: 0.313rem;
-					margin: 1.5rem auto;
-					background: url(/assets/images/divider.png) repeat-x;
-					opacity: 0.5;
-					display: block;
-				}
-		    }
-		    p{
-		    	max-width: 56rem;
-		   		@extend .m-auto;
-		    }
-		}	
+.main-header-container {
+    .packet {
+        background: url(/assets/images/homepage/crest.png) no-repeat center -1.875rem $white;
+        background-size: 4.063rem;
+        margin-top: -2rem;
+        z-index: 2;
+    }
+    .slice {
+        text-align: center;
+        padding: 2.5rem 0;
+    }
+    h2 {
+        font-family: $site-font-regular;
+        font-size: $type-size-10;
+        color: $main-heading-color;
+        margin-bottom: 2rem;
+        &:after {
+            content: "";
+            width: 6.25rem;
+            height: 0.313rem;
+            margin: 1.5rem auto;
+            background: url(/assets/images/divider.png) repeat-x;
+            opacity: 0.5;
+            display: block;
+        }
+    }
+    p {
+        max-width: 56rem;
+        @extend .m-auto;
+    }
 }
-
-.specials-listing{
-	    padding: 0 3rem;
-
-	    .special-item{
-	    	  margin: 2rem 1rem;
-			.bar{
-				background: rgba(0,0,0,0.85);
-			}
-			.overlay{
-				background: rgba(0,0,0,0.85);
-				top:-2.15rem;
-			}
-			a{
-				border:solid 1px $white;
-				&:nth-child(even){
-					border-top:0; border-bottom: 0;
-				}
-			}
-		}
-
+.specials-listing {
+    padding: 0 3rem;
+    .special-item {
+        margin: 2rem 1rem;
+        .bar {
+            background: rgba(0, 0, 0, 0.85);
+        }
+        .overlay {
+            background: rgba(0, 0, 0, 0.85);
+            top: -2.15rem;
+        }
+        a {
+            border: solid 1px $white;
+            &:nth-child(even) {
+                border-top: 0;
+                border-bottom: 0;
+            }
+        }
+    }
 }
-
-.item-details{
-
-		background: $dark-bg;
-		color:$white;
-		.packet{
-			background: $dark-bg;	
-			padding-bottom: 4rem;
-			
-		}
-		h4{
-			margin:0;
-
-			&:after{
-				margin:2rem 0;
-			}
-
-		}
-		.terms{
-			font-family:$brg-font-regular;
-			font-size:$type-size-3;
-			margin: 1rem 0;
-		}
-		ul{
-			padding-left: 0.875rem;
-
-			li{
-				list-style-type: disc;
-			}
-		}
-		.link-btn{
-				color:$white;
-			}
-		.slice-3{
-			
-			a{
-				width:100%;
-				display:block;
-				text-align:center;
-				background:$mid-brown;
-				padding: 1.3rem 0;
-				color:$white;
-				font-family:$site-font-medium;
-				font-size:$type-size-2;
-				text-transform: uppercase;
-    			letter-spacing: .1rem;
-    			img{
-    				max-width:1.563rem;
-    				margin-right:.4rem;
-    			}
-				&:hover{
-					background: $panel-bg;
-				}
-			}
-			.booknow{
-				background:$trans-red ;
-				
-			}
-
-
-		}
-
+.item-details {
+    background: $dark-bg;
+    color: $white;
+    .packet {
+        background: $dark-bg;
+        padding-bottom: 4rem;
+    }
+    h4 {
+        margin: 0;
+        &:after {
+            margin: 2rem 0;
+        }
+    }
+    .terms {
+        font-family: $brg-font-regular;
+        font-size: $type-size-3;
+        margin: 1rem 0;
+    }
+    ul {
+        padding-left: 0.875rem;
+        li {
+            list-style-type: disc;
+        }
+    }
+    .link-btn {
+        color: $white;
+    }
+    .slice-3 {
+        a {
+            width: 100%;
+            display: block;
+            text-align: center;
+            background: $mid-brown;
+            padding: 1.3rem 0;
+            color: $white;
+            font-family: $site-font-medium;
+            font-size: $type-size-2;
+            text-transform: uppercase;
+            letter-spacing: .1rem;
+            img {
+                max-width: 1.563rem;
+                margin-right: .4rem;
+            }
+            &:hover {
+                background: $panel-bg;
+            }
+        }
+        .booknow {
+            background: $trans-red;
+        }
+    }
 }
-
-.banner-overlap-strip{
-	margin-top: -2rem;
-	.slice-9{
-	background: $dark-bg;	
-	}
-	.slice-3{
-	background: $trans-red;
-	height:1.875rem;	
-	}
+.banner-overlap-strip {
+    margin-top: -2rem;
+    .slice-9 {
+        background: $dark-bg;
+    }
+    .slice-3 {
+        background: $trans-red;
+        height: 1.875rem;
+    }
 }
