@@ -199,9 +199,10 @@ svg:not(:root) {
   text-transform: uppercase;
   font-size: $type-size-2;
   padding: 0.938rem 2.5rem;
-  width:11.250rem;
+  width:12rem;
   letter-spacing:1px;
   border:0;
+  display: inline-block;
   &.white{
     background: $white;
     color: $dark-bg;
@@ -210,4 +211,14 @@ svg:not(:root) {
     background: $sub-heading-color;
     color:$white;
   }
+}
+
+
+.img-color-overlay{
+    position:absolute;
+    content:"";
+    height:1.875rem;
+    left: 0;
+    right: 0;      
+    z-index:2;
 }
