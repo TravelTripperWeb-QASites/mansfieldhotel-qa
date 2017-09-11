@@ -31,38 +31,32 @@
 	.slice-6{
 		position:relative;
 		&:before{
-			position:absolute;
-			content:"";
+			@extend .img-color-overlay;
 			background:$white;
-		    height:1.875rem;
-		    left: 0;
-		    right: 0;
-		    top: -1.875rem;
-		    z-index:2;
+			top: -1.875rem;
+
+			
 			
 		}
 		
 
 	}
-	.slice-6:last-of-type{
+	.address{
 		    background:$trans-main-color;
 		&:before{
 			background:$trans-main-color;
 		}
 		&:after{
+			@extend .img-color-overlay;
 			background:$trans-main-color;
-			position:absolute;
-			content:"";
-			height:1.875rem;
-		    left: 0;
-		    right: 0;
-		    bottom: -1.875rem;
-		    z-index:2;
+			bottom: -1.875rem;
 			
 		}
 	}
 	
 }
+
+
 
 .overlay-none{
 	background-color: transparent;

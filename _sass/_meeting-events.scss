@@ -47,6 +47,14 @@
 	 	}
 	 	.slice-9{
 	 		padding: .3rem 2rem 2rem 2rem;
+
+	 		&:after{
+			@extend .img-color-overlay;
+	 		background:$trans-choco;
+			bottom: -1.875rem;
+			
+				}
+	 		
 	 		a{
 	 			color:$white;
 	 			font-size:$type-size-2 ;
