@@ -221,4 +221,8 @@ svg:not(:root) {
     left: 0;
     right: 0;      
     z-index:2;
+    @include media-breakpoint-down(sm) {
+      display:none;
+    }
+   
 }

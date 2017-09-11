@@ -1,18 +1,4 @@
 {
-  "_definitions": [
-    {
-      "name": {
-        "required": true
-      },
-      "title": {
-        "required": true
-      },
-      "file": "events.json"
-    },
-    {
-      "file": "gallery.json"
-    }
-  ],
   "gallery": [
     {
       "file": "gallery1.json"
@@ -214,6 +200,20 @@
     },
     {
       "file": "gallery9.json"
+    }
+  ],
+  "_definitions": [
+    {
+      "name": {
+        "required": true
+      },
+      "title": {
+        "required": true
+      },
+      "file": "events.json"
+    },
+    {
+      "file": "gallery.json"
     }
   ]
 }

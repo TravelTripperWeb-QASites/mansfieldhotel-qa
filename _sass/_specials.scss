@@ -79,6 +79,11 @@
     .link-btn {
         color: $white;
     }
+    .slice-9, .slice-3 {
+       @include media-breakpoint-down(sm) {
+       padding: 2rem 0;
+    }  
+    }
     .slice-3 {
         a {
             width: 100%;
