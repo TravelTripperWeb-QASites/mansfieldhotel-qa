@@ -276,9 +276,28 @@ $(window).on("load", function () {
 	// banner-height start
 	var mheight = $(window).height();
 	var mwidth = $(window).width();
-	setTimeout(function () {
-		$(".inner-hero-container").height(mheight - 130);
-	}, 1000);
+	$(".inner-hero-container").height(mheight - 130);
+	
 	// banner-height end
+
+	// events carousel start
+	jQuery(function ($) {
+    var captionwrapper = $('#carouselHomebanner.carousel div.carousel-item:nth-child(1) .carousel-caption');
+    var caption = $('#carouselHomebanner.carousel  div.carousel-item:nth-child(1) .carousel-caption .slidetext' );
+    var people =  $('#carouselHomebanner.carousel  div.carousel-item:nth-child(1) .carousel-caption .people' );
+    $('.new-caption-area').html(caption.html());
+    $('#people').html(people.html()); 
+    captionwrapper.css('display', 'none');
+
+    $("#carouselHomebanner").on('slide.bs.carousel', function (evt) { 
+        var captionwrapper = $('#carouselHomebanner.carousel  div.carousel-item:nth-child(' + ($(evt.relatedTarget).index() + 1) + ') .carousel-caption');
+       var caption= $('#carouselHomebanner.carousel div.carousel-item:nth-child(' + ($(evt.relatedTarget).index() + 1) + ') .carousel-caption .slidetext');
+       var people =  $('#carouselHomebanner.carousel div.carousel-item:nth-child(' + ($(evt.relatedTarget).index() + 1) + ')  .carousel-caption .people' );
+        $('.new-caption-area').html(caption.html());
+        $('#people').html(people.html()); 
+        captionwrapper.css('display', 'none');
+    	});
+	});
+	// events carousel start
 
 });
