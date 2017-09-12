@@ -103,6 +103,7 @@ del a {
 /* links */
 
 a {
+  transition:all 0.3s ease;
   &:hover,
   &:active {
     outline: 0;

@@ -1,7 +1,9 @@
 .bar-details{
     background: $dark-bg;
+    padding: 1px;
     .packet{
         background: $white;
+        margin-top: -2rem;
     }
     h4{
      color: $main-heading-color;  
