@@ -1,8 +1,23 @@
 {
   "gallery_image": {
-    "url": "https://cdn.traveltripper.io/site-assets/32_701_5687/media/2017-07-29-095306/Royalton-Penthouse-North-Dining-Table-web.jpg"
+    "url": "https://cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-030244/mansfieldhotel-35.jpg",
+    "path": "https://cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-030244/mansfieldhotel-35.jpg",
+    "file_type": "image/jpeg",
+    "name": "mansfieldhotel-35",
+    "tags": "",
+    "url_large": "//cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-030244/large_mansfieldhotel-35.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-030244/thumb_mansfieldhotel-35.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-030244/medium_mansfieldhotel-35.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-030244/small_mansfieldhotel-35.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-030244/xsmall_mansfieldhotel-35.jpg",
+    "width": 1152,
+    "height": 768,
+    "file_size": 322006,
+    "alt": "interior",
+    "caption": "interior",
+    "description": "interior"
   },
-  "image_caption": "Penthouse North",
-  "alt_tag": "Penthouse North",
-  "category": "rooms"
+  "image_caption": "interior",
+  "alt_tag": "interior",
+  "category": "rooms and suites"
 }

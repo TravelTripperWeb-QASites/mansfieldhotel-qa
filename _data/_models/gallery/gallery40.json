@@ -1,8 +1,23 @@
 {
   "gallery_image": {
-    "url": "https://cdn.traveltripper.io/site-assets/32_701_5687/media/2017-07-29-100906/shutterstock-289871738.jpg"
+    "url": "https://cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-031143/mansfieldhotel-45.jpg",
+    "path": "https://cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-031143/mansfieldhotel-45.jpg",
+    "file_type": "image/jpeg",
+    "name": "mansfieldhotel-45",
+    "tags": "",
+    "url_large": "//cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-031143/large_mansfieldhotel-45.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-031143/thumb_mansfieldhotel-45.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-031143/medium_mansfieldhotel-45.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-031143/small_mansfieldhotel-45.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-031143/xsmall_mansfieldhotel-45.jpg",
+    "width": 1152,
+    "height": 768,
+    "file_size": 311667,
+    "alt": "interior",
+    "caption": "interior",
+    "description": "interior"
   },
-  "image_caption": "Radio City Music Hall",
-  "alt_tag": "Radio City Music Hall",
-  "category": "location"
+  "image_caption": "interior",
+  "alt_tag": "interior",
+  "category": "rooms and suites"
 }
