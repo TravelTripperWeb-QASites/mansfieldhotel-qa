@@ -792,7 +792,7 @@
 
 .location-carousel{
 	padding: 7.5rem 0;
-	background: $lighter-gray ;
+	background: $lightest-gray ;
 	.loc-content{
 		text-align: center;
 		padding:6rem;
@@ -852,8 +852,9 @@
 	#carouselLocation2{
 		.carousel-inner{
 			.carousel-item {
+				border-left: solid 1px $black;
 				.content{
-					padding:0.575rem;
+					padding:0.575rem 1.8rem 0.575rem 0;
 					text-align: center;
 					h1{
 						font-size: $type-size-13;
@@ -1435,7 +1436,15 @@
 }
 
 /*Other styling*/
-
+.z-1{
+	z-index: 1;
+}
+.z-2{
+	z-index: 2;
+	position: relative;
+	right:-1.875rem;
+	padding-right:1.875rem;
+}
 .location-cta{
 	text-align:center;
 	background: url(/assets/images/homepage/cta-bg.jpg) no-repeat top left;
