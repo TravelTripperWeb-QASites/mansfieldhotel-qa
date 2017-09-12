@@ -19,5 +19,9 @@
   },
   "image_caption": "rest room",
   "alt_tag": "rest room",
+<<<<<<< HEAD
   "category": "rooms"
+=======
+  "category": "hotels"
+>>>>>>> 9f3e5c4eb34daefb3296edff04bfcdd22a8cd59e
 }
