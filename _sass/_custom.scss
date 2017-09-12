@@ -487,15 +487,33 @@
 		}
 	}
 	color:$white;
-	a{display: block; color: $white; text-transform: uppercase; font-size:$type-size-2; font-family: $site-font-medium;text-align: center; letter-spacing:0.125rem; padding:1.07rem ; width: 100%;border:solid 1px $black;
+	a{display: block; color: $white; text-transform: uppercase; font-size:$type-size-2; font-family: $site-font-medium;text-align: center; letter-spacing:0.125rem; padding:1.07rem ; width: 100%; border:solid 1px $black;
 		&:nth-child(even){
 			border-top:0; border-bottom: 0;
 		}
 		&:last-child{
 			border-bottom: 0;
 		}
-		&.active, &:hover{
+		-webkit-transition: all 0.3s ease;
+		-moz-transition: all 0.3s ease;
+		-o-transition: all 0.3s ease;
+		transition: all 0.3s ease;
+		&.active{
 			background: $sub-heading-color;
+			&:hover{
+				margin-top: -1.85rem;
+    			padding-top: 2.9rem;
+				background: rgba(235, 7, 0, 0.85);
+				-webkit-transition: all 0.3s ease;
+				-moz-transition: all 0.3s ease;
+				-o-transition: all 0.3s ease;
+				transition: all 0.3s ease;
+				color: $white;
+			}
+		}
+		&:hover{
+			background: $white;
+			color: $main-heading-color;
 		}
 	}
 }
@@ -623,16 +641,32 @@
 		@extend #carouselRooms;
 			.item{
 				.bar{
-					background: rgba(0,0,0,0.85);
+					background: rgba(37,20,20,0.85);
 				}
 				.overlay{
-					background: rgba(0,0,0,0.85);
-					top:-2.15rem;
+					background: rgba(37,20,20,0.85);
+					top:-1.9rem;
+					height:1.9rem;
 				}
 				a{
 					border:solid 1px $white;
 					&:nth-child(even){
 						border-top:0; border-bottom: 0;
+					}
+					-webkit-transition: all 0.3s ease;
+					-moz-transition: all 0.3s ease;
+					-o-transition: all 0.3s ease;
+					transition: all 0.3s ease;
+					&.active{
+						background: $sub-heading-color;
+						&:hover{
+							background: rgba(235, 7, 0, 0.85);
+							color: $white;
+						}
+					}
+					&:hover{
+						background: rgba(37,20,20,1);
+						color: $white;
 					}
 				}
 			}
@@ -1214,6 +1248,14 @@
 					border-bottom: solid 0.125rem $sub-heading-color;
 					text-decoration: none;
 				}
+			}
+		}
+		@include media-breakpoint-down(sm){
+			padding: 2rem 1.6rem;
+			margin: 0 auto;
+			li{
+				padding: 0 0.3rem;
+    			margin: 0;
 			}
 		}
 	}
