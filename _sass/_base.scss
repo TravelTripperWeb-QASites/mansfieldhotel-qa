@@ -209,6 +209,11 @@ svg:not(:root) {
   &.white{
     background: $white;
     color: $dark-bg;
+     &:hover{
+     color: $white; 
+     background:$panel-bg;
+    }
+
   }
   &.red{
     background: $sub-heading-color;
