@@ -103,6 +103,8 @@ del a {
 /* links */
 
 a {
+  letter-spacing: .07rem;
+  text-decoration: none;
   transition:all 0.3s ease;
   &:hover,
   &:active {
@@ -211,6 +213,12 @@ svg:not(:root) {
   &.red{
     background: $sub-heading-color;
     color:$white;
+    &:hover{
+    background: $dark-bg;
+    }
+    &:active{
+    background: $active-clr;
+    }
   }
 }
 
