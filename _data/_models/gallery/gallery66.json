@@ -1,8 +1,23 @@
 {
   "gallery_image": {
-    "url": "https://cdn.traveltripper.io/site-assets/32_701_5687/media/2017-07-29-101344/GrandCentralTerminal-iStock-487078430.jpg"
+    "url": "https://cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-034728/mansfieldhotel-72.jpg",
+    "path": "https://cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-034728/mansfieldhotel-72.jpg",
+    "file_type": "image/jpeg",
+    "name": "mansfieldhotel-72",
+    "tags": "",
+    "url_large": "//cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-034728/large_mansfieldhotel-72.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-034728/thumb_mansfieldhotel-72.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-034728/medium_mansfieldhotel-72.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-034728/small_mansfieldhotel-72.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-034728/xsmall_mansfieldhotel-72.jpg",
+    "width": 768,
+    "height": 1152,
+    "file_size": 313733,
+    "alt": "rest room",
+    "caption": "rest room",
+    "description": "rest room"
   },
-  "image_caption": "Grand Central Station",
-  "alt_tag": "Grand Central Station",
-  "category": "location"
+  "image_caption": "rest room",
+  "alt_tag": "rest room",
+  "category": "rooms"
 }

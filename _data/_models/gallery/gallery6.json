@@ -1,8 +1,23 @@
 {
   "gallery_image": {
-    "url": "https://cdn.traveltripper.io/site-assets/32_701_5687/media/2017-07-29-095226/Royalton-Main-Bar-2-WEB.jpg"
+    "url": "https://cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-023645/mansfieldhotel-6.jpg",
+    "path": "https://cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-023645/mansfieldhotel-6.jpg",
+    "file_type": "image/jpeg",
+    "name": "mansfieldhotel-6",
+    "tags": "",
+    "url_large": "//cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-023645/large_mansfieldhotel-6.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-023645/thumb_mansfieldhotel-6.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-023645/medium_mansfieldhotel-6.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-023645/small_mansfieldhotel-6.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-023645/xsmall_mansfieldhotel-6.jpg",
+    "width": 1152,
+    "height": 768,
+    "file_size": 240711,
+    "alt": "desk",
+    "caption": "desk",
+    "description": "desk"
   },
-  "image_caption": "Drinks - Bar 44",
-  "alt_tag": "Drinks - Bar 44",
-  "category": "dining"
+  "image_caption": "desk",
+  "alt_tag": "desk",
+  "category": "thehotel"
 }

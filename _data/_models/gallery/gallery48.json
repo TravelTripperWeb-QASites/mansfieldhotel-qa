@@ -1,8 +1,23 @@
 {
   "gallery_image": {
-    "url": "https://cdn.traveltripper.io/site-assets/32_701_5687/media/2017-07-29-101009/RockefellerCenter-iStock-626626836.jpg"
+    "url": "https://cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-031909/mansfieldhotel-54.jpg",
+    "path": "https://cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-031909/mansfieldhotel-54.jpg",
+    "file_type": "image/jpeg",
+    "name": "mansfieldhotel-54",
+    "tags": "",
+    "url_large": "//cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-031909/large_mansfieldhotel-54.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-031909/thumb_mansfieldhotel-54.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-031909/medium_mansfieldhotel-54.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-031909/small_mansfieldhotel-54.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-031909/xsmall_mansfieldhotel-54.jpg",
+    "width": 1152,
+    "height": 768,
+    "file_size": 406805,
+    "alt": "rooms",
+    "caption": "rooms",
+    "description": "rooms"
   },
-  "image_caption": "Rockefeller Center",
-  "alt_tag": "Rockefeller Center",
-  "category": "location"
+  "image_caption": "rooms",
+  "alt_tag": "rooms",
+  "category": "rooms"
 }

@@ -1,8 +1,23 @@
 {
   "gallery_image": {
-    "url": "https://cdn.traveltripper.io/site-assets/32_701_5687/media/2017-07-29-095350/Royalton-Standard-King-1-web.jpg"
+    "url": "https://cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-030600/mansfieldhotel-41.jpg",
+    "path": "https://cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-030600/mansfieldhotel-41.jpg",
+    "file_type": "image/jpeg",
+    "name": "mansfieldhotel-41",
+    "tags": "",
+    "url_large": "//cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-030600/large_mansfieldhotel-41.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-030600/thumb_mansfieldhotel-41.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-030600/medium_mansfieldhotel-41.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-030600/small_mansfieldhotel-41.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-030600/xsmall_mansfieldhotel-41.jpg",
+    "width": 1152,
+    "height": 768,
+    "file_size": 343373,
+    "alt": "dining table",
+    "caption": "dining table",
+    "description": "dining table"
   },
-  "image_caption": "Standard Guestroom",
-  "alt_tag": "Standard Guestroom",
+  "image_caption": "dining table",
+  "alt_tag": "dining table",
   "category": "rooms"
 }

@@ -1,8 +1,23 @@
 {
   "gallery_image": {
-    "url": "https://cdn.traveltripper.io/site-assets/32_701_5687/media/2017-07-29-095311/Royalton-Penthouse-South-Bath-WEB.jpg"
+    "url": "https://cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-030553/mansfieldhotel-38.jpg",
+    "path": "https://cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-030553/mansfieldhotel-38.jpg",
+    "file_type": "image/jpeg",
+    "name": "mansfieldhotel-38",
+    "tags": "",
+    "url_large": "//cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-030553/large_mansfieldhotel-38.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-030553/thumb_mansfieldhotel-38.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-030553/medium_mansfieldhotel-38.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-030553/small_mansfieldhotel-38.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-030553/xsmall_mansfieldhotel-38.jpg",
+    "width": 1152,
+    "height": 768,
+    "file_size": 286233,
+    "alt": "bed-room",
+    "caption": "bed-room",
+    "description": "bed-room"
   },
-  "image_caption": "Penthouse South",
-  "alt_tag": "Penthouse South",
+  "image_caption": "bed-room",
+  "alt_tag": "bed-room",
   "category": "rooms"
 }

@@ -1,8 +1,23 @@
 {
   "gallery_image": {
-    "url": "https://cdn.traveltripper.io/site-assets/32_701_5687/media/2017-07-29-101342/fabian-fauth-239221.jpg"
+    "url": "https://cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-033820/mansfieldhotel-71.jpg",
+    "path": "https://cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-033820/mansfieldhotel-71.jpg",
+    "file_type": "image/jpeg",
+    "name": "mansfieldhotel-71",
+    "tags": "",
+    "url_large": "//cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-033820/large_mansfieldhotel-71.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-033820/thumb_mansfieldhotel-71.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-033820/medium_mansfieldhotel-71.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-033820/small_mansfieldhotel-71.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-033820/xsmall_mansfieldhotel-71.jpg",
+    "width": 1152,
+    "height": 768,
+    "file_size": 286039,
+    "alt": "bed room",
+    "caption": "bed room",
+    "description": "bed room"
   },
-  "image_caption": "The Statue of Liberty",
-  "alt_tag": "The Statue of Liberty",
-  "category": "location"
+  "image_caption": "bed room",
+  "alt_tag": "bed room",
+  "category": "rooms"
 }

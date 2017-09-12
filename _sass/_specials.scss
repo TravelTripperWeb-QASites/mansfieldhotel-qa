@@ -49,8 +49,19 @@
                 border-top: 0;
                 border-bottom: 0;
             }
+			@include media-breakpoint-down(sm){
+				&:last-child{
+					border-bottom: 0;
+				}
+			}
         }
     }
+	@include media-breakpoint-down(sm){
+		padding: 0 1rem;
+		.special-item{
+			margin: 1rem 0;
+		}
+	}
 }
 .item-details {
     background: $dark-bg;

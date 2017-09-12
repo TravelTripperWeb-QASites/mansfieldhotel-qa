@@ -1,8 +1,23 @@
 {
   "gallery_image": {
-    "url": "https://cdn.traveltripper.io/site-assets/32_701_5687/media/2017-07-29-101057/iStock-508963065.jpg"
+    "url": "https://cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-031911/mansfieldhotel-55.jpg",
+    "path": "https://cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-031911/mansfieldhotel-55.jpg",
+    "file_type": "image/jpeg",
+    "name": "mansfieldhotel-55",
+    "tags": "",
+    "url_large": "//cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-031911/large_mansfieldhotel-55.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-031911/thumb_mansfieldhotel-55.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-031911/medium_mansfieldhotel-55.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-031911/small_mansfieldhotel-55.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-031911/xsmall_mansfieldhotel-55.jpg",
+    "width": 1152,
+    "height": 768,
+    "file_size": 373434,
+    "alt": "rooms",
+    "caption": "rooms",
+    "description": "rooms"
   },
-  "image_caption": "New York City",
-  "alt_tag": "New York City",
-  "category": "location"
+  "image_caption": "rooms",
+  "alt_tag": "rooms",
+  "category": "rooms"
 }
