@@ -15,7 +15,8 @@
     "required": true
   },
   "category": {
-    "type": "text",
+    "type": "select",
+    "options":["hotels","rooms","bar","attractions"],
     "label": "Image Category",
     "required": true
   }
