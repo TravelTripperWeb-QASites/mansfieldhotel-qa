@@ -1031,20 +1031,43 @@
 /*Gallery*/
 
 .gallery-wrapper{
-	padding:0 0 30px 0;
+	background: $lightest-gray;
+	padding:0 0 1.875rem 0;
+	.packet{
+		max-width: 82.5rem;
+	}
 	@include media-breakpoint-up(lg){
-		padding:0 0 60px 0;
+		padding:0 0 3.750rem 0;
  	}
 	.gallery-listing{
-		padding:0 0 10px 0;
+		padding:0 0 0.625rem 0;
 		@include media-breakpoint-up(lg){
-			padding:0 0 20px 0;
+			padding:0 0 1.250rem 0;
 		}
 	}
+	hr{margin:0.3rem 0 3.375rem; border-color: $lighter-gray;}
 	.sub-nav{
-		margin-bottom: 0.625rem;
+		margin:0 auto;
+		max-width: 35.250rem;
+		padding-top: 3.375rem;
 		li{
-			
+			list-style: none;
+			text-align: center;
+			display: inline-block;
+			padding: 0 1rem;
+			margin: 0;
+			a{
+				font-family: $site-font-medium;
+				font-size: $type-size-2;
+				text-transform: uppercase;
+				color: $light-gray;
+				padding-bottom: 0.45rem;
+				&:hover,&.active{
+					color: $black;
+					border-bottom: solid 0.125rem $sub-heading-color;
+					text-decoration: none;
+				}
+			}
 		}
 	}
 	.gallery-wrap{
