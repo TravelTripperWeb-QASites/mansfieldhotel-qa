@@ -57,7 +57,10 @@
     color: $white;
     .packet {
         background: $dark-bg;
-        padding-bottom: 4rem;
+        padding-bottom: 7rem;
+         @include media-breakpoint-up(md) {
+        padding-bottom: 7rem;
+        }
     }
     h4 {
         margin: 0;
@@ -76,12 +79,11 @@
             list-style-type: disc;
         }
     }
-    .link-btn {
-        color: $white;
-    }
+    
     .slice-9, .slice-3 {
-       @include media-breakpoint-down(sm) {
-       padding: 2rem 0;
+       padding: 0 2rem;
+       @include media-breakpoint-down(md) {
+       padding: 2rem 1.5rem;
     }  
     }
     .slice-3 {
@@ -104,11 +106,25 @@
                 margin-right: .4rem;
             }
             &:hover {
-                background: $panel-bg;
+                background: $white;
+                color:$dark-bg;
             }
         }
         .booknow {
             background: $trans-red;
+             &:hover {
+                background: $trans-red;
+                color:$white;
+                
+
+            @include media-breakpoint-up(md) {
+                     margin-top: -1.875rem;
+                     padding-top: 3rem;
+
+                 }
+
+
+            }
         }
     }
 }
@@ -116,9 +132,10 @@
     margin-top: -2rem;
     .slice-9 {
         background: $dark-bg;
+        height: 1.875rem;
     }
     .slice-3 {
-        background: $trans-red;
-        height: 1.875rem;
+        background: none;
+        
     }
 }

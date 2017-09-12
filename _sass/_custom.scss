@@ -305,6 +305,15 @@
 		color: $sub-heading-color;
 		
 	}
+
+	&.white{
+		color: $white;
+		border-bottom: solid 0.063rem $white;
+		&:hover{
+		color: $sub-heading-color;
+		border-bottom: solid 0.063rem $sub-heading-color;
+	}
+	}
 }
 
 /*Home Intro section*/

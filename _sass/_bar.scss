@@ -14,9 +14,19 @@
         }
 
     }
+    .bg-cover{
+        min-height:320px;
+    }
     .details{
           height: 620px;
           padding: 1rem 4rem 1rem 2rem !important;
+
+          .email{
+                text-transform: inherit;
+                .fa{
+                    color:$sub-heading-color;
+                }
+          }
     }
 }
 
@@ -45,3 +55,18 @@
         width: 6em;
     }  
 }
+
+.gallery-cta {
+    .overlay {
+        h1{
+            &.m-bar-h1{
+                background: none;
+                outline: none;
+                box-shadow: none;
+                border: none;
+            }
+        }
+    }
+}
+
+    
