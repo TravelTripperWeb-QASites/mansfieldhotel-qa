@@ -204,19 +204,5 @@
     {
       "file": "gallery9.json"
     }
-  ],
-  "_definitions": [
-    {
-      "name": {
-        "required": true
-      },
-      "title": {
-        "required": true
-      },
-      "file": "events.json"
-    },
-    {
-      "file": "gallery.json"
-    }
   ]
 }
