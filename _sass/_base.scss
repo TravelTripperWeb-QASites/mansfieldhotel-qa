@@ -175,14 +175,58 @@ svg:not(:root) {
 .packet-fluid{@extend .container-fluid;}
 .bar{@extend .row;}
 .slice{@extend .col;}
-.slice-4{@extend .col-md-4;}
-.slice-3{@extend .col-md-3;}
-.slice-2{@extend .col-md-2;}
-.slice-12{@extend .col-md-12;}
-.slice-9{@extend .col-md-9;}
-.slice-8{@extend .col-md-8;}
-.slice-7{@extend .col-md-7;}
-.slice-6{@extend .col-md-6;}
+
+/* Semantic  naming for Bootstrap 4 grids */
+
+$grid-columns: 12;
+
+/* class="slice-xl-1",  class="slice-xl-2",  class="slice-xl-3" .....
+    for >= 1200px */
+
+@for $i from 1 through $grid-columns {  
+    .slice-xl-#{$i} { 
+        @extend .col-xl-#{$i};
+    }
+}
+
+/* class="slice-lg-1", class="slice-lg-2", class="slice-lg-3" .....
+   for >= 992px */
+
+@for $i from 1 through $grid-columns {
+    .slice-lg-#{$i} { 
+        @extend .col-lg-#{$i};
+    }
+}
+
+/* class="slice-1", class="slice-2", class="slice-3" .....
+   for >= 768px (DEFAULT) 
+*/
+
+@for $i from 1 through $grid-columns {
+    .slice-#{$i} { 
+        @extend .col-md-#{$i};
+    }
+}
+
+/* class="slice-sm-1", class="slice-sm-2", class="slice-sm-3" .....
+   for >= 576px 
+*/
+
+@for $i from 1 through $grid-columns {
+    .slice-sm-#{$i} { 
+        @extend .col-sm-#{$i};
+    }
+}
+
+/* class="slice-xs-1", class="slice-xs-2", class="slice-xs-3" .....
+   for < 575px 
+*/
+
+@for $i from 1 through $grid-columns {
+    .slice-xs-#{$i} { 
+        @extend .col-#{$i};
+    }
+}
 
 /*Form controls*/
 
