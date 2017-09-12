@@ -1230,6 +1230,21 @@
 	}
 }
 
+/*Static content*/
+
+.static-content{
+	margin: 0 auto 4rem;
+	background: $lightest-gray;
+	@extend .p-5;
+	h2{margin-top:0;}
+	ol{
+		li{
+			list-style: inherit;
+			margin-bottom: 1.5rem;
+		}
+	}
+}
+
 /*Other styling*/
 
 .location-cta{
