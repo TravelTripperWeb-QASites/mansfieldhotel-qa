@@ -1,8 +1,23 @@
 {
   "gallery_image": {
-    "url": "https://cdn.traveltripper.io/site-assets/32_701_5687/media/2017-07-29-095115/Royalton-Guestroom-King-Fireplace-2web.jpg"
+    "url": "https://cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-025237/mansfieldhotel-24.jpg",
+    "path": "https://cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-025237/mansfieldhotel-24.jpg",
+    "file_type": "image/jpeg",
+    "name": "mansfieldhotel-24",
+    "tags": "",
+    "url_large": "//cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-025237/large_mansfieldhotel-24.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-025237/thumb_mansfieldhotel-24.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-025237/medium_mansfieldhotel-24.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-025237/small_mansfieldhotel-24.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-025237/xsmall_mansfieldhotel-24.jpg",
+    "width": 1152,
+    "height": 768,
+    "file_size": 344703,
+    "alt": "reception",
+    "caption": "reception",
+    "description": "reception"
   },
-  "image_caption": "Guestroom with Fireplace",
-  "alt_tag": "Guestroom with Fireplace",
-  "category": "rooms"
+  "image_caption": "reception",
+  "alt_tag": "reception",
+  "category": "the hotel"
 }

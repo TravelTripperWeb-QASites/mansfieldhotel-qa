@@ -1,8 +1,23 @@
 {
   "gallery_image": {
-    "url": "https://cdn.traveltripper.io/site-assets/32_701_5687/media/2017-07-29-095344/Royalton-Restaurant-1-Web.jpg"
+    "url": "https://cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-024032/mansfieldhotel-8.jpg",
+    "path": "https://cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-024032/mansfieldhotel-8.jpg",
+    "file_type": "image/jpeg",
+    "name": "mansfieldhotel-8",
+    "tags": "",
+    "url_large": "//cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-024032/large_mansfieldhotel-8.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-024032/thumb_mansfieldhotel-8.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-024032/medium_mansfieldhotel-8.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-024032/small_mansfieldhotel-8.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-024032/xsmall_mansfieldhotel-8.jpg",
+    "width": 1152,
+    "height": 768,
+    "file_size": 332582,
+    "alt": "desk",
+    "caption": "desk",
+    "description": "desk"
   },
-  "image_caption": "Forty Four",
-  "alt_tag": "Forty Four",
-  "category": "dining"
+  "image_caption": "desk",
+  "alt_tag": "desk",
+  "category": "the hotel"
 }

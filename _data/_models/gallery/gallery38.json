@@ -1,8 +1,23 @@
 {
   "gallery_image": {
-    "url": "https://cdn.traveltripper.io/site-assets/32_701_5687/media/2017-07-29-095352/Royalton-Standard-King-2-web.jpg"
+    "alt": "rooms",
+    "url": "https://cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-031138/mansfieldhotel-43.jpg",
+    "path": "https://cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-031138/mansfieldhotel-43.jpg",
+    "file_type": "image/jpeg",
+    "name": "mansfieldhotel-43",
+    "tags": "",
+    "url_large": "//cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-031138/large_mansfieldhotel-43.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-031138/thumb_mansfieldhotel-43.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-031138/medium_mansfieldhotel-43.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-031138/small_mansfieldhotel-43.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-031138/xsmall_mansfieldhotel-43.jpg",
+    "width": 1152,
+    "height": 768,
+    "file_size": 351895,
+    "caption": "rooms",
+    "description": "rooms"
   },
-  "image_caption": "Standard Guestroom",
-  "alt_tag": "Standard Guestroom",
-  "category": "rooms"
+  "image_caption": "rooms",
+  "alt_tag": "rooms",
+  "category": "rooms and suites"
 }

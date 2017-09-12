@@ -1,8 +1,23 @@
 {
   "gallery_image": {
-    "url": "https://cdn.traveltripper.io/site-assets/32_701_5687/media/2017-07-29-095123/Royalton-Guestroom-Standard-Bath-Web.jpg"
+    "url": "https://cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-025603/mansfieldhotel-28.jpg",
+    "path": "https://cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-025603/mansfieldhotel-28.jpg",
+    "file_type": "image/jpeg",
+    "name": "mansfieldhotel-28",
+    "tags": "",
+    "url_large": "//cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-025603/large_mansfieldhotel-28.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-025603/thumb_mansfieldhotel-28.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-025603/medium_mansfieldhotel-28.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-025603/small_mansfieldhotel-28.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-025603/xsmall_mansfieldhotel-28.jpg",
+    "width": 768,
+    "height": 1152,
+    "file_size": 372414,
+    "alt": "reception",
+    "caption": "reception",
+    "description": "reception"
   },
-  "image_caption": "Guestroom Bath",
-  "alt_tag": "Guestroom Bath",
-  "category": "rooms"
+  "image_caption": "reception",
+  "alt_tag": "reception",
+  "category": "the hotel"
 }
