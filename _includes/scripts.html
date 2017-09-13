@@ -9,34 +9,6 @@
 <!-- Placed at the end of the document so the pages load faster -->
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script src="{{ '/assets/js/ie10-viewport-bug-workaround.js' | absolute_url }}"></script>
-<script type="text/javascript">
-	
-var $carousel = $('#carouselHomebanner');
-$carousel.carousel();
-var handled=false;
-var itemclicked="";
-$carousel.bind('slide.bs.carousel', function (e) {
-    var current=$(e.target).find('.item.active');
-    var indx=$(current).index();
-    if((indx+2)>$('.space-tabs li').length)
-        indx=-1
-        
-     if(!handled)
-     {
-        $('.space-tabs li').removeClass('active')
-     	$('.space-tabs li:nth-child('+(indx+2)+')').addClass('active');
-        
-     }
-     else
-     {
-        handled=!handled;
-     }
-    
-});
 
-$(".space-tabs li").on('click',function(){
-   $(this).addClass('active').siblings().removeClass('active');
-   handled=true;
-});
 
-</script>
+
