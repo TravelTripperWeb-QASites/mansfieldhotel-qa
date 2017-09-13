@@ -39,7 +39,7 @@ permalink: /request-for-proposal/
                     <input type="tel" class="form-control" placeholder="Address" aria-label="Phone number" id="input_11" name="q11_phone" required>
                 </div>
                 <div class="form-group full">
-                  <select class="form-control" id="input_99" name="q9_state" data-component="dropdown" aria-label="state">
+                  <select class="form-control states-select" id="input_99" name="q9_state" data-component="dropdown" aria-label="state">
                       <option value="">Select State</option>
                       <option value="Alabama"> Alabama </option>
                       <option value="Alaska"> Alaska </option>
@@ -96,32 +96,44 @@ permalink: /request-for-proposal/
                    
                 </div>
                 <div class="form-group full">
-                    <input type="date" class="form-control " placeholder="Arrival" aria-label="Arrival date" id="input_6" name="q6_arrivalDate" required>
+                    <input type="text" class="form-control " placeholder="Arrival date" aria-label="Arrival " id="input_6" name="q6_arrivalDate" required>
+                </div>
+                <div class="form-group full">
+                    <input type="text" class="form-control " placeholder="Event Name" aria-label="Arrival " id="input_6" name="q6_arrivalDate" required>
+                </div>
+                <div class="form-group full">
+                    <input type="text" class="form-control " placeholder="No of attendees" aria-label="Arrival " id="input_6" name="q6_arrivalDate" required>
                 </div>
             </div>
             <div class="form-inline">
                 <div class="form-group full">
-                    <input type="text" class="form-control" placeholder="Name *" aria-label="Last Name"  id="input_5" name="q5_name" required>
+                    <input type="text" class="form-control" placeholder="Last Name" aria-label="Last Name"  id="input_5" name="q5_name" required>
                 </div>
                 <div class="form-group full">
-                    <input type="text" class="form-control" placeholder="Name *" aria-label="Company"  id="input_5" name="q5_name" required>
+                    <input type="text" class="form-control" placeholder="Company" aria-label="Company"  id="input_5" name="q5_name" required>
                 </div>
                 <div class="form-group full">
-                    <input type="text" class="form-control" placeholder="Name *" aria-label="Address 2"  id="input_5" name="q5_name" required>
+                    <input type="text" class="form-control" placeholder="Address 2" aria-label="Address 2"  id="input_5" name="q5_name" required>
                 </div>
                 <div class="form-group full">
-                    <input type="text" class="form-control" placeholder="Name *" aria-label="Phone Number"  id="input_5" name="q5_name" required>
+                    <input type="text" class="form-control" placeholder="Phone Number" aria-label="Phone Number"  id="input_5" name="q5_name" required>
                 </div>
                 <div class="form-group full">
-                    <input type="date" class="form-control" placeholder="Name *" aria-label="Departure Date"  id="input_5" name="q5_name" required>
+                    <input type="text" class="form-control" placeholder="Departure Date" aria-label="Departure "  id="input_5" name="q5_name" required>
+                </div>
+                <div class="form-group full">
+                    <input type="text" class="form-control" placeholder="No of Guest Rooms Required" aria-label="Departure "  id="input_5" name="q5_name" required>
                 </div>
                
                
             </div>
             <div class="form-inline full">
                 <div class="form-group full">
-                    <textarea type="text" class="form-control" placeholder="Type your message *" aria-label="Type your message" id="input_4"  name="q4_message" required></textarea>
-                </div>
+                   Are Dates Flexible? :
+                    <input class="radio" type="radio" name="flexible" value="Dates are flexible" checked> Yes<br>
+              <input class="radio"  type="radio" name="flexible" value="Dates are not flexible"> No<br>
+                  
+                          </div>
                 <button class="common-btn red mt-4" title="submit" id="input_2" type="submit">submit</button>
             </div>
             <script> JotForm.showJotFormPowered = "0"; </script> <input type="hidden" id="simple_spc" name="simple_spc" value="72542312704448" /> <script type="text/javascript"> document.getElementById("si" + "mple" + "_spc").value = "72542312704448-72542312704448"; </script>
