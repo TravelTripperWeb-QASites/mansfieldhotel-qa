@@ -489,7 +489,7 @@
 		opacity: 0.85;
 	}
 	.bar{
-		background: $panel-bg;
+		background: rgba(74, 7, 6, 0.85);
 		height:auto;
 	}
 	img{
@@ -543,10 +543,12 @@
 .rooms-suites{
 	@extend .container-fluid;
 	background-color: $dark-bg;
-	padding: 8.5rem 0 7.125rem;
+	padding: 8.5rem 0 2.188rem;
     margin-top: -8.938rem;
 	#carouselRooms{
-		.carousel-inner{
+		overflow-x: hidden;
+		padding-bottom: 5.688rem;
+		/*.carousel-inner{
 			max-height: 640px;
 			@include media-breakpoint-down(md){
 				max-height: 464px;
@@ -555,13 +557,25 @@
 				padding: 0 !important;
 				max-height: 640px;
 			}
-		}
+		}*/
+		
 		.carousel-control-prev, .carousel-control-next{
-			width:5%;
+			width:4%;
 			i{font-size:$type-size-10;}
+			padding-bottom:5rem;
+			background: $dark-bg;
+			opacity: 1;
+			i{
+				opacity:0.5;
+			}
+			&:hover{
+				i{
+					opacity:1;
+				}
+			}
 		}
 		.carousel-indicators{
-			bottom:-5rem;
+			position: absolute;
 			color:$white;
 			li{
 				max-width:0.313rem;
@@ -653,6 +667,38 @@
 		}
 	}
 }
+
+/*Rooms Carousel*/
+
+.rooms-carousel{
+	@extend .rooms-suites;
+	background: url(/assets/images/homepage/crest.png) no-repeat center -1.875rem $white;
+	background-size: 4.063rem;
+	margin-top: 0;
+	padding-top: 3.75rem;
+	.carousel-control-prev, .carousel-control-next{
+		color:$dark-gray;
+		background: $white !important;
+	}
+	.carousel-indicators{
+		li{
+			background-color: $dark-gray !important;
+			&.active{
+				border-color: $dark-gray !important;	
+				background-color: $white !important;
+				height:0.62rem !important;
+			}
+		}
+	}
+	.item{
+		a{
+			border:solid 1px $white;
+		}
+	}
+}
+
+/*Offers Carousel*/
+
 .offers-carousel{
 	@extend .rooms-suites;
 	background: url(/assets/images/homepage/crest.png) no-repeat center -1.875rem $white;
@@ -661,42 +707,43 @@
 	padding-top: 3.75rem;
 	#carouselOffers{
 		@extend #carouselRooms;
-			.item{
-				.bar{
-					background: rgba(37,20,20,0.85);
+		.item{
+			.bar{
+				background: rgba(37,20,20,0.85);
+			}
+			.overlay{
+				background: rgba(37,20,20,0.85);
+				top:-1.85rem;
+				height:1.9rem;
+			}
+			h2{
+				margin-bottom: 2rem;
+			}
+			a{
+				border:solid 1px $white;
+				&:nth-child(even){
+					border-top:0; border-bottom: 0;
 				}
-				.overlay{
-					background: rgba(37,20,20,0.85);
-					top:-1.85rem;
-					height:1.9rem;
-				}
-				h2{
-					margin-bottom: 2rem;
-				}
-				a{
-					border:solid 1px $white;
-					&:nth-child(even){
-						border-top:0; border-bottom: 0;
-					}
-					-webkit-transition: all 0.3s ease;
-					-moz-transition: all 0.3s ease;
-					-o-transition: all 0.3s ease;
-					transition: all 0.3s ease;
-					&.active{
-						background: $sub-heading-color;
-						&:hover{
-							background: rgba(235, 7, 0, 0.85);
-							color: $white;
-						}
-					}
+				-webkit-transition: all 0.3s ease;
+				-moz-transition: all 0.3s ease;
+				-o-transition: all 0.3s ease;
+				transition: all 0.3s ease;
+				&.active{
+					background: $sub-heading-color;
 					&:hover{
-						background: rgba(37,20,20,1);
+						background: rgba(235, 7, 0, 0.85);
 						color: $white;
 					}
 				}
-			}
+				&:hover{
+					background: rgba(37,20,20,1);
+					color: $white;
+				}
+			 }
+		}
 		.carousel-control-prev, .carousel-control-next{
 			color:$black;
+			background: $white;
 		}
 	}
 }
@@ -1211,29 +1258,6 @@
 				img{
 					margin:0rem;
 				}
-			}
-		}
-	}
-}
-
-/*Rooms Carousel*/
-
-.rooms-carousel{
-	@extend .rooms-suites;
-	background: url(/assets/images/homepage/crest.png) no-repeat center -1.875rem $white;
-	background-size: 4.063rem;
-	margin-top: 0;
-	padding-top: 3.75rem;
-	.carousel-control-prev, .carousel-control-next{
-		color:$dark-gray;
-	}
-	.carousel-indicators{
-		li{
-			background-color: $dark-gray !important;
-			&.active{
-				border-color: $dark-gray !important;	
-				background-color: $white !important;
-				height:0.62rem !important;
 			}
 		}
 	}
