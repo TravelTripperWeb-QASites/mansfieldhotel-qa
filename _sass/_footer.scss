@@ -16,8 +16,8 @@
 
 	}
 	input{
-		font-family:$brg-font-regular;
-		font-size:$type-size-3;
+		font-family:$site-font-italic;
+		font-size:$type-size-2;
 		color:$light-brown;
 		font-style: italic;
 	}
@@ -34,7 +34,7 @@
    		cursor:pointer;
 
    		&:hover{
-   		background-color:$main-heading-color;
+   		background-color:$dark-bg;
    		}
 
 	}
@@ -46,7 +46,9 @@
 	background: $white;
 	margin-top:4rem;
 	z-index: 2;
-	
+	@include media-breakpoint-down(md) { 
+			 padding-bottom: 2rem;
+		}	
 	.details-row{
 		@extend .bar;
 	}
@@ -63,14 +65,18 @@
 
 		position:relative;		
 		.details{
-			border-right:1px solid $lighter-gray;
+			border:none;
 			padding-left: 1.2rem;
-
+			@include media-breakpoint-up(md) { 
+			 border-right:1px solid $lighter-gray;
+			padding-left: 1.2rem;
+			}	
 
 		}
 	}
 	p{
 		font-family:$site-font-medium;
+		font-size:$type-size-3;
 		margin:0;
 	}
 	a{
@@ -78,6 +84,10 @@
 		font-family:$brg-font-regular;
 		font-size:$type-size-3;
 		letter-spacing: .1rem;
+
+		&:hover{
+			color:$sub-heading-color;
+		}
 	}
 	.logo-container{
 		
@@ -103,7 +113,9 @@
 			    display: block;
 			    padding: 0 1.2rem;
 			    margin: .7rem 0;
-			    
+			    &:hover{
+					color:$sub-heading-color;
+				}
 			}
 		}	
 	}
@@ -111,7 +123,11 @@
 }	
 
 .map-wrap{
-	min-height:31rem;
+	min-height:20rem;
+
+	@include media-breakpoint-up(md){
+		min-height:31rem;
+	}
 }
 
 /* only info css */

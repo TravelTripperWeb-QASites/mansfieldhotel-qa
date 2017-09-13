@@ -3,9 +3,9 @@
 	background:$background-color;
 
 	 .space-tabs{
-	 	h3{
+	 	h2{
 	 		font-size:$type-size-8;
-	 		padding: 1.3rem;
+	 		margin: 3rem 0 2rem 0;
 	 	}
 	 	ol{
 	 		padding: 0;
@@ -19,11 +19,22 @@
 	 		 text-transform:uppercase;
 	 		 cursor:pointer;
 	 		 margin: 0 .9rem;
-	 		 padding: .4rem;
+	 		 padding: .4rem 0;
+	 		 position:relative;
+	 		 letter-spacing: .1rem;
 	 		 &.active{
 	 		 	 color:$dark-bg;
-	 		 }
 
+		 		 	 &:after{
+		 		 	content:"";
+		 		 	border-bottom:3px solid $sub-heading-color;
+		 		 	position:absolute;
+		 		 	bottom: -1px;
+		 		 	left:0;
+		 		 	right:0;
+		 		 }
+	 		 }
+	 		 
 	 		}
 	 	}
 
@@ -55,12 +66,7 @@
 			
 				}
 	 		
-	 		a{
-	 			color:$white;
-	 			font-size:$type-size-2 ;
-	 			display: inline-block;
-	 			border-bottom: solid 0.063rem $white;
-	 		}
+	 		
 
 	 	}
 	 	.slice-3{

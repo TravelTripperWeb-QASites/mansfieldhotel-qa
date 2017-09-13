@@ -140,13 +140,16 @@
 /*Custom footer here*/
 
 .footer{
-	height:auto;
-	position: relative;
-	.custom-footer{
-		background:$lighter-gray;
+	background:$lighter-gray;
+  	.custom-footer{
+  		max-width: 1320px;
+		
 		font-size: $type-size-2;
-		height: 52px;
-    	line-height: 51px;
+		
+    	.slice-4{
+    		    height: 50px;
+   				padding-top: .9rem;
+    	}
 		.text-left{
 			font-family: $brg-font-regular;
 		}
@@ -162,7 +165,7 @@
 					color:$text-color;
 					text-decoration:none;
 					&:hover{
-						opacity:0.7;
+					color:$sub-heading-color;	
 					}
 					&:after{
 						content: "";
@@ -184,9 +187,9 @@
 				}
 			}
 		}
-		.text-right{
-			img{width:50%;}
-		}
+		
+			img{max-width:19em;}
+		
 	}
 }
 
@@ -308,17 +311,28 @@
 /*Button styles*/
 
 .link-btn{
+	
 	font-family: $site-font-medium;
 	font-size: $type-size-2;
 	text-transform: uppercase;
 	color: $black;
 	border-bottom: solid 0.063rem $sub-heading-color;
 	padding-bottom: 0.5rem;
+	letter-spacing: .07rem;
 	display: inline-block;
 	margin-bottom: 1rem;
 	&:hover{
-		text-decoration: none;
-		color: $black;
+		color: $sub-heading-color;
+		
+	}
+
+	&.white{
+		color: $white;
+		border-bottom: solid 0.063rem $white;
+		&:hover{
+		color: $sub-heading-color;
+		border-bottom: solid 0.063rem $sub-heading-color;
+	}
 	}
 }
 
@@ -786,6 +800,11 @@
 			left: calc(50% - 5.625rem);
 			width:11.250rem;
 			bottom: calc(50% - 5.813rem);
+
+			&:hover{
+				background:$panel-bg;
+				color: $white;
+			}
 		}
 	}
 }

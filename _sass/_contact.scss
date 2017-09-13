@@ -1,3 +1,20 @@
+
+.contact-address{
+
+    h3{
+        margin-top:0;
+    }
+    .details{
+        border-right: 1px solid $lighter-gray; 
+    }
+
+}
+.social-links{
+        a{
+          color:  $main-heading-color;
+          margin: 0 .5rem; 
+        }
+    }
 .contact-top{
 	margin-top: 0;
 	.details-col{
@@ -26,6 +43,11 @@
 	padding:3.75rem 0;
     background:$background-color;
     .form-part{
+         .form-control{
+            border: none;
+            background-color: #fff;
+            font-family:$site-font-italic !important;
+        }
         @extend .container;
         max-width:850px;
         text-align:center;
@@ -39,6 +61,7 @@
                 //color:$grey;
             }
         }
+
         .form-inline{
             button{
                 &.black{
@@ -68,9 +91,9 @@
                     letter-spacing:1px;
                     padding: 12px 16px;
                     &.date{
-                        background:url(/assets/images/calendar-icon.png) 98% center no-repeat;
+                        background:url(/assets/images/calendar-icon.png) 98% center no-repeat $white;
                         padding: 10px 16px;
-                        @include media-breakpoint-up(md) { background:url(/assets/images/calendar-icon.png) 95% center no-repeat; }
+                        @include media-breakpoint-up(md) { background:url(/assets/images/calendar-icon.png) 95% center no-repeat $white; }
                     }
                 }
                 textarea{
