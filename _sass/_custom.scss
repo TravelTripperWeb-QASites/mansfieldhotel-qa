@@ -1530,8 +1530,11 @@
 	z-index: 10000;
 	@extend .bg-cover;
 	.logo{
-		max-width:200px;
+		max-width:140px;
 		padding: 1rem 0;
+		@include media-breakpoint-up(md){
+			max-width:200px;
+		}
 	}
 	.content{
 		
@@ -1550,23 +1553,28 @@
 	}
 	h1{
 		color:$white;
-		font-size:$type-size-9;
+		font-size:$type-size-6;
 		position:relative;
-		margin: 1rem;
+		margin: .3rem;
+		
+		@include media-breakpoint-up(md){
+			font-size:$type-size-9;
+			margin: 1rem;
+		}
 		
 	}
 	.spacer-bar{
 		    background-color: rgba(255, 255, 255, 0.6);
 			width:1px;
 			margin:0 auto;
-			height:20px;
-			 @include media-breakpoint-up(lg) {
-		   height:60px;
+			 height:30px;
+			@media (min-width: 1370px) {
+		    height:60px;
 		   }
-		}
+	}
 	.spacer-bar:first-child{
-		   height:60px;
-		   @include media-breakpoint-up(lg) {
+		   height:90px;
+		   @media (min-width: 1370px) {
 		   height:190px;
 		   }
 	}
