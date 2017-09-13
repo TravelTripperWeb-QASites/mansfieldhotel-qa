@@ -203,19 +203,35 @@ $(document).ready(function () {
 		  pause: null
 	  });
 	 });
-	
 	$('#carouselLocation2.carousel .carousel-item').each(function () {
-		var next = $(this).next();
-		if (!next.length) {
-			next = $(this).siblings(':first');
-		}
-		next.children(':first-child').clone().appendTo($(this));
+				var next = $(this).next();
+				if (!next.length) {
+					next = $(this).siblings(':first');
+				}
+				next.children(':first-child').clone().appendTo($(this));
 
-		if (next.next().length > 0) {
-			next.next().children(':first-child').clone().appendTo($(this));
-		} else {
-			$(this).siblings(':first').children(':first-child').clone().appendTo($(this));
-		}
+				if (next.next().length > 0) {
+					next.next().children(':first-child').clone().appendTo($(this));
+				} else {
+					$(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+				}
+	});
+	$('#carouselLocation').on('slide.bs.carousel', function (e) {
+			//$('#carouselLocation2.carousel .carousel-item').each(function () {
+				var $e = $(e.relatedTarget);
+				var idx = $e.index();
+				var next = idx;
+				if (!next.length) {
+					next = $(this).siblings(':first');
+				}
+				next.children(':first-child').clone().appendTo($(this));
+
+				if (next.next().length > 0) {
+					next.next().children(':first-child').clone().appendTo($(this));
+				} else {
+					$(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+				}
+		//	});
 	});
 	
 	//Rooms Carousel
