@@ -4,6 +4,23 @@
 
 $(document).ready(function () {
 
+	//carousel as owl items
+	setTimeout(function(){
+		var HideItems = $('#carouselRooms .carousel-item,#carouselOffers .carousel-item').length;
+		var item = $('#carouselRooms,#carouselOffers').find('.carousel-item:first').outerWidth();
+     var twidth = HideItems * item;
+		 //console.log(HideItems);
+		$('#carouselRooms,#carouselOffers').find('.carousel-inner .carousel-item').css('max-width',item);
+		$('#carouselRooms,#carouselOffers').find('.carousel-inner').css('width', twidth);
+		
+	   //$('#carouselRooms .carousel-item').each(function(i){
+//		    var totalItem = $('#carouselRooms .carousel-item').length;
+//		    if(i > 1){
+//				$(this).hide();
+//			}
+//	   });
+	},1000);
+	
 	// START MAP FUNCTION 
 	function initialize() {
 
@@ -207,7 +224,6 @@ $(document).ready(function () {
 		var idx = $e.index();
 		var itemsPerSlide = 2;
 		var totalItems = $('.carousel-item').length;
-		
     	if (idx >= totalItems-(itemsPerSlide-1)) {
 			var it = itemsPerSlide - (totalItems - idx);
 			for (var i=0; i<it; i++) {
