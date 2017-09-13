@@ -53,6 +53,7 @@
 		}
 		@include media-breakpoint-down(md) {
 			background: rgba(0,0,0,0.9);
+			
 		}
 	}
 	.booknow-resized{
@@ -74,6 +75,10 @@
 			padding:0.5rem 0;
 			img{
 				height:2.5rem;
+			}
+			@include media-breakpoint-down(md){
+				max-width: 100%;
+				display: block;
 			}
 		}
 		.navbar-toggler{
@@ -107,7 +112,7 @@
 					display: none;
 				}
 			}
-			@include media-breakpoint-down(sm){
+			@include media-breakpoint-down(md){
 				flex-direction:inherit;
 				display: block;
 				.nav-item{
@@ -128,7 +133,7 @@
 			font-size: $type-size-1;
 			text-transform: uppercase;
 			letter-spacing: 0.125rem;
-			@include media-breakpoint-down(sm){
+			@include media-breakpoint-down(md){
 				position: absolute;
     			width: 100px;
 			}
@@ -397,6 +402,15 @@
 		.facade{
 			width:100%;
 		}
+		.reviews{
+			margin: 4rem 0 14rem;
+			.carousel-item{
+				min-height: 21.875rem;
+			}
+			.carousel-indicators{
+				bottom:5rem;
+			}
+		}
 	}
 	@include media-breakpoint-down(sm){
 		&.py-5{
@@ -476,13 +490,7 @@
 	}
 	.bar{
 		background: $panel-bg;
-		height:10rem;
-		@include media-breakpoint-down(md){
-			height:14.3rem;
-		}
-		@include media-breakpoint-down(sm){
-			height:19.5rem;
-		}
+		height:auto;
 	}
 	img{
 		width:100%;
@@ -659,8 +667,11 @@
 				}
 				.overlay{
 					background: rgba(37,20,20,0.85);
-					top:-1.9rem;
+					top:-1.85rem;
 					height:1.9rem;
+				}
+				h2{
+					margin-bottom: 2rem;
 				}
 				a{
 					border:solid 1px $white;
@@ -689,7 +700,6 @@
 		}
 	}
 }
-
 
 
 /*Bar Section*/
@@ -1454,6 +1464,7 @@
 	}
 }
 
+
 /*Other styling*/
 .z-1{
 	z-index: 1;
@@ -1463,6 +1474,9 @@
 	position: relative;
 	right:-1.875rem;
 	padding-right:1.875rem;
+	@include media-breakpoint-down(sm){
+		right: inherit;
+	}
 }
 .location-cta{
 	text-align:center;
