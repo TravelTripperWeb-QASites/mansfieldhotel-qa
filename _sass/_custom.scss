@@ -246,7 +246,7 @@
 
 /*BRG block styling*/
 
-.brg{
+/*.brg{
 	height:90px;
 	background-color: $dark-bg;
 	 .red-bg{
@@ -311,7 +311,115 @@
 			a{padding:10px 20px;}
 		}
 	}
+}*/
+
+.static-booking-widget{
+	@extend .container-fluid;
+	.booking-widget-row{
+		@extend .row;
+		@xtend .m-0;
+		.rate{
+			@extend .col-lg-3;
+			@extend .p-0;
+			.best-rate{
+				@extend .w-50;
+				float: left;
+				background: $dark-bg;
+				h2{
+					margin:0;
+					padding: 1.280rem;
+					color: $rate-text-color;
+					line-height: 1.6rem;
+				}
+				text-align: right;
+			}
+			.tonight-rate{
+				@extend .w-50;
+				float: right;
+				background: $rate-text-color;
+				color: $dark-bg;
+				text-align: center;
+				i{
+					font-family: $brg-font-regular;
+					font-size: $type-size-4;
+					font-style: normal;
+					padding-top:1.05rem;
+					display: block;
+				}
+				h2{
+					font-family: $brg-font-regular;
+					font-size: $type-size-11;
+					margin: 0;
+					padding-bottom: 1.250rem;
+				}
+			}
+		}
+		.booking-form{
+			@extend .col-lg-7;
+			background:$main-heading-color;
+			form{
+				padding:0 1.563rem;
+				.form-group{
+					padding:0 1.563rem;
+					label{
+						color:#fff;
+						font-size:$type-size-2;
+						font-family:$site-font-medium;
+						letter-spacing:.1rem;
+						margin:1.1rem 0 0;
+					}
+					input,select{
+						font-family:$site-font-italic;
+						font-size:$type-size-3 ;
+						color:#939393 ;
+						background: transparent;
+						border: none;
+						border-bottom: 0.063rem solid white;
+						padding: .3rem 0;
+					}
+					select{
+						position:relative;
+						z-index:1;
+						height: 2rem !important;
+						background: url(/assets/images/white-arrow.png) transparent center right no-repeat;
+					}
+					.fa-angle-down{
+						position: absolute;
+						right: 1rem;
+						top: 2.063rem;
+						font-size: $type-size-7 ;
+						color: $white;
+						 z-index:2;
+					}
+				}
+				@include media-breakpoint-down(md) {
+					padding:3.125rem 1.563rem;
+				}
+			}
+		}
+		.book-now-btn{
+			background: $sub-heading-color;
+			@extend .col-lg-2;
+			@extend .p-0;
+			text-align: center;
+			a{
+				display: block;
+				padding:2rem 0;
+				color:$white;
+				font-family: $brg-font-regular;
+				font-size: $type-size-6;
+				text-transform: uppercase;
+				letter-spacing: 0.063rem;
+				&:hover{
+					background: $trans-red;
+					margin-top: -1.875rem;
+					padding-top:3.875rem;
+				}
+			}
+		}
+	}
 }
+
 
 /*Button styles*/
 
