@@ -249,20 +249,20 @@
 .brg{
 	height:90px;
 	background-color: $dark-bg;
-	// .red-bg{
-	// 	background-color: rgba(235, 7, 0, 0.8);
-	// 	height: 7.5rem;
-	// 	color: $white;
-	// 	margin-top: -1.875rem;
-	// 	h2{
-	// 		position: absolute;
-	// 		bottom: 0.6rem;
-	// 		right: 1.250rem;
-	// 	}
-	// 	@include media-breakpoint-down(md){
-	// 		height:10.25rem;
-	// 	}
-	// }
+	 .red-bg{
+	 	background-color: rgba(235, 7, 0, 0.8);
+	 	height: 7.5rem;
+	 	color: $white;
+	 	margin-top: -1.875rem;
+	 	h2{
+	 		position: absolute;
+	 		bottom: 0.6rem;
+	 		right: 1.250rem;
+	 	}
+	 	@include media-breakpoint-down(md){
+	 		height:10.25rem;
+	 	}
+	 }
 	.rates{
 		margin: 22px 0 14px; padding: 0;
 		li{
@@ -415,31 +415,28 @@
 			}
 		}
 	}
-	// @include media-breakpoint-down(md) {
-	// 	.facade{
-	// 		width:100%;
-	// 	}
-	// 	.reviews{
-	// 		margin: 4rem 0 14rem;
-	// 		.carousel-item{
-	// 			// min-height: 21.875rem;
-	// 		}
-	// 		.carousel-indicators{
-	// 			// bottom:5rem;
-	// 		}
-	// 	}
-	// }
-	// @include media-breakpoint-down(sm){
-	// 	&.py-5{
-	// 		padding-top: 0 !important;
-	// 	}
-	// 	.reviews{
-	// 		margin: 3rem 0;
-	// 		.carousel-item{
-	// 			// min-height: 21.875rem;
-	// 		}
-	// 	}
-	// }
+	 @include media-breakpoint-down(md) {
+	 	.facade{
+	 		width:100%;
+	 	}
+	 	.reviews{
+	 		margin: 4rem 0 14rem;
+	 		.carousel-item{
+	 			 min-height: 21.875rem;
+	 		}
+	 	}
+	 }
+	 @include media-breakpoint-down(sm){
+	 	&.py-5{
+	 		padding-top: 0 !important;
+	 	}
+	 	.reviews{
+	 		margin: 3rem 0;
+	 		.carousel-item{
+	 			 min-height: 21.875rem;
+	 		}
+	 	}
+	 }
 }
 
 /*Rooms & Suites Section*/
@@ -804,32 +801,32 @@
     	background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
 		background-size: 4.063rem;
 	}
-	// .slice-6{
-		// &:first-child{
-		// 	img{
-		// 		margin:3.750rem 3.750rem 1.875rem;
-		// 	}
-		// }
-		// &:last-child{
-		// 	text-align: right;
-		// 	img{
-		// 		margin:1.875rem 3.750rem 3.750rem;
-		// 	}
-		// }
-		// @include media-breakpoint-down(md) {
-		// 	&:first-child{
-		// 		img{
-		// 			margin:0rem;
-		// 		}
-		// 	}
-		// 	&:last-child{
-		// 		text-align: right;
-		// 		img{
-		// 			margin:0rem;
-		// 		}
-		// 	}
-		// }
-	// }
+	/* .slice-6{
+		 &:first-child{
+		 	img{
+		 		margin:3.750rem 3.750rem 1.875rem;
+		 	}
+		 }
+		 &:last-child{
+		 	text-align: right;
+		 	img{
+		 		margin:1.875rem 3.750rem 3.750rem;
+		 	}
+		 }
+		 @include media-breakpoint-down(md) {
+		 	&:first-child{
+		 		img{
+		 			margin:0rem;
+		 		}
+		 	}
+		 	&:last-child{
+		 		text-align: right;
+		 		img{
+		 			margin:0rem;
+		 		}
+		 	}
+		 }
+	 }*/
 }
 
 .gallery-cta{
@@ -1196,29 +1193,29 @@
 		}
 	}
 	.slice-6{
-		// &:first-child{
-		// 	img{
-		// 		margin:0;
-		// 	}
-		// }
-		// &:last-child{
-		// 	text-align: right;
-		// 	img{
-		// 		margin:0;
-		// 	}
-		// }
-		// &:nth-child(2){
-		// 	text-align: right;
-		// 	img{
-		// 		margin:3.750rem 3.750rem 1.875rem;
-		// 	}
-		// }
-		// &:nth-child(3){
-		// 	text-align: left;
-		// 	img{
-		// 		margin:1.875rem 3.750rem 3.750rem;
-		// 	}
-		// }
+		/* &:first-child{
+		 	img{
+		 		margin:0;
+		 	}
+		 }
+		 &:last-child{
+		 	text-align: right;
+		 	img{
+		 		margin:0;
+		 	}
+		 }
+		 &:nth-child(2){
+		 	text-align: right;
+		 	img{
+		 		margin:3.750rem 3.750rem 1.875rem;
+		 	}
+		 }
+		 &:nth-child(3){
+		 	text-align: left;
+		 	img{
+		 		margin:1.875rem 3.750rem 3.750rem;
+		 	}
+		 }*/
 		.caption{
 			color:$white;
 			font-family: $brg-font-regular;
