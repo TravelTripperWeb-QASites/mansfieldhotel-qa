@@ -13,15 +13,46 @@ $(document).ready(function () {
 
   //splash screen start
 
-  $(window).scroll(function (event) {
+if(!localStorage.showPopup) {
+ localStorage.showPopup = "1";
+}
+
+if(localStorage.showPopup == "1") {
+  $('.splash-screen').show();
+  console.log(localStorage.showPopup, "hhhhhhhhhhhh");
+  if($('.splash-screen').length) {  
+    if($('.splash-screen').css('display') != 'none' ) {
+      $("body").css("overflow", "hidden");
+      $(window).on('wheel', function(event){
+        $('.splash-screen').slideUp(300, function(){
+          $("body").css("overflow", "auto");
+        });
+      });
+    }
+  }
+   localStorage.showPopup = "0"; 
+  
+} else {
+  $('.splash-screen').hide();  
+  console.log(localStorage.showPopup,"kkkkkkkkkkkk");
+}
+
+
+
+
+/*  $(window).scroll(function (event) {
         var scroll = $(window).scrollTop();
         if(scroll == 0){
             
         } 
          else {
-            $('.splash-screen').slideUp(300);
+            
+            if($('.splash-screen').css('display') != 'none' ) {
+              $("body").scrollTop(0);
+              $('.splash-screen').slideUp(300);
+            }
         }
-    });
+    });*/
 
     $(".fa-angle-down").click(function(){
         $('.splash-screen').slideUp(300);
