@@ -1,5 +1,175 @@
 ---
-layout: home
+layout: default
+title: Welcome to the Mansfield Hotel
 ---
 
-Example home page, Hello World!
+{% include splash-screen.html %}
+{% include homebanner-carousel.html %}
+
+<section class="intro py-5">
+
+  <div class="packet">
+    <div class="bar">
+      <div class="slice-6">
+        <div class="symbol"><img src="/assets/images/homepage/crest.png" alt="Crest"></div>
+        {% regionblock page_header, type: header %}
+          <h1>Welcome to<br>The Mansfield Hotel</h1>
+        {% endregionblock %}
+        {% regionblock page_intro, type: text %}
+          <p>The historic landmark 126-room Mansfield Hotel enjoys a prime location in the heart of the city on 44th Street between Fifth and Sixth Avenues. Broadway theatres, fine restaurants, shopping, and celebrated sites are all within a short walking distance.</p>
+        {% endregionblock %}
+        <a href="/about/" class="link-btn">Our Storied Past</a>
+      </div>
+      <div class="slice-6">
+        <img src="/assets/images/homepage/facade.jpg" alt="The Mansfield Hotel" class="facade">
+      </div>
+    </div>
+  </div>
+
+  <div class="reviews">
+
+    {% regionblock reviews_header, type: header %}
+      <h3>Reviews</h3>
+    {% endregionblock %}
+
+    <div id="carouselReviews" class="carousel slide" data-ride="carousel">
+
+      <div class="carousel-inner" role="listbox">
+
+        {% assign reviews = site.data._models.reviews %}
+        {% for review in reviews %}
+          <div class="carousel-item{% if forloop.first %} active{% endif %}">
+            <div class="carousel-caption">
+              <p>"{{ review.review_text }}"<i>- {{ review.reviewers_name }}</i></p>
+            </div>
+          </div>
+        {% endfor %}
+
+      </div>
+
+      <ol class="carousel-indicators">
+        {% for review in reviews %}
+          <li data-target="#carouselReviews" data-slide-to="{{ forloop.index0 }}"{% if forloop.first %} class="active"{% endif %}></li>
+        {% endfor %}
+      </ol>
+
+    </div>
+  </div>
+
+</section>
+
+<div class="heading-block">
+  {% regionblock rooms_header, type: header %}
+    <h3>Rooms & Suites</h3>
+  {% endregionblock %}
+  {% regionblock rooms_subheader, type: header %}
+    <h2>New York's Best Kept Secret</h2>
+  {% endregionblock %}
+  {% regionblock reviews_text, type: text %}
+    <p>With its historic Beaux-Arts design, old New York charm, and exceptional service, The Mansfield is a true gem in the heart of Manhattan. Indulge in pillow-top mattresses and classically-styled rooms, while our attentive staff provides the luxurious details of your trip to New York City.</p>
+  {% endregionblock %}
+  <a href="#">Browse Rooms & Suites</a>
+  <div class="symbol"><img src="/assets/images/homepage/crest2.png" alt="The Mansfield Hotel"></div>
+</div>
+
+<section class="rooms-suites">
+  {% include rooms-carousel.html %}
+</section>
+
+<section class="packet-fluid bar-section m-0 p-0">
+  <div class="description-box">
+    {% regionblock m_bar_header, type: header %}
+      <h3>M Bar</h3>
+    {% endregionblock %}
+    {% regionblock m_bar_subheader, type: header %}
+      <h2 class="mt-1">Beaux Art ambiance</h2>
+    {% endregionblock %}
+    {% regionblock m_bar_text, type: text %}
+      <p>The M Bar is one of the most quintessential bars in midtown NYC. The beautiful venue is known for its classic cocktails and live music, featuring a domed skylight, mahogany bookshelves, Beaux Arts lighting, and comfortable lounge seating, creating an intimate and elegant atmosphere reminiscent of days gone by.</p>
+    {% endregionblock %}
+    <a href="/m-bar/" class="link-btn">Join us for a drink</a>
+  </div>
+  <div class="bar m-0">
+    <div class="slice-6 p-0">
+      {% regionblock m_bar_image_1, type: image %}
+        <img src="/assets/images/bar/bar1.jpg" alt="Bar" class="img-fluid w-100">
+      {% endregionblock %}
+    </div>
+    <div class="slice-6 p-0">
+      {% regionblock m_bar_image_2, type: image %}
+        <img src="/assets/images/bar/bar2.jpg" alt="Bar" class="img-fluid w-100">
+      {% endregionblock %}
+    </div>
+    <div class="slice-6 p-0">
+      {% regionblock m_bar_image_3, type: image %}
+        <img src="/assets/images/bar/bar3.jpg" alt="Bar" class="img-fluid w-100">
+      {% endregionblock %}
+    </div>
+    <div class="slice-6 p-0">
+      {% regionblock m_bar_image_4, type: image %}
+        <img src="/assets/images/bar/bar4.jpg" alt="Bar" class="img-fluid w-100">
+      {% endregionblock %}
+    </div>
+  </div>
+</section>
+
+<section class="packet-fluid location-carousel">
+  <div class="bar m-0 p-0">
+
+    <div class="slice-lg-4 p-0">
+      <div class="loc-content">
+        {% regionblock location_header, type: header %}
+          <h3>Location</h3>
+        {% endregionblock %}
+        {% regionblock location_subheader, type: header %}
+          <h2>At the Heart of it all</h2>
+        {% endregionblock %}
+        {% regionblock location_text, type: text %}
+          <p>The M Bar is one of the most quintessential bars in midtown NYC. The beautiful venue is known for its classic cocktails and live music, featuring a domed skylight, mahogany bookshelves, Beaux Arts lighting, and comfortable lounge seating, creating an intimate and elegant atmosphere reminiscent of days gone by.</p>
+        {% endregionblock %}
+        <a href="/location/" class="link-btn">Discover More</a>
+      </div>
+    </div>
+
+    <div class="slice-lg-8 p-0">
+      <div class="bar m-0 p-0">
+
+        <div class="slice-3 p-0 z-2">
+          <div id="carouselLocation2" class="carousel" data-interval="false">
+            <div class="carousel-inner" role="listbox">
+              {% assign locations = site.data._models.location %}
+              {% for location in locations %}
+                <div class="carousel-item{% if forloop.first %} active{% endif %}">
+                  <div class="content">
+                    <h1>{{ location.walk_time }}</h1>
+                    <p>Minutes walk to {{ location.title }}</p>
+                  </div>
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+
+        <div class="slice-9 p-0 z-1">
+          <div id="carouselLocation" class="carousel slide">
+
+            <div class="carousel-inner" role="listbox">
+              {% for location in locations %}
+                <div class="carousel-item{% if forloop.first %} active{% endif %}" style="background: url('{{ location.image.url }}') no-repeat;"></div>
+              {% endfor %}
+            </div>
+
+            <a class="carousel-control-prev" href="#carouselLocation" role="button" data-slide="prev"><i class="fa fa-angle-left" aria-hidden="true"></i><span class="sr-only">Previous</span></a>
+            <a class="carousel-control-next" href="#carouselLocation" role="button" data-slide="next"><i class="fa fa-angle-right" aria-hidden="true"></i><span class="sr-only">Next</span></a>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+{% include gallery-cta.html %}
+{% include offers-carousel.html %}

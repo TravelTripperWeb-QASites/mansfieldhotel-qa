@@ -1,73 +1,51 @@
 ---
-layout: with-mailing-info
+layout: default
 title: "Specials"
 description: "specials details"
 permalink: /specials/
 ---
 
-<section class="inner-hero-container" style="background-image:url(/assets/images/offers/hero-specials-details.jpg);"> 
-
-</section>
+<section class="inner-hero-container" style="background-image:url('/assets/images/offers/hero-specials-details.jpg');"></section>
 
 <div class="main-header-container">
   <div class="packet">
     <div class="bar">
       <div class="slice">
-      <h2>special offers</h2>
-      <p>From money-saving offers to the best room rates, booking direct with The Mansfield has its perks.</p>
-      </div>  
+        {% regionblock page_header, type: header %}
+          <h2>Special Offers</h2>
+        {% endregionblock %}
+        {% regionblock page_content, type: text %}
+          <p>From money-saving offers to the best room rates, booking direct with The Mansfield has its perks.</p>
+        {% endregionblock %}
+      </div>
     </div>
   </div>
 </div>
 
-
 <div class="packet-fluid specials-listing">
-      <div class="bar">
+  <div class="bar">
+
+    {% assign offers = site.data._models.offer | sort: 'order' %}
+    {% for offer in offers %}
+
       <div class="slice-6">
-        <div class="item special-item"> <img src="../assets/images/offers/offer1.jpg" alt="Room"/>
+        <div class="item special-item">
+          <img src="{{ offer.image.url }}" alt="{{ offer.image.alt }}">
           <div class="bar m-0">
             <div class="slice-8 p-0">
               <div class="overlay"></div>
-              <h2>Free Continental Breakfast</h2>
+              <h2>{{ offer.title }}</h2>
             </div>
-            <div class="slice-4 p-0"> <a href="#" class="active">book special</a> <a href="#">check rate</a><a href="/special-details/">view details</a> </div>
-          </div>
-      </div>
-      </div>
-      <div class="slice-6">
-      <div class="item special-item"> <img src="../assets/images/offers/offer2.jpg" alt="Room"/>
-          <div class="bar m-0">
-            <div class="slice-8 p-0">
-              <div class="overlay"></div>
-              <h2>NONREFUNDABLE RATE</h2>
+            <div class="slice-4 p-0">
+              <a href="{{ offer.booking_url }}" class="active">Book Special</a>
+              <a href="{{ offer.booking_url }}">Check Rate</a>
+              <a href="{{ offer.url_friendly_name }}">View Details</a>
             </div>
-            <div class="slice-4 p-0"> <a href="#" class="active">book special</a> <a href="#">check rate</a><a href="/special-details/">view details</a> </div>
           </div>
-      </div>
-      </div>
-      <div class="slice-6">
-      <div class="item special-item"> <img src="../assets/images/offers/offer3.jpg" alt="Room"/>
-          <div class="bar m-0">
-            <div class="slice-8 p-0">
-              <div class="overlay"></div>
-              <h2>AAA DISCOUNT</h2>
-            </div>
-            <div class="slice-4 p-0"> <a href="#" class="active">book special</a> <a href="#">check rate</a><a href="/special-details/">view details</a> </div>
-          </div>
-      </div>
-      </div>
-      <div class="slice-6">
-      <div class="item special-item"> <img src="../assets/images/offers/offer4.jpg" alt="Room"/>
-          <div class="bar m-0">
-            <div class="slice-8 p-0">
-              <div class="overlay"></div>
-              <h2>AARP MEMBER DISCOUNT</h2>
-            </div>
-            <div class="slice-4 p-0"> <a href="#" class="active">book special</a> <a href="#">check rate</a><a href="/special-details/">view details</a> </div>
-          </div>
-      </div>
+        </div>
       </div>
 
-      </div>
+    {% endfor %}
 
+  </div>
 </div>

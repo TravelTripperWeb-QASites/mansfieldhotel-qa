@@ -1,0 +1,19 @@
+{
+  "title": {
+    "required": true
+  },
+  "image": {
+    "type": "image",
+    "required": true
+  },
+  "booking_url": {
+    "required": true
+  },
+  "url_friendly_name": {
+    "type": "url_slug",
+    "required": true
+  },
+  "order": {
+    "type": "integer"
+  }
+}

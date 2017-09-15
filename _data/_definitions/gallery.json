@@ -1,23 +1,11 @@
 {
-  "gallery_image": {
+  "image": {
     "type": "image",
-    "label": "Image",
-    "required": true
-  },
-  "image_caption": {
-    "type": "text",
-    "label": "Image Caption",
-    "required": true
-  },
-  "alt_tag": {
-    "type": "text",
-    "label": "Image Alt Tag",
     "required": true
   },
   "category": {
     "type": "select",
     "options":["hotels","rooms","bar","attractions"],
-    "label": "Image Category",
     "required": true
   }
 }

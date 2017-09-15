@@ -5,13 +5,16 @@
 @import "variables";
 @import "base";
 @import "footer";
-@import "custom";
 @import "utilities";
+
+// Import custom Sass files below
+
+@import "navigation";
+@import "about";
+@import "custom";
 @import "specials";
 @import "bar";
 @import "contact";
 @import "lightgallery/lightgallery";
 @import "location";
 @import "meeting-events";
-
-/* Import custom Sass files below */

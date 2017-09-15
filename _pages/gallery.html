@@ -1,46 +1,53 @@
 ---
-layout: with-mailing-info
+layout: default
 title: "Gallery"
 description: "Gallery"
 permalink: /gallery/
 ---
 
-<section class="inner-hero-container" style="background-image:url(/assets/images/gallery/gallery-banner.jpg);"> </section>
+<section class="inner-hero-container" style="background-image:url('/assets/images/gallery/gallery-banner.jpg');"></section>
+
 <div class="main-header-container">
   <div class="packet">
     <div class="bar">
-    <div class="slice">
-    <h2>Image Gallery</h2>
-    <p>Built in 1903, as a single gentlemen’s hotel on Manhattan’s Club Row, The Mansfield is a historic hotel designed in the Beaux Arts style by James Renwick, the famed architect behind St. Patrick’s Cathedral and the New York Public Library. Although updated, The Mansfield preserves much of its original style and old world charm, offering guests a rare glimpse into a bygone era. 
-</p>
-    </div> 
-	</div> 
-  </div>
-</div>
-<section class="gallery-wrapper"> 
- <div class="gallery-listing">
-      <div class="packet p-0">
-        <ul class="sub-nav">
-          <li><a href="javascript:;" class="filter active"  data-filter="all" data-rel="all" >All</a></li>
-          <li><a href="javascript:;"  class="filter" data-rel="hotels">The Hotel</a></li>
-          <li><a href="javascript:;"  class="filter" data-rel="rooms">Rooms & Suites</a></li>
-          <li><a href="javascript:;"  class="filter" data-rel="bar">M Bar</a></li>
-          <!-- <li><a href="javascript:;"  class="filter" data-rel="attractions">Attractions</a></li> -->
-        </ul>
-        <hr>
-      </div>
-      <div class="packet no-padding gallery-wrap p-0" id="lightgallery">
-        <div class="card-columns">
-          {% assign galleries = site.data._models.gallery %}
-          {% for gallery in galleries %} 
-			<div class="card item fancybox" data-filter="{{ gallery.category }}"  data-src="{{ gallery.gallery_image.url }}" data-sub-html="{{ gallery.image_caption }}">
-				<img src="{{ gallery.gallery_image.url }}" alt="{{gallery.image_caption}}" class="img-responsive"/>
-				<div class="overlay">
-					<div class="zoom-in"><img src="../assets/images/plus.png" alt="Zoom In"/></div>
-				</div>
-			</div>
-          {% endfor %}        
-       </div>
+      <div class="slice">
+        {% regionblock page_header, type: header %}
+          <h2>Image Gallery</h2>
+        {% endregionblock %}
+        {% regionblock page_content, type: text %}
+          <p>Built in 1903, as a single gentlemen's hotel on Manhattan's Club Row, The Mansfield is a historic hotel designed in the Beaux Arts style by James Renwick, the famed architect behind St. Patrick's Cathedral and the New York Public Library. Although updated, The Mansfield preserves much of its original style and old world charm, offering guests a rare glimpse into a bygone era.</p>
+        {% endregionblock %}
       </div>
     </div>
+  </div>
+</div>
+
+<section class="gallery-wrapper">
+  <div class="gallery-listing">
+    <div class="packet p-0">
+      <ul class="sub-nav">
+        <li><a href="javascript:;" class="filter active" data-filter="all" data-rel="all">All</a></li>
+        <li><a href="javascript:;" class="filter" data-rel="hotels">The Hotel</a></li>
+        <li><a href="javascript:;" class="filter" data-rel="rooms">Rooms & Suites</a></li>
+        <li><a href="javascript:;" class="filter" data-rel="bar">M Bar</a></li>
+        <!-- <li><a href="javascript:;"  class="filter" data-rel="attractions">Attractions</a></li> -->
+      </ul>
+      <hr>
+    </div>
+    <div class="packet no-padding gallery-wrap p-0" id="lightgallery">
+      <div class="card-columns">
+        {% assign images = site.data._models.gallery %}
+        {% for image in images %}
+          <div class="card item fancybox" data-filter="{{ image.category }}" data-src="{{ image.image.url }}" {% if image.image.caption %}data-sub-html="{{ image.image.caption }}"{% endif %}>
+            <img src="{{ image.image.url }}" alt="{{ image.image.alt }}" class="img-responsive">
+            <div class="overlay">
+              <div class="zoom-in">
+                <img src="/assets/images/plus.png" alt="Zoom In">
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
 </section>
