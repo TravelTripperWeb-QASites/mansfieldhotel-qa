@@ -359,14 +359,13 @@ $(document).ready(function () {
 
 	//homeBannercarousel
 	$('.carousel').carousel();
-
-	
-	if ($(window).width() < 748) {
-	   $('#carouselHomebanner .carousel-item').css('height', window.innerHeight - 180);
-	}
-	else {
-	   $('#carouselHomebanner .carousel-item').css('height', window.innerHeight - 90);
-	}
+	$('#carouselHomebanner .carousel-item').css('height', window.innerHeight - 90);
+	//if ($(window).width() < 748) {
+//	   $('#carouselHomebanner .carousel-item').css('height', window.innerHeight - 180);
+//	}
+//	else {
+//	   
+//	}
 
 	//Locations Carousel
 	$('#carouselLocation.carousel, #carouselLocation2.carousel ').hover(function () { 
