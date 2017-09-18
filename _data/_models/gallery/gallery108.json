@@ -1,5 +1,5 @@
 {
-  "gallery_image": {
+  "image": {
     "url": "https://cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-051814/mansfieldhotel-117.jpg",
     "path": "https://cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-051814/mansfieldhotel-117.jpg",
     "file_type": "image/jpeg",
@@ -17,7 +17,7 @@
     "caption": "entrance door",
     "description": "entrance door"
   },
-  "image_caption": "entrance door",
+  "caption": "entrance door",
   "alt_tag": "entrance door",
   "category": "hotels"
 }

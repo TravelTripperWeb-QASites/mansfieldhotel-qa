@@ -1,41 +1,51 @@
 ---
-layout: with-mailing-info
+layout: default
 title: "Specials"
 description: "specials details"
 permalink: /specials/
 ---
-<section rt3-special-rates= "offers">
-<section class="inner-hero-container" style="background-image:url(/assets/images/offers/hero-specials-details.jpg);"> 
 
-</section>
+<section rt3-special-rates="offers">
 
-<div class="main-header-container">
-  <div class="packet">
-    <div class="bar">
-      <div class="slice">
-      <h2>special offers</h2>
-      <p>From money-saving offers to the best room rates, booking direct with The Mansfield has its perks.</p>
-      </div>  
+  <section class="inner-hero-container" style="background-image:url('/assets/images/offers/hero-specials-details.jpg');"></section>
+
+  <div class="main-header-container">
+    <div class="packet">
+      <div class="bar">
+        <div class="slice">
+          {% regionblock page_header, type: header %}
+            <h2>Special Offers</h2>
+          {% endregionblock %}
+          {% regionblock page_content, type: text %}
+            <p>From money-saving offers to the best room rates, booking direct with The Mansfield has its perks.</p>
+          {% endregionblock %}
+        </div>
+      </div>
     </div>
   </div>
-</div>
 
-
-<div class="packet-fluid specials-listing">
-      <div class="bar">
+  <div class="packet-fluid specials-listing">
+    <div class="bar">
       <div class="slice-6" ng-repeat="offer in offers.special_rates">
-        <div class="item special-item"> <img ng-src="[[offer.images[0].large || '/assets/images/dummy.jpg']]" alt="[[offer.rate_plan_name]]"/>
+        <div class="item special-item">
+          <img ng-src="[[ offer.images[0].large || '/assets/images/dummy.jpg' ]]" alt="[[ offer.rate_plan_name ]]">
           <div class="bar m-0">
+
             <div class="slice-8 p-0">
               <div class="overlay"></div>
               <h2 ng-bind-html="offer.rate_plan_name | renderHTMLCorrectly"></h2>
             </div>
-            <div class="slice-4 p-0"> <a ng-href="[[offer.promo_url]]" class="active" target="_blank">book special</a> <a ng-href="[[offer.promo_url]]" target="_blank">check rate</a><a ng-href="/special-details/#[[offer.rate_plan_name | formatNameForLink ]]" >view details</a> </div>
-          </div>
-      </div>
-      </div>
-     
-      </div>
 
-</div>
+            <div class="slice-4 p-0">
+              <a ng-href="[[ offer.promo_url ]]" class="active" target="_blank">book special</a>
+              <a ng-href="[[ offer.promo_url ]]" target="_blank">check rate</a>
+              <a ng-href="/special-details/#[[ offer.rate_plan_name | formatNameForLink ]]">view details</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </section>

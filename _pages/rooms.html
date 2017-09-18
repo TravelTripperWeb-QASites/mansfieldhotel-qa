@@ -1,19 +1,19 @@
 ---
-layout: with-mailing-info
+layout: default
 title: "Rooms"
 description: "specials details"
 permalink: /rooms/
 ---
 
-<section class="inner-hero-container" style="background-image:url(/assets/images/rooms/rooms-banner.jpg);"> </section>
+<section class="inner-hero-container" style="background-image:url(/assets/images/rooms/rooms-banner.jpg);"></section>
 
 <div class="main-header-container">
   <div class="packet">
     <div class="bar">
       <div class="slice">
-      <h2>Rooms at The Mansfield</h2>
-    <p>Travel back to old New York. Rooms at The Mansfield are elegantly-styled with ebony-stained hardwood floors and classic furnishings and come equipped with pillow-top mattresses, fine-quality linens, iHome alarm clock radios, LCD TVs, plush robes and Beekman 1802 bath products. Pets are welcome, too. </p>
-      </div>  
+        <h2>Rooms at The Mansfield</h2>
+        <p>Travel back to old New York. Rooms at The Mansfield are elegantly-styled with ebony-stained hardwood floors and classic furnishings and come equipped with pillow-top mattresses, fine-quality linens, iHome alarm clock radios, LCD TVs, plush robes and Beekman 1802 bath products. Pets are welcome, too. </p>
+      </div>
     </div>
   </div>
 </div>
@@ -30,6 +30,8 @@ permalink: /rooms/
             </div>
 			  <div class="slice-4 p-0"> <a ng-href="{{site.reztripUrl}}search?selected_room_category=[[room.category]]&selected_room=[[room.code]]"  class="active">Book [[room.name | roomOrSuite]]</a> <a ng-href="/room-details/#[[room.name | formatNameForLink]]">[[room.name | roomOrSuite]] Details</a> <a href="/gallery/"><i class="fa fa-camera"></i> Gallery</a> </div>
           </div>
+          <div class="slice-4 p-0"><a href="#" class="active">Book Room</a><a href="#">Room Details</a><a href="/gallery/"><i class="fa fa-camera"></i> Gallery</a></div>
+        </div>
       </div>
       </div>
      
@@ -44,9 +46,10 @@ permalink: /rooms/
             </div>
             <div class="slice-2 p-0"> <a href="tel:844.591.5565" class="active">Call Now</a> <a ng-href="/room-details/#[[room.name | formatNameForLink]]">[[room.name | roomOrSuite]] Details</a> <a href="/gallery/"><i class="fa fa-camera"></i> Gallery</a> </div>
           </div>
+          <div class="slice-2 p-0"><a href="tel:844.591.5565" class="active">Call Now</a><a href="#">Room Details</a><a href="/gallery/"><i class="fa fa-camera"></i> Gallery</a></div>
+        </div>
       </div>
-      </div>
-      </div>
+    </div>
+  </div>
 
 </div>
-

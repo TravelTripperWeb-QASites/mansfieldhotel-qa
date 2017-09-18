@@ -1,5 +1,5 @@
 {
-  "gallery_image": {
+  "image": {
     "url": "https://cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-040328/mansfieldhotel-80.jpg",
     "path": "https://cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-040328/mansfieldhotel-80.jpg",
     "file_type": "image/jpeg",
@@ -17,7 +17,7 @@
     "caption": "rest room",
     "description": "rest room"
   },
-  "image_caption": "rest room",
+  "caption": "rest room",
   "alt_tag": "rest room",
   "category": "rooms an d suites"
 }

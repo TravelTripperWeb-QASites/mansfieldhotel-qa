@@ -1,5 +1,5 @@
 {
-  "gallery_image": {
+  "image": {
     "url": "https://cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-030600/mansfieldhotel-41.jpg",
     "path": "https://cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-030600/mansfieldhotel-41.jpg",
     "file_type": "image/jpeg",
@@ -17,7 +17,7 @@
     "caption": "dining table",
     "description": "dining table"
   },
-  "image_caption": "dining table",
+  "caption": "dining table",
   "alt_tag": "dining table",
   "category": "rooms"
 }

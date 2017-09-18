@@ -1,0 +1,12 @@
+{
+  "title": {
+    "required": true
+  },
+  "review_text": {
+    "type": "text",
+    "required": true
+  },
+  "reviewers_name": {
+    "required": true
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "gallery_image": {
+  "image": {
     "url": "https://cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-023642/mansfieldhotel-5.jpg",
     "path": "https://cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-023642/mansfieldhotel-5.jpg",
     "file_type": "image/jpeg",
@@ -17,7 +17,7 @@
     "caption": "mansfiledhotel",
     "description": "mansfiledhotel"
   },
-  "image_caption": "mansfiledhotel",
+  "caption": "mansfiledhotel",
   "alt_tag": "reception",
   "category": "thehotel"
 }
