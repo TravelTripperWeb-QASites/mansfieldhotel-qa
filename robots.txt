@@ -1,3 +1,5 @@
+# Disallowed and allowed directories and files
+
 User-agent: *
 Disallow: 
 
