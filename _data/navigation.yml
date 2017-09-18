@@ -1,0 +1,17 @@
+main:
+  - title: About
+    url: /about/
+  - title: Rooms
+    url: /rooms/
+  - title: M Bar
+    url: /m-bar/
+  - title: Specials
+    url: /specials/
+  - title: Meetings & Events
+    url: /meeting-events/
+  - title: Location
+    url: /location/
+  - title: Gallery
+    url: /gallery/
+  - title: Contact
+    url: /contact/

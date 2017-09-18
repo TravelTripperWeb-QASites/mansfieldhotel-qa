@@ -1,0 +1,275 @@
+/*
+   Base Elements
+   ========================================================================== */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: $text-color;
+  font-family: $global-font-family;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 2rem 0 0.5rem;
+  line-height: 1.2;
+  font-family: $header-font-family;
+}
+
+h1 {
+  margin:30px 0;
+  font-size: $type-size-12;
+  color: $main-heading-color;
+  @include media-breakpoint-down(sm){
+	  font-size: $type-size-9;
+  }
+}
+
+h2 {
+  font-size: $type-size-9;
+  font-family: $headings-bold-condensed-font;
+  text-transform: uppercase;
+  line-height: 2rem;
+  letter-spacing: 0.2rem;
+  &.title{
+		text-align: center; margin-bottom: 3.750rem; color: $sub-heading-color; font-size: $type-size-10;
+		&:before,&:after{
+			content: "";
+			width:5rem;
+			background: url(/assets/images/divider.png) repeat-x center center;
+			height: 0.250rem;
+			display: inline-block;
+			margin: 0.5rem 1.25rem;
+			@include media-breakpoint-down(sm){
+				width:0.938rem;
+				margin: 0.5rem;
+			}
+		}
+  }
+}
+
+h3 {
+	font-size: $type-size-4;
+	font-family: $headings-bold-condensed-font;
+	color: $sub-heading-color;
+	text-transform: uppercase;
+	letter-spacing: 0.125rem;
+}
+
+h4 {
+    font-family:$site-font-regular;
+    font-size: $type-size-10;
+    letter-spacing: .2rem;
+    line-height: 1.875rem;
+    text-transform: uppercase;
+    &:after{
+      content:"";
+      width: 6.25rem;
+      height:0.313rem;
+      margin: 2.5rem auto;
+      background: url(/assets/images/divider-dark.png) repeat-x;
+      opacity:0.5;
+      display: block;
+    }
+}
+
+h5 {
+  font-size: $type-size-10;
+  font-family: $headings-bold-condensed-font;
+}
+
+h6 {
+  font-size: $type-size-6;
+}
+
+small, .small {
+  font-size: $type-size-6;
+}
+
+p {
+  margin-bottom: 1.3rem;
+}
+
+u,
+ins {
+  text-decoration: none;
+  border-bottom: 1px solid $text-color;
+  a {
+    color: inherit;
+  }
+}
+
+del a {
+  color: inherit;
+}
+
+/* links */
+
+a {
+  &:hover,
+  &:active {
+    outline: 0;
+    text-decoration:none;
+  }
+}
+
+/* horizontal rule */
+
+hr {
+  display: block;
+  margin: 1rem 0;
+  border: 0;
+  border-top: 1px solid $border-color;
+}
+
+/* sets a default bottom margin and removes bullet points from lists */
+
+ul li,
+ol li {
+  margin-bottom: 0.5rem;
+  list-style: none;
+}
+
+li ul,
+li ol {
+  margin-top: 0.5rem;
+  list-style: none;
+}
+
+/* removes margins, padding, and bullet points from navigation lists */
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none !important;
+    &:hover{
+      text-decoration: none !important;
+    }
+  }
+
+  /* override white-space for nested lists */
+  ul li,
+  ol li {
+    margin-bottom: 0;
+  }
+
+  li ul,
+  li ol {
+    margin-top: 0;
+  }
+}
+
+/* fix IE9 SVG bug */
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/*Layout styles*/
+
+.packet{@extend .container; max-width: 1020px;}
+.packet-fluid{@extend .container-fluid;}
+.bar{@extend .row;}
+.slice{@extend .col;}
+
+/* Semantic  naming for Bootstrap 4 grids */
+
+$grid-columns: 12;
+
+/* class="slice-xl-1",  class="slice-xl-2",  class="slice-xl-3" .....
+    for >= 1200px */
+
+@for $i from 1 through $grid-columns {  
+    .slice-xl-#{$i} { 
+        @extend .col-xl-#{$i};
+    }
+}
+
+/* class="slice-lg-1", class="slice-lg-2", class="slice-lg-3" .....
+   for >= 992px */
+
+@for $i from 1 through $grid-columns {
+    .slice-lg-#{$i} { 
+        @extend .col-lg-#{$i};
+    }
+}
+
+/* class="slice-1", class="slice-2", class="slice-3" .....
+   for >= 768px (DEFAULT) 
+*/
+
+@for $i from 1 through $grid-columns {
+    .slice-#{$i} { 
+        @extend .col-md-#{$i};
+    }
+}
+
+/* class="slice-sm-1", class="slice-sm-2", class="slice-sm-3" .....
+   for >= 576px 
+*/
+
+@for $i from 1 through $grid-columns {
+    .slice-sm-#{$i} { 
+        @extend .col-sm-#{$i};
+    }
+}
+
+/* class="slice-xs-1", class="slice-xs-2", class="slice-xs-3" .....
+   for < 575px 
+*/
+
+@for $i from 1 through $grid-columns {
+    .slice-xs-#{$i} { 
+        @extend .col-#{$i};
+    }
+}
+
+/*Form controls*/
+
+.form-control{
+	border-radius: 0;
+	-webkit-appearance: none;
+    -webkit-border-radius: 0px;
+}
+
+/* buttons css */
+
+.common-btn{
+  font-family: $site-font-medium;
+  text-transform: uppercase;
+  font-size: $type-size-2;
+  padding: 0.938rem 2.5rem;
+  width:12rem;
+  letter-spacing:1px;
+  border:0;
+  display: inline-block;
+  &.white{
+    background: $white;
+    color: $dark-bg;
+  }
+  &.red{
+    background: $sub-heading-color;
+    color:$white;
+  }
+}
+
+
+.img-color-overlay{
+    position:absolute;
+    content:"";
+    height:1.875rem;
+    left: 0;
+    right: 0;      
+    z-index:2;
+}
