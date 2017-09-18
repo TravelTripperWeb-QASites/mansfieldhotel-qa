@@ -4,83 +4,85 @@ title: "Room Details"
 description: "Room details"
 permalink: /room-details/
 ---
-<section rt3-room-details="room" >
-<section class="inner-hero-container" ng-style="{'background-image':'url('+room.photos[0].large+')'}"> </section>
+<section rt3-room-details="room">
 
-<section class="packet room-details p-0">
-	<div class="bar m-0 p-0">
-		<div class="slice-6 p-0">
-			<div class="content">
-				<h4 ng-bind-html="room.name | renderHTMLCorrectly"></h4>
-				<p ng-bind-html="room.description | renderHTMLCorrectly"></p>
-				<a href="/gallery/" class="link-btn"><i class="camera"></i> <span>View Room Image Gallery</span></a>
-			</div>
-		</div>
-		<div class="slice-6 p-5 dark-bg">
-			<h5 ng-show="room.code !='RDP'"><a  ng-href="{{site.reztripUrl}}search?selected_room_category=[[room.category]]&selected_room=[[room.code]]" target="_blank">[[room.todayRate]]</a> <span>tonight's rate</span></h5>
-			<form action="{{site.reztripUrl}}search?" method="get" >
-			<input type="hidden" name="selected_room" value="[[room.code]]" />
-			<div class="bar m-0 p-0">
-				
-				<div class="form-group slice-6">
-					<label for="arrival">Arrival</label>
-					<input  class="form-control" name="arrival_date" id="arrival" aria-label="Arrival Date">
-				</div>
-				<div class="form-group slice-6">
-					<label for="departure">Departure</label>
-					<input class="form-control" name="departure_date" id="departure" aria-label="Departure Date">
-				</div>
-				<div class="form-group slice-6">
-					<label for="noofAdults">Adults</label>
-					<select class="form-control" id="noofAdults" name="adults[]">
-					  <option value="1">01 Adult</option>
-            <option value="2" selected>02 Adult</option>
-            <option value="3">03 Adult</option>
-            <option value="4">04 Adult</option>
-					</select>
-			    </div>
-			    <div class="form-group slice-6">
-					<label for="noofChildren">Children</label>
-					<select class="form-control" id="noofChildren" name="children[]">
-					  <option value="0">00 Children</option>
-            <option value="1">01 Children</option>
-            <option value="2">02 Children</option>
-            <option value="3">03 Children</option>
-           
-					</select>
-			    </div>
-				<div class="slice-6"><button type="submit" class="btn-block">Book Now</button></div>
-			
-				<div class="slice-6">
-					<ul>
-						<li><a href="tel:844.591.5565"><i class="phone"></i> <span>Phone</span></a></li>
-						<li><a href="mailto:reservations@mansfieldhotel.com"><i class="mail"></i> <span>Email</span></a></li>
-					</ul>
-				</div>
-			</div>
-				 </form> 
-		</div>
-	</div>
-</section>
-<section class="packet-fluid amenities-section m-0 p-0">
-  <div class="description-box">
-    <h3>Amenities & Services</h3>
-	<ul>
-		<li ng-repeat="amenity in room.amenities">[[amenity]] </li>
-		<li ng-repeat="amenity in hotelInfo.common_room_amenities">[[amenity]] </li>
-	</ul>
-  </div>
-  <div class="bar m-0">
+  <section class="inner-hero-container" ng-style="{'background-image':'url('+room.photos[0].large+')'}"></section>
 
-    <div class="slice-6 p-0"><img src="/assets/images/amenities/amenity1.jpg" alt="Amenities" class="img-fluid w-100" /></div>
-    <div class="slice-6 p-0"><img src="/assets/images/amenities/amenity2.jpg" alt="Amenities" class="img-fluid w-100" /></div>
-    <div class="slice-6 p-0"><img src="/assets/images/amenities/amenity3.jpg" alt="Amenities" class="img-fluid w-100" /></div>
-    <div class="slice-6 p-0"><img src="/assets/images/amenities/amenity4.jpg" alt="Amenities" class="img-fluid w-100" /></div>
+  <section class="packet room-details p-0">
+  	<div class="bar m-0 p-0">
+  		<div class="slice-6 p-0">
+  			<div class="content">
+  				<h4 ng-bind-html="room.name | renderHTMLCorrectly"></h4>
+  				<p ng-bind-html="room.description | renderHTMLCorrectly"></p>
+  				<a href="/gallery/" class="link-btn"><i class="camera"></i><span>View Room Image Gallery</span></a>
+  			</div>
+  		</div>
+  		<div class="slice-6 p-5 dark-bg">
+  			<h5 ng-show="room.code !='RDP'"><a  ng-href="{{site.reztripUrl}}search?selected_room_category=[[room.category]]&selected_room=[[room.code]]" target="_blank">[[room.todayRate]]</a> <span>tonight's rate</span></h5>
+  			<form action="{{site.reztripUrl}}search?" method="get" >
+  			<input type="hidden" name="selected_room" value="[[room.code]]">
+  			<div class="bar m-0 p-0">
 
-  </div>
-</section>
-<section class="rooms-carousel room-detail-page-carousel" style="display:none">
-  <h2 class="title">More Rooms & Suites</h2>
-  {% include rooms-carousel.html %}
-</section>
+  				<div class="form-group slice-6">
+  					<label for="arrival">Arrival</label>
+  					<input  class="form-control" name="arrival_date" id="arrival" aria-label="Arrival Date">
+  				</div>
+  				<div class="form-group slice-6">
+  					<label for="departure">Departure</label>
+  					<input class="form-control" name="departure_date" id="departure" aria-label="Departure Date">
+  				</div>
+  				<div class="form-group slice-6">
+  					<label for="noofAdults">Adults</label>
+  					<select class="form-control" id="noofAdults" name="adults[]">
+  					  <option value="1">01 Adult</option>
+              <option value="2" selected>02 Adult</option>
+              <option value="3">03 Adult</option>
+              <option value="4">04 Adult</option>
+  					</select>
+  			    </div>
+  			    <div class="form-group slice-6">
+  					<label for="noofChildren">Children</label>
+  					<select class="form-control" id="noofChildren" name="children[]">
+  					  <option value="0">00 Children</option>
+              <option value="1">01 Children</option>
+              <option value="2">02 Children</option>
+              <option value="3">03 Children</option>
+
+  					</select>
+  			    </div>
+  				<div class="slice-6"><button type="submit" class="btn-block">Book Now</button></div>
+
+  				<div class="slice-6">
+  					<ul>
+  						<li><a href="tel:844.591.5565"><i class="phone"></i> <span>Phone</span></a></li>
+  						<li><a href="mailto:reservations@mansfieldhotel.com"><i class="mail"></i> <span>Email</span></a></li>
+  					</ul>
+  				</div>
+  			</div>
+  				 </form>
+  		</div>
+  	</div>
+  </section>
+
+  <section class="packet-fluid amenities-section m-0 p-0">
+    <div class="description-box">
+      <h3>Amenities & Services</h3>
+  	<ul>
+  		<li ng-repeat="amenity in room.amenities">[[amenity]]</li>
+  		<li ng-repeat="amenity in hotelInfo.common_room_amenities">[[amenity]]</li>
+  	</ul>
+    </div>
+    <div class="bar m-0">
+      <div class="slice-6 p-0"><img src="/assets/images/amenities/amenity1.jpg" alt="Amenities" class="img-fluid w-100"></div>
+      <div class="slice-6 p-0"><img src="/assets/images/amenities/amenity2.jpg" alt="Amenities" class="img-fluid w-100"></div>
+      <div class="slice-6 p-0"><img src="/assets/images/amenities/amenity3.jpg" alt="Amenities" class="img-fluid w-100"></div>
+      <div class="slice-6 p-0"><img src="/assets/images/amenities/amenity4.jpg" alt="Amenities" class="img-fluid w-100"></div>
+    </div>
+  </section>
+
+  <section class="rooms-carousel room-detail-page-carousel" style="display:none">
+    <h2 class="title">More Rooms & Suites</h2>
+    {% include rooms-carousel.html %}
+  </section>
+
 </section>
