@@ -36,7 +36,7 @@ title: Welcome to the Mansfield Hotel
 
       <div class="carousel-inner" role="listbox">
 
-        {% assign reviews = site.data._models.reviews %}
+        {% assign reviews = site.data._models.review %}
         {% for review in reviews %}
           <div class="carousel-item{% if forloop.first %} active{% endif %}">
             <div class="carousel-caption">
@@ -77,6 +77,7 @@ title: Welcome to the Mansfield Hotel
 </section>
 
 <section class="packet-fluid bar-section m-0 p-0">
+
   <div class="description-box">
     {% regionblock m_bar_header, type: header %}
       <h3>M Bar</h3>
@@ -89,6 +90,7 @@ title: Welcome to the Mansfield Hotel
     {% endregionblock %}
     <a href="/m-bar/" class="link-btn">Join us for a drink</a>
   </div>
+
   <div class="bar m-0">
     <div class="slice-6 p-0">
       {% regionblock m_bar_image_1, type: image %}
@@ -111,6 +113,7 @@ title: Welcome to the Mansfield Hotel
       {% endregionblock %}
     </div>
   </div>
+
 </section>
 
 <section class="packet-fluid location-carousel">

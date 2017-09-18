@@ -5,14 +5,20 @@ description: "event details"
 permalink: /meeting-events/
 ---
 
-<section class="inner-hero-container" style="background-image:url(/assets/images/meeting-events/hero-meetings.jpg);"></section>
+{% assign venues = site.data._models.event_spaces %}
+
+<section class="inner-hero-container" style="background-image:url('/assets/images/meeting-events/hero-meetings.jpg');"></section>
 
 <div class="main-header-container">
   <div class="packet">
     <div class="bar">
       <div class="slice">
-        <h2>Meetings & Events</h2>
-        <p>The Mansfield Hotel Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        {% regionblock page_header, type: header %}
+          <h2>Meetings & Events</h2>
+        {% endregionblock %}
+        {% regionblock page_text, type: text %}
+          <p>The Mansfield Hotel Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        {% endregionblock %}
       </div>
     </div>
   </div>
@@ -22,26 +28,25 @@ permalink: /meeting-events/
   <div class="packet">
     <div class="bar">
       <div class="slice space-tabs p-0">
-        <h2 class="title">Our event spaces</h2>
+        {% regionblock spaces_header, type: header %}
+          <h2 class="title">Our Event Spaces</h2>
+        {% endregionblock %}
         <ol>
-          <li data-target="#carouselHomebanner" data-slide-to="0" class="active">the m bar</li>
-          <li data-target="#carouselHomebanner" data-slide-to="1">the club room</li>
-          <li data-target="#carouselHomebanner" data-slide-to="2">the penthouse</li>
+          {% for venue in venues %}
+            <li data-target="#carouselHomebanner" data-slide-to="{{ forloop.index0 }}"{% if forloop.first == true %} class="active"{% endif %}>{% if venue.menu_name %}{{ venue.menu_name }}{% else %}{{ venue.title }}{% endif %}</li>
+          {% endfor %}
         </ol>
       </div>
     </div>
     <div class="bar info">
-      <div class="slice-9 text-left ">
-        <div class="new-caption-area">
-
-        </div>
-
+      <div class="slice-9 text-left">
+        <div class="new-caption-area"></div>
       </div>
       <div class="slice-3 p-0">
-        <img src="/assets/images/meeting-events/group-icon.png" alt="Group" />
+        <img src="/assets/images/meeting-events/group-icon.png" alt="Group">
         <h1 id="people"></h1>
-        <p>people</p>
-        <a href="/request-for-proposal/" title="contact us" class="common-btn red ">request for proposal</a>
+        <p>People</p>
+        <a href="/request-for-proposal/" title="contact us" class="common-btn red">Request for Proposal</a>
       </div>
     </div>
   </div>
@@ -50,42 +55,18 @@ permalink: /meeting-events/
 
     <div class="carousel-inner" role="listbox">
 
-      <div class="carousel-item active" style="background: url('/assets/images/bar/hero-bar.jpg') no-repeat;">
-        <div class="carousel-caption">
-          <div class="slidetext">
-            <h4>the m bar</h4>
-            <p>The M Bar is one of the most quintessential bars in midtown NYC. The beautiful venue is known for its classic cocktails and live music, featuring a domed skylight, mahogany bookshelves, Beaux Arts lighting, and comfortable lounge seating,
-              creating an intimate and elegant atmosphere reminiscent of days gone by.</p>
-            <a href="/m-bar/" class="link-btn white">venue details</a>
+      {% for venue in venues %}
+        <div class="carousel-item{% if forloop.first == true %} active{% endif %}" style="background: url('{{ venue.image.url }}') no-repeat;">
+          <div class="carousel-caption">
+            <div class="slidetext">
+              <h4>{{ venue.title }}</h4>
+              <p>{{ venue.description }}</p>
+              {% if venue.link %}<a href="{{ venue.link }}" class="link-btn white">Venue Details</a>{% endif %}
+            </div>
+            <people class="people">{{ venue.occupancy }}</people>
           </div>
-          <people class="people">10-75</people>
         </div>
-      </div>
-
-      <div class="carousel-item" style="background: url('/assets/images/homecarousel/01.jpg') no-repeat;">
-        <div class="carousel-caption">
-          <div class="slidetext">
-            <h4>the Club Room</h4>
-            <p>The Club Room is located off the main lobby and was originally designed as the parlor of the hotel. It has been meticulously restored to an original Beaux Arts library. Recreating turn-of-the-century craftsmanship, the Club Room features honey
-              colored hardwoods, and luxurious furnishings that can serve as a home-like setting for entertaining, sharing cocktails over a match of chess or cribbage, or even in better days engaging in a friendly wager over a game of cards.</p>
-            <!-- <a href="#" class="link-btn white">venue details</a> -->
-          </div>
-          <people class="people">2-30</people>
-        </div>
-      </div>
-
-      <div class="carousel-item" style="background: url('/assets/images/homepage/gallery-cta.jpg') no-repeat;">
-        <div class="carousel-caption">
-          <div class="slidetext">
-
-            <h4>the Renwick Duplex Penthouse Suite</h4>
-            <p>The New York hotel’s stunning 700 sq. ft. Penthouse offers classic Manhattan accommodations for discerning clientele and features a stunning spa bathroom with a sunken Jacuzzi bathtub, a living & dining space with sprawling 18 ft. floor-to-ceiling
-              windows, and a wet bar perfect for entertaining.</p>
-            <a href="##" class="link-btn white">venue details</a>
-          </div>
-          <people class="people">10-50</people>
-        </div>
-      </div>
+      {% endfor %}
 
     </div>
 

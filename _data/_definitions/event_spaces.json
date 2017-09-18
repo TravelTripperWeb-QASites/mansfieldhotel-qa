@@ -1,0 +1,24 @@
+{
+  "title": {
+    "required": true
+  },
+  "menu_name": {
+    "instructions": "Use when the title is too long for the menu. If blank the title will be used."
+  },
+  "description": {
+    "type": "text",
+    "required": true
+  },
+  "image": {
+    "type": "image",
+    "required": true
+  },
+  "link": {
+    "type": "url_slug"
+  },
+  "occupancy": {
+    "type": "text",
+    "instructions": "How many people can this facility hold? List only the numbers e.g. 10-25.",
+    "required": true
+  }
+}

@@ -12,8 +12,12 @@ permalink: /contact/
 
     <div class="bar">
       <div class="slice">
-        <h2>contact us</h2>
-        <p>If you have questions, comments, or need special arrangements, please call us or email us.</p>
+        {% regionblock page_header, type: header %}
+          <h2>Contact Us</h2>
+        {% endregionblock %}
+        {% regionblock page_text, type: text %}
+          <p>If you have questions, comments, or need special arrangements, please call us or email us.</p>
+        {% endregionblock %}
       </div>
     </div>
 
@@ -21,27 +25,39 @@ permalink: /contact/
 
       <div class="slice-4">
         <div class="details">
-          <h3>Address</h3>
-          <a href="#"> 12 West 44th Street <br>
+          {% regionblock address_header, type: header %}
+            <h3>Address</h3>
+          {% endregionblock %}
+          {% regionblock address_text, type: text %}
+            <a href="#"> 12 West 44th Street <br>
               (Between 5th and 6th Avenues)<br>
               New York, New York 10036
-              </a>
+            </a>
+          {% endregionblock %}
         </div>
       </div>
 
       <div class="slice-4">
         <div class="details">
-          <h3>Contact</h3>
-          <p>Phone: <a href="tel:212.277.8700">212.277.8700</a></p>
-          <p>Fax: <a href="tel:212.764.4477">212.764.4477</a></p>
-          <p>M Bar: <a href="mailto:mbar@mansfieldhotel.com">mbar@mansfieldhotel.com</a></p>
+          {% regionblock phone_header, type: header %}
+            <h3>Contact</h3>
+          {% endregionblock %}
+          {% regionblock phone_text, type: text %}
+            <p>Phone: <a href="tel:212.277.8700">212.277.8700</a></p>
+            <p>Fax: <a href="tel:212.764.4477">212.764.4477</a></p>
+            <p>M Bar: <a href="mailto:mbar@mansfieldhotel.com">mbar@mansfieldhotel.com</a></p>
+          {% endregionblock %}
         </div>
       </div>
 
       <div class="slice-4">
-        <h3>Reservations</h3>
-        <p>Phone: <a href="tel:844.591.5565">844.591.5565</a></p>
-        <p>Email: <a href="mailto:reservations@mansfieldhotel.com">reservations@mansfieldhotel.com</a></p>
+        {% regionblock reservation_header, type: header %}
+          <h3>Reservations</h3>
+        {% endregionblock %}
+        {% regionblock reservation_text, type: text %}
+          <p>Phone: <a href="tel:844.591.5565">844.591.5565</a></p>
+          <p>Email: <a href="mailto:reservations@mansfieldhotel.com">reservations@mansfieldhotel.com</a></p>
+        {% endregionblock %}
       </div>
 
     </div>
@@ -59,7 +75,9 @@ permalink: /contact/
 
 <section class="top-content-main">
   <div class="form-part p-0 contact-form">
-    <h2 class="title mb-3">inquire now</h2>
+    {% regionblock form_header, type: header %}
+      <h2 class="title mb-3">Inquire Now</h2>
+    {% endregionblock %}
     <p><i>Required fields are marked *</i></p>
     <form action="https://submit.jotform.me/submit/72542312704448/" method="post" name="form_72542312704448" id="72542312704448" accept-charset="utf-8" class="contact-form-inner">
       <input type="hidden" name="formID" value="72542312704448" />
@@ -126,7 +144,9 @@ permalink: /contact/
 <section class="packet-fluid p-0">
   <div class="gallery-cta inner bg-cover p-0" style="background-image: url(/assets/images/contact/footer-bg.jpg);">
     <div class="overlay">
-      <h1>Get a Glimpse of a Bygone Era at The Mansfield</h1>
+      {% regionblock cta_header, type: header %}
+        <h1>Get a Glimpse of a Bygone Era at The Mansfield</h1>
+      {% endregionblock %}
       <a href="/rooms/" title="view our rooms" class="common-btn white">view our rooms</a>
     </div>
   </div>

@@ -31,7 +31,9 @@
     left: 1.875rem;
     bottom: 2.5rem;
     display: block;
-    justify-content: inherit;
+    -webkit-box-pack: inherit;
+        -ms-flex-pack: inherit;
+            justify-content: inherit;
     padding-left: inherit;
     margin-right: inherit;
     margin-left: inherit;
@@ -527,8 +529,6 @@
       border-bottom: 0;
     }
     -webkit-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    -o-transition: all .3s ease;
     transition: all .3s ease;
 
     &.active {
@@ -539,8 +539,6 @@
         padding-top: 2.9rem;
         background: rgba(235, 7, 0, 0.85);
         -webkit-transition: all .3s ease;
-        -moz-transition: all .3s ease;
-        -o-transition: all .3s ease;
         transition: all .3s ease;
         color: $white;
       }
@@ -632,13 +630,15 @@
       .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
       .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
       .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
+        -webkit-transition: none;
         transition: none;
       }
 
       .carousel-inner .carousel-item-next,
       .carousel-inner .carousel-item-prev {
         position: relative;
-        transform: translate3d(0, 0, 0);
+        -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
       }
 
       .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item {
@@ -656,7 +656,8 @@
       .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
       .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {
         position: relative;
-        transform: translate3d(-100%, 0, 0);
+        -webkit-transform: translate3d(-100%, 0, 0);
+                transform: translate3d(-100%, 0, 0);
         visibility: visible;
       }
 
@@ -676,7 +677,8 @@
       .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
       .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item {
         position: relative;
-        transform: translate3d(100%, 0, 0);
+        -webkit-transform: translate3d(100%, 0, 0);
+                transform: translate3d(100%, 0, 0);
         visibility: visible;
         display: block;
         visibility: visible;
@@ -768,8 +770,6 @@
           border-bottom: 0;
         }
         -webkit-transition: all .3s ease;
-        -moz-transition: all .3s ease;
-        -o-transition: all .3s ease;
         transition: all .3s ease;
 
         &.active {
@@ -805,17 +805,17 @@
     position: absolute;
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     z-index: 99;
     max-width: 28.25rem;
     margin: auto;
     padding: 3.75rem;
     text-align: center;
     background: url('/assets/images/homepage/crest.png') no-repeat center -1.875rem #fff;
-    border: solid 1.875rem rgba(235, 7, 0, .85);
-    -webkit-background-clip: padding-box;
     background-clip: padding-box;
     background-size: 4.063rem;
-    transform: translate(-50%, -50%);
+    border: solid 1.875rem rgba(235, 7, 0, .85);
 
     h2 {
       font-family: $global-font-family;
@@ -896,7 +896,8 @@
       display: inline-block;
       margin: 13.75rem auto;
       border-bottom: solid .125rem $white;
-      box-shadow: 0 .2rem 0 $black;
+      -webkit-box-shadow: 0 .2rem 0 $black;
+              box-shadow: 0 .2rem 0 $black;
       outline: .063rem solid $white;
       outline-offset: .125rem;
       @include media-breakpoint-down(sm) {
@@ -1059,17 +1060,20 @@
 
       .carousel-item-next,
       .carousel-item-right.active {
-        transform: translateX(33.33%);
+        -webkit-transform: translateX(33.33%);
+                transform: translateX(33.33%);
       }
 
       .carousel-item-left.active,
       .carousel-item-prev {
-        transform: translateX(-33.33%);
+        -webkit-transform: translateX(-33.33%);
+                transform: translateX(-33.33%);
       }
 
       .carousel-item-left,
       .carousel-item-right {
-        transform: translateX(0);
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
       }
     }
 
@@ -1467,8 +1471,10 @@
     }
 
     .card-columns {
-      column-count: 3;
-      column-gap: 1.875rem;
+      -webkit-column-count: 3;
+              column-count: 3;
+      -webkit-column-gap: 1.875rem;
+              column-gap: 1.875rem;
 
       .card {
         background-color: inherit;
@@ -1491,8 +1497,6 @@
           z-index: 9;
           top: 0;
           -webkit-transition: all .5s ease;
-          -moz-transition: all .5s ease;
-          -o-transition: all .5s ease;
           transition: all .5s ease;
 
           .social-share {
@@ -1559,8 +1563,6 @@
           .overlay {
             opacity: 1;
             -webkit-transition: all .5s ease;
-            -moz-transition: all .5s ease;
-            -o-transition: all .5s ease;
             transition: all .5s ease;
 
             .zoom-in {
@@ -1576,7 +1578,8 @@
 
       }
       @include media-breakpoint-down(sm) {
-        column-count: 2;
+        -webkit-column-count: 2;
+                column-count: 2;
       }
     }
   }
