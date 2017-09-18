@@ -1,63 +1,60 @@
-.location-details{
+.location-details {
+  .address,
+  h3 {
+    color: $white;
 
-  .address, h3{
-      color:$white;
+    p {
+      font-family: $brg-font-regular;
+    }
 
-      p{
-  	font-family:$brg-font-regular;
   }
 
+}
+
+.location-list {
+  p {
+    margin: .8rem 0;
+    font-family: $brg-font-regular;
+    font-size: $type-size-3;
   }
-  
+}
+
+.banner-overlap-strip-loc {
+  h4 {
+    &:after {
+      margin: 2rem 0;
+    }
+  }
+
+  .slice-6 {
+    position: relative;
+
+    &:before {
+      @extend .img-color-overlay;
+      background: $white;
+      top: -1.875rem;
+
+    }
+
+  }
+
+  .address {
+    background: $trans-main-color;
+
+    &:before {
+      background: $trans-main-color;
+    }
+
+    &:after {
+      @extend .img-color-overlay;
+      background: $trans-main-color;
+      bottom: -1.875rem;
+
+    }
+  }
 
 }
 
-.location-list{
-
-	p{
-		font-family:$brg-font-regular;
-		margin:.8rem 0;
-		font-size:$type-size-3;
-
-	}
-}
-
-.banner-overlap-strip-loc{
-	h4{
-		&:after{
-			margin: 2rem 0;
-		}
-	}
-	.slice-6{
-		position:relative;
-		&:before{
-			@extend .img-color-overlay;
-			background:$white;
-			top: -1.875rem;
-
-			
-			
-		}
-		
-
-	}
-	.address{
-		    background:$trans-main-color;
-		&:before{
-			background:$trans-main-color;
-		}
-		&:after{
-			@extend .img-color-overlay;
-			background:$trans-main-color;
-			bottom: -1.875rem;
-			
-		}
-	}
-	
-}
-
-
-
-.overlay-none{
-	background-color: transparent !important;
+.overlay-none {
+  background-color: transparent !important;
 }

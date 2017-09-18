@@ -802,6 +802,21 @@
   position: relative;
 
   .description-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 99;
+    max-width: 28.25rem;
+    margin: auto;
+    padding: 3.75rem;
+    text-align: center;
+    background: url('/assets/images/homepage/crest.png') no-repeat center -1.875rem #fff;
+    border: solid 1.875rem rgba(235, 7, 0, .85);
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    background-size: 4.063rem;
+    transform: translate(-50%, -50%);
+
     h2 {
       font-family: $global-font-family;
       font-size: $type-size-10;
@@ -820,22 +835,6 @@
     h3 {
       margin-top: 1rem;
     }
-    text-align: center;
-    position: absolute;
-    z-index: 99;
-    margin: auto;
-    top: 24%;
-    left: 0;
-    right: 0;
-    max-width: 28.250rem;
-    padding: 3.750rem;
-    background: url('/assets/images/homepage/crest.png') no-repeat center -1.875rem #fff;
-    border: solid 1.875rem rgba(235, 7, 0, 0.85);
-    -webkit-background-clip: padding-box;
-    /* for Safari */
-    background-clip: padding-box;
-    /* for IE9+, Firefox 4+, Opera, Chrome */
-    background-size: 4.063rem;
   }
   /* .slice-6{
 		 &:first-child{
