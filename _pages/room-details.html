@@ -4,76 +4,71 @@ title: "Room Details"
 description: "Room details"
 permalink: /room-details/
 ---
-
-<section class="inner-hero-container" style="background-image:url('/assets/images/rooms/room-details-banner.jpg');"></section>
+<section rt3-room-details="room" >
+<section class="inner-hero-container" ng-style="{'background-image':'url('+room.photos[0].large+')'}"> </section>
 
 <section class="packet room-details p-0">
-  <div class="bar m-0 p-0">
-    <div class="slice-6 p-0">
-      <div class="content">
-        <h4>The jennings deluxe suite</h4>
-        <p>The Mansfield's Deluxe Suite - The Jennings Apartment is approx. 420 square feet and features customized etched-glass French doors designed by Denise Amses of Amses Coma, a decorative fireplace, ebony-stained hardwood floors, and a separate parlor area. The suite includes one king-sized bed, which is complemented by luxurious linens, down comforter and pillow-topped mattress along with a spacious separate living area. The Deluxe Suite-The Jennings Apartment is appointed with customized robes, iHome Alarm Clock Radio for your iPod, two Dell Flat Panel LCD TVs, mini bar and Philosophy bath products. Perfect for the business traveler, this room is equipped with a writing desk and high-speed wireless internet access.</p>
-        <a href="#" class="link-btn"><i class="camera"></i><span>View Room Image Gallery</span></a>
-      </div>
-    </div>
-    <div class="slice-6 p-5 dark-bg">
-      <h5>$215 <span>tonight's rate</span></h5>
-      <div class="bar m-0 p-0">
-        <div class="form-group slice-6">
-          <label for="arrival">Arrival</label>
-          <input type="date" class="form-control" id="arrival" aria-label="Arrival Date">
-        </div>
-        <div class="form-group slice-6">
-          <label for="departure">Departure</label>
-          <input type="date" class="form-control" id="departure" aria-label="Departure Date">
-        </div>
-        <div class="form-group slice-6">
-          <label for="noofAdults">Adults</label>
-          <select class="form-control" id="noofAdults">
-					  <option>00 Adults</option>
-					  <option>01 Adults</option>
-					  <option selected>02 Adults</option>
-					  <option>03 Adults</option>
+	<div class="bar m-0 p-0">
+		<div class="slice-6 p-0">
+			<div class="content">
+				<h4 ng-bind-html="room.name | renderHTMLCorrectly"></h4>
+				<p ng-bind-html="room.description | renderHTMLCorrectly"></p>
+				<a href="/gallery/" class="link-btn"><i class="camera"></i> <span>View Room Image Gallery</span></a>
+			</div>
+		</div>
+		<div class="slice-6 p-5 dark-bg">
+			<h5 ng-show="room.code !='RDP'"><a  ng-href="{{site.reztripUrl}}search?selected_room_category=[[room.category]]&selected_room=[[room.code]]" target="_blank">[[room.todayRate]]</a> <span>tonight's rate</span></h5>
+			<form action="{{site.reztripUrl}}search?" method="get" >
+			<input type="hidden" name="selected_room" value="[[room.code]]" />
+			<div class="bar m-0 p-0">
+				
+				<div class="form-group slice-6">
+					<label for="arrival">Arrival</label>
+					<input  class="form-control" name="arrival_date" id="arrival" aria-label="Arrival Date">
+				</div>
+				<div class="form-group slice-6">
+					<label for="departure">Departure</label>
+					<input class="form-control" name="departure_date" id="departure" aria-label="Departure Date">
+				</div>
+				<div class="form-group slice-6">
+					<label for="noofAdults">Adults</label>
+					<select class="form-control" id="noofAdults" name="adults[]">
+					  <option value="1">01 Adult</option>
+            <option value="2" selected>02 Adult</option>
+            <option value="3">03 Adult</option>
+            <option value="4">04 Adult</option>
 					</select>
-        </div>
-        <div class="form-group slice-6">
-          <label for="noofChildren">Children</label>
-          <select class="form-control" id="noofChildren">
-					  <option>00 Children</option>
-					  <option>01 Children</option>
-					  <option>02 Children</option>
-					  <option>03 Children</option>
+			    </div>
+			    <div class="form-group slice-6">
+					<label for="noofChildren">Children</label>
+					<select class="form-control" id="noofChildren" name="children[]">
+					  <option value="0">00 Children</option>
+            <option value="1">01 Children</option>
+            <option value="2">02 Children</option>
+            <option value="3">03 Children</option>
+           
 					</select>
-        </div>
-        <div class="slice-6"><button type="submit" class="btn-block">Book Now</button></div>
-        <div class="slice-6">
-          <ul>
-            <li><a href="#"><i class="phone"></i><span>Phone</span></a></li>
-            <li><a href="#"><i class="mail"></i><span>Email</span></a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
+			    </div>
+				<div class="slice-6"><button type="submit" class="btn-block">Book Now</button></div>
+			
+				<div class="slice-6">
+					<ul>
+						<li><a href="tel:844.591.5565"><i class="phone"></i> <span>Phone</span></a></li>
+						<li><a href="mailto:reservations@mansfieldhotel.com"><i class="mail"></i> <span>Email</span></a></li>
+					</ul>
+				</div>
+			</div>
+				 </form> 
+		</div>
+	</div>
 </section>
 <section class="packet-fluid amenities-section m-0 p-0">
   <div class="description-box">
     <h3>Amenities & Services</h3>
-    <ul>
-      <li>FREE WIFI</li>
-      <li>Complimentary Business Center</li>
-      <li>24-Hour Fitness Center</li>
-      <li>Luxurious Linens</li>
-      <li>Pillow Top Mattresses</li>
-      <li>Flat Panel LCD TV</li>
-      <li>Plush Microfiber/Terry Robes Upon Request</li>
-      <li>Beekman 1802 Bath Products</li>
-      <li>Room Service: 5:00pm-10:00pm</li>
-      <li>iHome Dual Alarm Clock Radio for iPod</li>
-      <li>Lodgenet Interactive On Demand Movies</li>
-      <li>Hair Dryer</li>
-      <li>Pet Friendly</li>
-    </ul>
+	<ul>
+		<li ng-repeat="amenity in room.amenities">[[amenity]] </li>
+		<li ng-repeat="amenity in hotelInfo.common_room_amenities">[[amenity]] </li>
+	</ul>
   </div>
   <div class="bar m-0">
 
@@ -84,6 +79,8 @@ permalink: /room-details/
 
   </div>
 </section>
-<section class="rooms-carousel">
-  <h2 class="title">More Rooms & Suites</h2> {% include rooms-carousel.html %}
+<section class="rooms-carousel room-detail-page-carousel" style="display:none">
+  <h2 class="title">More Rooms & Suites</h2>
+  {% include rooms-carousel.html %}
+</section>
 </section>

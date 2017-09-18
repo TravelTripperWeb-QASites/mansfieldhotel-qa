@@ -62,6 +62,7 @@ if(localStorage.showPopup == "1") {
 
 	//carousel as owl items
 	setTimeout(function(){
+    $(".room-detail-page-carousel, .offers-carousel").css("display","block");
 		var HideItems = $('#carouselRooms .carousel-item,#carouselOffers .carousel-item').length;
 		var item = $('#carouselRooms,#carouselOffers').find('.carousel-item:first').outerWidth();
      var twidth = HideItems * item;
@@ -75,7 +76,8 @@ if(localStorage.showPopup == "1") {
 //				$(this).hide();
 //			}
 //	   });
-	},1000);
+    
+	},2800);
 	
 
 	// START MAP FUNCTION 
@@ -514,8 +516,54 @@ if(localStorage.showPopup == "1") {
 
 
 	/*Gallery end*/
-	
-	
+	// make rooms desc div height same
+    setTimeout(function(){
+        var allDescDiv = $('.descSection');
+        var biggestHeight = 0;
+        var ht
+
+          allDescDiv.each(function(){
+              ht = $(this).height();
+              if(ht > biggestHeight){
+
+                  biggestHeight = ht ;
+              }
+          });
+
+        allDescDiv.height(biggestHeight);
+    },2800);
+
+    $("#arrival").datepicker({
+        dateFormat: "yy-mm-dd",
+        altField  : '#arrival',
+        altFormat : 'yy-mm-dd',
+        minDate: 0,
+        onSelect: function (date) {
+            var date2 = $('#arrival').datepicker('getDate');
+            date2.setDate(date2.getDate() + 1);
+            $('#departure').datepicker('setDate', date2);
+            //sets minDate to dt1 date + 1
+            $('#departure').datepicker('option', 'minDate', date2);
+        }
+    });
+    $('#departure').datepicker({
+        dateFormat: "yy-mm-dd",
+        altField  : '#departure',
+        altFormat : 'yy-mm-dd',
+        onClose: function () {
+            var dt1 = $('#arrival').datepicker('getDate');
+            console.log(dt1);
+            var dt2 = $('#departure').datepicker('getDate');
+            if (dt2 <= dt1) {
+                var minDate = $('#departure').datepicker('option', 'minDate');
+                $('#departure').datepicker('setDate', minDate);
+            }
+        }
+    });
+    
+    $(".homeBookNowBtn").on("click",function(){
+      $("#homeBookNowFrm").submit();
+    })
 });
 
 $(window).scroll(function () {
@@ -582,7 +630,7 @@ $(window).on("load", function () {
         });
 // events meeting-events carousel end
 
-
-
+        
+       
 
 });

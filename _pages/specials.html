@@ -4,8 +4,8 @@ title: "Specials"
 description: "specials details"
 permalink: /specials/
 ---
-
-<section class="inner-hero-container" style="background-image:url('/assets/images/offers/hero-specials-details.jpg');"></section>
+<section rt3-special-rates= "offers">
+<section class="inner-hero-container" style="background-image:url(/assets/images/offers/hero-specials-details.jpg);"> 
 
 <div class="main-header-container">
   <div class="packet">
@@ -23,29 +23,20 @@ permalink: /specials/
 </div>
 
 <div class="packet-fluid specials-listing">
-  <div class="bar">
-
-    {% assign offers = site.data._models.offer | sort: 'order' %}
-    {% for offer in offers %}
-
-      <div class="slice-6">
-        <div class="item special-item">
-          <img src="{{ offer.image.url }}" alt="{{ offer.image.alt }}">
+      <div class="bar">
+      <div class="slice-6" ng-repeat="offer in offers.special_rates">
+        <div class="item special-item"> <img ng-src="[[offer.images[0].large || '/assets/images/dummy.jpg']]" alt="[[offer.rate_plan_name]]"/>
           <div class="bar m-0">
             <div class="slice-8 p-0">
               <div class="overlay"></div>
-              <h2>{{ offer.title }}</h2>
+              <h2 ng-bind-html="offer.rate_plan_name | renderHTMLCorrectly"></h2>
             </div>
-            <div class="slice-4 p-0">
-              <a href="{{ offer.booking_url }}" class="active">Book Special</a>
-              <a href="{{ offer.booking_url }}">Check Rate</a>
-              <a href="{{ offer.url_friendly_name }}">View Details</a>
-            </div>
+            <div class="slice-4 p-0"> <a ng-href="[[offer.promo_url]]" class="active" target="_blank">book special</a> <a ng-href="[[offer.promo_url]]" target="_blank">check rate</a><a ng-href="/special-details/#[[offer.rate_plan_name | formatNameForLink ]]" >view details</a> </div>
           </div>
-        </div>
+      </div>
+      </div>
+     
       </div>
 
-    {% endfor %}
-
-  </div>
 </div>
+</section>

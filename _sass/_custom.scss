@@ -166,6 +166,17 @@
           margin: 0;
           padding-bottom: 1.250rem;
         }
+
+        a {
+          color: $dark-bg;
+          text-decoration: none;
+
+          &:active,
+          &:visited {
+            text-decoration: none;
+          }
+        }
+
       }
     }
 
@@ -1167,6 +1178,16 @@
       font-size: $type-size-6;
       font-family: $brg-font-regular;
     }
+
+    a {
+      color: $white;
+    }
+
+    &:active,
+    &:visited {
+      text-decoration: none;
+    }
+
   }
 
   .form-group {
@@ -1785,5 +1806,24 @@
         }
       }
     }
+  }
+}
+
+.tonight-rate-link a {
+  display: inline !important;
+  padding: 0 !important;
+  font-family: $site-font-medium;
+  font-size: 1rem;
+  color: $rate-text-color !important;
+  letter-spacing: .063rem !important;
+  border: 0 !important;
+
+  &.active {
+    background: $rate-text-color !important;
+  }
+
+  &:hover {
+    color: $rate-text-color;
+    background: $panel-bg !important;
   }
 }
