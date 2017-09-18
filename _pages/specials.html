@@ -4,7 +4,7 @@ title: "Specials"
 description: "specials details"
 permalink: /specials/
 ---
-
+<section rt3-special-rates= "offers">
 <section class="inner-hero-container" style="background-image:url(/assets/images/offers/hero-specials-details.jpg);"> 
 
 </section>
@@ -23,51 +23,19 @@ permalink: /specials/
 
 <div class="packet-fluid specials-listing">
       <div class="bar">
-      <div class="slice-6">
-        <div class="item special-item"> <img src="../assets/images/offers/offer1.jpg" alt="Room"/>
+      <div class="slice-6" ng-repeat="offer in offers.special_rates">
+        <div class="item special-item"> <img ng-src="[[offer.images[0].large || '/assets/images/dummy.jpg']]" alt="[[offer.rate_plan_name]]"/>
           <div class="bar m-0">
             <div class="slice-8 p-0">
               <div class="overlay"></div>
-              <h2>Free Continental Breakfast</h2>
+              <h2 ng-bind-html="offer.rate_plan_name | renderHTMLCorrectly"></h2>
             </div>
-            <div class="slice-4 p-0"> <a href="#" class="active">book special</a> <a href="#">check rate</a><a href="/special-details/">view details</a> </div>
+            <div class="slice-4 p-0"> <a ng-href="[[offer.promo_url]]" class="active" target="_blank">book special</a> <a ng-href="[[offer.promo_url]]" target="_blank">check rate</a><a ng-href="/special-details/#[[offer.rate_plan_name | formatNameForLink ]]" >view details</a> </div>
           </div>
       </div>
       </div>
-      <div class="slice-6">
-      <div class="item special-item"> <img src="../assets/images/offers/offer2.jpg" alt="Room"/>
-          <div class="bar m-0">
-            <div class="slice-8 p-0">
-              <div class="overlay"></div>
-              <h2>NONREFUNDABLE RATE</h2>
-            </div>
-            <div class="slice-4 p-0"> <a href="#" class="active">book special</a> <a href="#">check rate</a><a href="/special-details/">view details</a> </div>
-          </div>
-      </div>
-      </div>
-      <div class="slice-6">
-      <div class="item special-item"> <img src="../assets/images/offers/offer3.jpg" alt="Room"/>
-          <div class="bar m-0">
-            <div class="slice-8 p-0">
-              <div class="overlay"></div>
-              <h2>AAA DISCOUNT</h2>
-            </div>
-            <div class="slice-4 p-0"> <a href="#" class="active">book special</a> <a href="#">check rate</a><a href="/special-details/">view details</a> </div>
-          </div>
-      </div>
-      </div>
-      <div class="slice-6">
-      <div class="item special-item"> <img src="../assets/images/offers/offer4.jpg" alt="Room"/>
-          <div class="bar m-0">
-            <div class="slice-8 p-0">
-              <div class="overlay"></div>
-              <h2>AARP MEMBER DISCOUNT</h2>
-            </div>
-            <div class="slice-4 p-0"> <a href="#" class="active">book special</a> <a href="#">check rate</a><a href="/special-details/">view details</a> </div>
-          </div>
-      </div>
-      </div>
-
+     
       </div>
 
 </div>
+</section>

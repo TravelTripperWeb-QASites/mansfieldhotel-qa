@@ -1,3 +1,9 @@
+<script>
+function getIp(data) {
+  sessionStorage.ip_add =  data.ip;
+}
+</script>
+<script src ="https://api.ipify.org?format=jsonp&callback=getIp"> </script>
 <script src="{{ '/assets/js/main.min.js' | absolute_url }}"></script>
 
 {% if site.data.api-keys.maps.google.enabled != false %}

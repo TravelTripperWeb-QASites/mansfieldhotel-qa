@@ -352,6 +352,13 @@
 					margin: 0;
 					padding-bottom: 1.250rem;
 				}
+				a{
+					color: $dark-bg;
+					text-decoration: none;
+					&:active,&:visited {
+						text-decoration: none;
+					}
+				}
 			}
 		}
 		.booking-form{
@@ -1206,6 +1213,12 @@
     		margin-top: 2rem;
 			
 		}
+		a{
+			color:$white;
+		}
+		&:active,&:visited{
+			text-decoration: none;
+		}
 		span{
 			font-size: $type-size-6;
 			font-family: $brg-font-regular;
@@ -1755,5 +1768,25 @@
 			}
 		}
 	}
+}
+
+.tonight-rate-link a{
+	display: inline !important;
+	color: $rate-text-color!important; 
+	letter-spacing: 0.063rem!important;
+	padding: 0px!important;
+	
+		
+	font-family:$site-font-medium;
+	font-size: 1rem;
+	border: none!important;
+	&.active{
+			background: $rate-text-color!important;
+			
+		}
+		&:hover{
+			background: $panel-bg!important;
+			color: $rate-text-color;
+		}
 }
 

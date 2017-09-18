@@ -6,6 +6,7 @@ description              : "Site default description."
 url                      : # the base hostname & protocol for your site e.g. "https://www.traveltripper.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : TravelTripperWeb/mansfieldhotel # GitHub username/repo-name e.g. "TravelTripperWeb/bedrock"
+reztripUrl               : "https://mansfieldhotel.reztrip.com/"
 
 # Language Settings
 default_lang             : 'en'

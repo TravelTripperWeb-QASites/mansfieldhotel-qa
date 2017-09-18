@@ -20,135 +20,29 @@ permalink: /rooms/
 
 <div class="packet-fluid rooms-listing">
       <div class="bar">
-      <div class="slice-6">
-        <div class="item rooms-item"> <img src="../assets/images/rooms/room1.jpg" alt="Room"/>
+      <div class="slice-6" ng-repeat="room in browser.roomsList | filter : {'code' : '!RDP'} ">
+        <div class="item rooms-item"> <img ng-src="[[room.photos[0].large]]" alt="[[room.name]]"/>
           <div class="bar m-0">
-            <div class="slice-8 p-0">
+            <div class="slice-8 p-0 descSection">
               <div class="overlay"></div>
-              <h2>Guest Room Petite</h2>
-			  <p>Tonight's Rate $239</p>
+              <h2 ng-bind-html="room.name | renderHTMLCorrectly"></h2>
+			        <p>Tonight's Rate <span class="tonight-rate-link" ><a ng-href="{{site.reztripUrl}}search?selected_room_category=[[room.category]]&selected_room=[[room.code]]" target="_blank">[[room.todayRate]]</a></span></p>
             </div>
-			  <div class="slice-4 p-0"> <a href="#" class="active">Book Room</a> <a href="#">Room Details</a> <a href="/gallery/"><i class="fa fa-camera"></i> Gallery</a> </div>
+			  <div class="slice-4 p-0"> <a ng-href="{{site.reztripUrl}}search?selected_room_category=[[room.category]]&selected_room=[[room.code]]"  class="active">Book [[room.name | roomOrSuite]]</a> <a ng-href="/room-details/#[[room.name | formatNameForLink]]">[[room.name | roomOrSuite]] Details</a> <a href="/gallery/"><i class="fa fa-camera"></i> Gallery</a> </div>
           </div>
       </div>
       </div>
-      <div class="slice-6">
-      <div class="item rooms-item"> <img src="../assets/images/rooms/room2.jpg" alt="Room"/>
-          <div class="bar m-0">
-            <div class="slice-8 p-0">
-              <div class="overlay"></div>
-              <h2>Standard Guest Room</h2>
-			  <p>Tonight's Rate $239</p>
-            </div>
-            <div class="slice-4 p-0"> <a href="#" class="active">Book Room</a> <a href="#">Room Details</a> <a href="/gallery/"><i class="fa fa-camera"></i> Gallery</a> </div>
-          </div>
-      </div>
-      </div>
-      <div class="slice-6">
-      <div class="item rooms-item"> <img src="../assets/images/rooms/room3.jpg" alt="Room"/>
-          <div class="bar m-0">
-            <div class="slice-8 p-0">
-              <div class="overlay"></div>
-              <h2>Deluxe Queen Guest Room</h2>
-			  <p>Tonight's Rate $249</p>
-            </div>
-            <div class="slice-4 p-0"> <a href="#" class="active">Book Room</a> <a href="#">Room Details</a> <a href="/gallery/"><i class="fa fa-camera"></i> Gallery</a> </div>
-          </div>
-      </div>
-      </div>
-      <div class="slice-6">
-      <div class="item rooms-item"> <img src="../assets/images/rooms/room4.jpg" alt="Room"/>
-          <div class="bar m-0">
-            <div class="slice-8 p-0">
-              <div class="overlay"></div>
-              <h2>Deluxe King Guest Room</h2>
-			  <p>Tonight's Rate $319</p>
-            </div>
-            <div class="slice-4 p-0"> <a href="#" class="active">Book Room</a> <a href="#">Room Details</a> <a href="/gallery/"><i class="fa fa-camera"></i> Gallery</a> </div>
-          </div>
-      </div>
-      </div>
-      <div class="slice-6">
-        <div class="item rooms-item"> <img src="../assets/images/rooms/room5.jpg" alt="Room"/>
-          <div class="bar m-0">
-            <div class="slice-8 p-0">
-              <div class="overlay"></div>
-              <h2>Deluxe Guest Room - Two Beds</h2>
-			  <p>Tonight's Rate $459</p>
-            </div>
-            <div class="slice-4 p-0"> <a href="#" class="active">Book Room</a> <a href="#">Room Details</a> <a href="/gallery/"><i class="fa fa-camera"></i> Gallery</a> </div>
-          </div>
-      </div>
-      </div>
-      <div class="slice-6">
-      <div class="item rooms-item"> <img src="../assets/images/rooms/room6.jpg" alt="Room"/>
-          <div class="bar m-0">
-            <div class="slice-8 p-0">
-              <div class="overlay"></div>
-              <h2>Junior Suite</h2>
-			  <p>Tonight's Rate $529</p>
-            </div>
-            <div class="slice-4 p-0"> <a href="#" class="active">Book Room</a> <a href="#">Room Details</a> <a href="/gallery/"><i class="fa fa-camera"></i> Gallery</a> </div>
-          </div>
-      </div>
-      </div>
-      <div class="slice-6">
-      <div class="item rooms-item"> <img src="../assets/images/rooms/room7.jpg" alt="Room"/>
-          <div class="bar m-0">
-            <div class="slice-8 p-0">
-              <div class="overlay"></div>
-              <h2>The Jennings Apartment</h2>
-			  <p>Tonight's Rate $449</p>
-            </div>
-            <div class="slice-4 p-0"> <a href="#" class="active">Book Room</a> <a href="#">Room Details</a> <a href="/gallery/"><i class="fa fa-camera"></i> Gallery</a> </div>
-          </div>
-      </div>
-      </div>
-      <div class="slice-6">
-      <div class="item rooms-item"> <img src="../assets/images/rooms/room8.jpg" alt="Room"/>
-          <div class="bar m-0">
-            <div class="slice-8 p-0">
-              <div class="overlay"></div>
-              <h2>The Yeats Apartment</h2>
-			  <p>Tonight's Rate $449</p>
-            </div>
-            <div class="slice-4 p-0"> <a href="#" class="active">Book Room</a> <a href="#">Room Details</a> <a href="/gallery/"><i class="fa fa-camera"></i> Gallery</a> </div>
-          </div>
-      </div>
-      </div>
-	  <div class="slice-6">
-      <div class="item rooms-item"> <img src="../assets/images/rooms/room9.jpg" alt="Room"/>
-          <div class="bar m-0">
-            <div class="slice-8 p-0">
-              <div class="overlay"></div>
-              <h2>The Fitzgerald Apartment</h2>
-			  <p>Tonight's Rate $449</p>
-            </div>
-            <div class="slice-4 p-0"> <a href="#" class="active">Book Room</a> <a href="#">Room Details</a> <a href="/gallery/"><i class="fa fa-camera"></i> Gallery</a> </div>
-          </div>
-      </div>
-      </div>
-      <div class="slice-6">
-      <div class="item rooms-item"> <img src="../assets/images/rooms/room10.jpg" alt="Room"/>
-          <div class="bar m-0">
-            <div class="slice-8 p-0">
-              <div class="overlay"></div>
-              <h2>The Two-Bedroom Apartment</h2>
-			  <p>Tonight's Rate $449</p>
-            </div>
-            <div class="slice-4 p-0"> <a href="#" class="active">Book Room</a> <a href="#">Room Details</a> <a href="/gallery/"><i class="fa fa-camera"></i> Gallery</a> </div>
-          </div>
-      </div>
-      </div>
-      <div class="slice-12">
-      <div class="item rooms-item full-width"> <img src="../assets/images/rooms/room11.jpg" alt="Room"/>
+     
+    
+      <div class="slice-12" ng-repeat="room in browser.roomsList | filter : {'code' : 'RDP'} ">
+      <div class="item rooms-item full-width"> <img ng-src="[[room.photos[0].large]]" alt="[[room.name]]" />
           <div class="bar m-0">
             <div class="slice-10 p-0">
               <div class="overlay"></div>
-              <h2>THE RENWICK DUPLEX PENTHOUSE AT THE MANSFIELd hotel</h2>
+              <h2  ng-bind-html="room.name | renderHTMLCorrectly"></h2>
 			  <!-- <p>Tonight's Rate $700</p> -->
             </div>
-            <div class="slice-2 p-0"> <a href="tel:844.591.5565" class="active">Call Now</a> <a href="#">Room Details</a> <a href="/gallery/"><i class="fa fa-camera"></i> Gallery</a> </div>
+            <div class="slice-2 p-0"> <a href="tel:844.591.5565" class="active">Call Now</a> <a ng-href="/room-details/#[[room.name | formatNameForLink]]">[[room.name | roomOrSuite]] Details</a> <a href="/gallery/"><i class="fa fa-camera"></i> Gallery</a> </div>
           </div>
       </div>
       </div>
