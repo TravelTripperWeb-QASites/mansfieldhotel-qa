@@ -1,0 +1,9 @@
+{
+  "title": "The M Bar",
+  "description": "The M Bar is one of the most quintessential bars in midtown NYC. The beautiful venue is known for its classic cocktails and live music, featuring a domed skylight, mahogany bookshelves, Beaux Arts lighting, and comfortable lounge seating, creating an intimate and elegant atmosphere reminiscent of days gone by.",
+  "image": {
+    "url": "/assets/images/bar/hero-bar.jpg"
+  },
+  "link": "/m-bar/",
+  "occupancy": "10-75"
+}

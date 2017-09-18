@@ -2,10 +2,10 @@
 title                    : "The Mansfield Hotel"
 title_separator          : "-"
 name                     : "The Mansfield Hotel"
-description              : "Site default description."
+description              : "The Mansfield Hotel"
 url                      : # the base hostname & protocol for your site e.g. "https://www.traveltripper.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : TravelTripperWeb/mansfieldhotel # GitHub username/repo-name e.g. "TravelTripperWeb/bedrock"
+reztripUrl               : "https://mansfieldhotel.reztrip.com/"
 
 # Language Settings
 default_lang             : 'en'
@@ -75,7 +75,7 @@ sass:
 permalink: pretty
 timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
-# data_paginate: 
+# data_paginate:
 #   per_page: 5
 #   data: 'blog'
 #   path: 'blog/page:num'
@@ -83,7 +83,7 @@ timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 #   sort_field: 'date'
 #   sort_reverse: true
 
-page_gen: # 
+page_gen: #
   # - data: 'attractions'
   #   template: 'single-attraction'
   #   dir: 'attractions'

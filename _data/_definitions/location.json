@@ -1,0 +1,13 @@
+{
+  "title": {
+    "required": true
+  },
+  "walk_time": {
+    "label": "How many minutes walk to this location?",
+    "required": true
+  },
+  "image": {
+    "type": "image",
+    "required": true
+  }
+}

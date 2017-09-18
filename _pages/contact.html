@@ -1,105 +1,153 @@
 ---
-layout: just-info
+layout: default
 title: "Contact Us"
 description: "Contact"
 permalink: /contact/
 ---
 
-<section class="inner-hero-container" style="background-image:url(/assets/images/contact/contact-banner.jpg);"> </section>
+<section class="inner-hero-container" style="background-image:url('/assets/images/contact/contact-banner.jpg');"></section>
+
 <div class="main-header-container pb-4 mb-2">
-  <div class="main-header-row">
-    <div class="main-header-col">
-        <h2>contact us</h2>
-        <p>If you have questions, comments, or need special arrangements, please call us or email us.</p>
-    </div> 
-    <div class="details-footer contact-top">
-      <div class="details-row">
-          <div class="details-col">
-              <div class="details">
-                  <h3>Address</h3>
-                  <a href="#"> 12 West 44th Street <br>
-                  (Between 5th and 6th Avenues)<br>
-                  New York, New York 10036
-                  </a>
-              </div>
-          </div>
-          <div class="details-col">
-            <div class="details">
-              <h3>Contact</h3>
-              <p>T. <a href="tel:212.277.8700"> 212.277.8700</a></p>
-              <p>F. <a href="tel:212.764.4477"> 212.764.4477</a></p>
-              <p>M Bar: <a href="mailto:mbar@mansfieldhotel.com">mbar@mansfieldhotel.com</a></p>
-            </div>
-          </div>
-          <div class="details-col">
-              <h3>Reservations</h3>
-              <p>T. <a href="tel:844.591.5565">844.591.5565</a></p>
-              <p>M Bar: <a href="mailto:reservations@mansfieldhotel.com">reservations@mansfieldhotel.com</a></p>
-          </div> 
-          <div class="social-media">
-            <ul>
-                <li><a href="/" title="Follow on Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                <li><a href="/" title="Follow on Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                <li><a href="/" title="Follow on instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-            </ul>
-          </div> 
+  <div class="packet">
+
+    <div class="bar">
+      <div class="slice">
+        {% regionblock page_header, type: header %}
+          <h2>Contact Us</h2>
+        {% endregionblock %}
+        {% regionblock page_text, type: text %}
+          <p>If you have questions, comments, or need special arrangements, please call us or email us.</p>
+        {% endregionblock %}
       </div>
-    </div> 
+    </div>
+
+    <div class="bar details-footer contact-address mt-0">
+
+      <div class="slice-4">
+        <div class="details">
+          {% regionblock address_header, type: header %}
+            <h3>Address</h3>
+          {% endregionblock %}
+          {% regionblock address_text, type: text %}
+            <a href="#"> 12 West 44th Street <br>
+              (Between 5th and 6th Avenues)<br>
+              New York, New York 10036
+            </a>
+          {% endregionblock %}
+        </div>
+      </div>
+
+      <div class="slice-4">
+        <div class="details">
+          {% regionblock phone_header, type: header %}
+            <h3>Contact</h3>
+          {% endregionblock %}
+          {% regionblock phone_text, type: text %}
+            <p>Phone: <a href="tel:212.277.8700">212.277.8700</a></p>
+            <p>Fax: <a href="tel:212.764.4477">212.764.4477</a></p>
+            <p>M Bar: <a href="mailto:mbar@mansfieldhotel.com">mbar@mansfieldhotel.com</a></p>
+          {% endregionblock %}
+        </div>
+      </div>
+
+      <div class="slice-4">
+        {% regionblock reservation_header, type: header %}
+          <h3>Reservations</h3>
+        {% endregionblock %}
+        {% regionblock reservation_text, type: text %}
+          <p>Phone: <a href="tel:844.591.5565">844.591.5565</a></p>
+          <p>Email: <a href="mailto:reservations@mansfieldhotel.com">reservations@mansfieldhotel.com</a></p>
+        {% endregionblock %}
+      </div>
+
+    </div>
+
+    <div class="bar text-center ">
+      <div class="slice social-links">
+
+        <a href="https://twitter.com/themansfieldnyc" title="Follow on Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+
+      </div>
+    </div>
+
   </div>
 </div>
 
 <section class="top-content-main">
-    <div class="form-part p-0 contact-form">
-        <h4>Enquire now!</h4>
-        <p><i>Required fields are marked *</i></p>
-        <form action="https://submit.jotform.me/submit/72473036804455/" method="post" name="form_72473036804455" id="72473036804455" accept-charset="utf-8" class="contact-form-inner">
-        <input type="hidden" name="formID" value="72473036804455" />
-            <div class="form-inline">
-                <div class="form-group full">
-                    <input type="text" class="form-control" placeholder="Name *" aria-label="Name" id="input_3" name="q3_name" required>
-                </div>
-                <div class="form-group full">
-                    <input type="email" class="form-control" placeholder="Email *" aria-label="Email" id="input_12" name="q12_email" required>
-                </div>
-                <div class="form-group full">
-                    <input type="text" class="form-control" placeholder="Phone number *" aria-label="Phone number" id="input_9" name="q9_phoneNumber" required>
-                </div>
-            </div>
-            <div class="form-inline">
-                <div class="form-group full">
-                    <input type="text" class="form-control date" placeholder="Arrival date" aria-label="Arrival date" id="input_8" name="q8_arrivalDate" required>
-                </div>
-                <div class="form-group full">
-                    <input type="text" class="form-control date" placeholder="Departure date" aria-label="Departure date" id="input_7" name="q7_departureDate" required>
-                </div>
-                <div class="form-group full">
-                    <select class="form-control" aria-label="Rooms" id="input_6" name="q6_noOf" required>
-                        <option>1 Room</option>
-                    </select>
-                    <select class="form-control" aria-label="Adults" id="input_4" name="q4_noOf4" required>
-                        <option>0 Adult</option>
-                    </select>
-                    <select class="form-control" aria-label="Children" id="input_5" name="q5_noOf5" required>
-                        <option>0 Children</option>
-                    </select>
-                </div>
-            </div>
-            <div class="form-inline full">
-                <div class="form-group full">
-                    <textarea type="text" class="form-control" placeholder="Type your message *" aria-label="Type your message" id="input_11" name="q11_message" required></textarea>
-                </div>
-                <button class="common-btn red mt-4" title="submit" id="input_2" type="submit">submit</button>
-            </div>
-        </form>
-    </div>
+  <div class="form-part p-0 contact-form">
+    {% regionblock form_header, type: header %}
+      <h2 class="title mb-3">Inquire Now</h2>
+    {% endregionblock %}
+    <p><i>Required fields are marked *</i></p>
+    <form action="https://submit.jotform.me/submit/72542312704448/" method="post" name="form_72542312704448" id="72542312704448" accept-charset="utf-8" class="contact-form-inner">
+      <input type="hidden" name="formID" value="72542312704448" />
+      <div class="form-inline">
+        <div class="form-group full">
+          <input type="text" class="form-control" placeholder="Name *" aria-label="Name" id="input_5" name="q5_name" required>
+        </div>
+        <div class="form-group full">
+          <input type="email" class="form-control" placeholder="Email *" aria-label="Email" id="input_3" name="q3_email" required>
+        </div>
+        <div class="form-group full">
+          <input type="tel" class="form-control" placeholder="Phone number *" aria-label="Phone number" id="input_11" name="q11_phone" required>
+        </div>
+      </div>
+      <div class="form-inline">
+        <div class="form-group full">
+          <input type="date" class="form-control date" placeholder="Arrival date" aria-label="Arrival date" id="input_6" name="q6_arrivalDate" required>
+        </div>
+        <div class="form-group full">
+          <input type="date" class="form-control date" placeholder="Departure date" aria-label="Departure date" id="input_7" name="q7_departureDate" required>
+        </div>
+        <div class="form-group full">
+          <select class="custom-select form-control" aria-label="Rooms" id="input_8" name="q8_rooms" required>
+            <option>1 Room</option>
+            <option>2 Room</option>
+            <option>3 Room</option>
+          </select>
+          <select class="custom-select form-control" aria-label="Adults" id="input_9" name="q9_adults" required>
+            <option>0 Adult</option>
+            <option>1 Adult</option>
+            <option>2 Adult</option>
+            <option>3 Adult</option>
+          </select>
+          <select class="custom-select form-control" aria-label="Children" id="input_10" name="q10_children" required>
+            <option>0 Children</option>
+            <option>1 Children</option>
+            <option>2 Children</option>
+            <option>3 Children</option>
+            <option>4 Children</option>
+            <option>5 Children</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-inline full">
+        <div class="form-group full">
+          <textarea type="text" class="form-control" placeholder="Type your message *" aria-label="Type your message" id="input_4" name="q4_message" required></textarea>
+        </div>
+        <button class="common-btn red mt-4" title="submit" id="input_2" type="submit">submit</button>
+      </div>
+      <script>
+        JotForm.showJotFormPowered = "0";
+      </script>
+      <input type="hidden" id="simple_spc" name="simple_spc" value="72542312704448" />
+      <script type="text/javascript">
+        document.getElementById("si" + "mple" + "_spc").value = "72542312704448-72542312704448";
+      </script>
+    </form>
+    <script type="text/javascript">
+      JotForm.ownerView = true;
+    </script>
+  </div>
 </section>
 
 <section class="packet-fluid p-0">
-    <div class="gallery-cta inner bg-cover p-0" style="background-image: url(/assets/images/contact/footer-bg.jpg);">
-      <div class="overlay">
-        <h1>Enter a portal to a New York City of days gone by...</h1>
-        <a href="#" title="view our rooms" class="common-btn white">view our rooms</a>
-      </div>
+  <div class="gallery-cta inner bg-cover p-0" style="background-image: url(/assets/images/contact/footer-bg.jpg);">
+    <div class="overlay">
+      {% regionblock cta_header, type: header %}
+        <h1>Get a Glimpse of a Bygone Era at The Mansfield</h1>
+      {% endregionblock %}
+      <a href="/rooms/" title="view our rooms" class="common-btn white">view our rooms</a>
     </div>
+  </div>
 </section>
-

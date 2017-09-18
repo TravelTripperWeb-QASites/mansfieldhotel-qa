@@ -110,6 +110,9 @@ del a {
 /* links */
 
 a {
+  letter-spacing: .07rem;
+  text-decoration: none;
+  transition:all 0.3s ease;
   &:hover,
   &:active {
     outline: 0;
@@ -257,10 +260,21 @@ $grid-columns: 12;
   &.white{
     background: $white;
     color: $dark-bg;
+     &:hover{
+     color: $white; 
+     background:$panel-bg;
+    }
+
   }
   &.red{
     background: $sub-heading-color;
     color:$white;
+    &:hover{
+    background: $dark-bg;
+    }
+    &:active{
+    background: $active-clr;
+    }
   }
 }
 
@@ -272,4 +286,8 @@ $grid-columns: 12;
     left: 0;
     right: 0;      
     z-index:2;
+    @include media-breakpoint-down(sm) {
+      display:none;
+    }
+   
 }
