@@ -84,8 +84,8 @@ if(localStorage.showPopup == "1") {
 	function initialize() {
 
 		var myLatLng = {
-			lat: 40.757757,
-			lng: -73.980736
+			lat: 40.755316,
+			lng: -73.981024
 		};
 		var stylemap = [
   {
