@@ -16,12 +16,9 @@
       "file": "event_spaces3.json"
     }
   ],
-<<<<<<< HEAD
   "events": [
 
   ],
-=======
->>>>>>> 411acb3ac718c90f51a58a7228c8859003bbdc9d
   "gallery": [
     {
       "file": "gallery01.json"
