@@ -15,7 +15,7 @@
 
 <title>{{ seo_title }}</title>
 
-{% assign seo_description = page.meta_description | default: page.excerpt | default: site.description %}
+{% assign seo_description = page.meta_description | default: page.description | default: site.description %}
 {% if seo_description %}
   {% assign seo_description = seo_description | markdownify | strip_html | strip_newlines | normalize_whitespace | escape_once %}
 {% endif %}
