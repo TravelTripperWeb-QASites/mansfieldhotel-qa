@@ -1,8 +1,8 @@
 # Site Settings
 title                    : "The Mansfield Hotel"
-title_separator          : "-"
+title_separator          : "|"
 name                     : "The Mansfield Hotel"
-description              : "The Mansfield Hotel"
+description              : "The Mansfield Hotel is a classic Midtown Manhattan hotel offering a convenient Times Square location and romantic boutique aspect. Book now on the Official site."
 url                      : # the base hostname & protocol for your site e.g. "https://www.traveltripper.io"
 repository               : TravelTripperWeb/mansfieldhotel # GitHub username/repo-name e.g. "TravelTripperWeb/bedrock"
 reztripUrl               : "https://mansfieldhotel.reztrip.com/"

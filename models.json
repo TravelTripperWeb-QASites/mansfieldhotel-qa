@@ -1,8 +1,386 @@
 {
+  "event_spaces": [
+    {
+      "name": "The M Bar",
+      "title": "The M Bar",
+      "file": "event_spaces1.json"
+    },
+    {
+      "name": "The Club Room",
+      "title": "The Club Room",
+      "file": "event_spaces2.json"
+    },
+    {
+      "name": "The Renwick Duplex Penthouse Suite",
+      "title": "The Renwick Duplex Penthouse Suite",
+      "file": "event_spaces3.json"
+    }
+  ],
+<<<<<<< HEAD
   "events": [
 
   ],
+=======
+>>>>>>> 411acb3ac718c90f51a58a7228c8859003bbdc9d
+  "gallery": [
+    {
+      "file": "gallery01.json"
+    },
+    {
+      "file": "gallery10.json"
+    },
+    {
+      "file": "gallery100.json"
+    },
+    {
+      "file": "gallery101.json"
+    },
+    {
+      "file": "gallery102.json"
+    },
+    {
+      "file": "gallery103.json"
+    },
+    {
+      "file": "gallery104.json"
+    },
+    {
+      "file": "gallery105.json"
+    },
+    {
+      "file": "gallery106.json"
+    },
+    {
+      "file": "gallery107.json"
+    },
+    {
+      "file": "gallery108.json"
+    },
+    {
+      "file": "gallery11.json"
+    },
+    {
+      "file": "gallery12.json"
+    },
+    {
+      "file": "gallery13.json"
+    },
+    {
+      "file": "gallery14.json"
+    },
+    {
+      "file": "gallery15.json"
+    },
+    {
+      "file": "gallery16.json"
+    },
+    {
+      "file": "gallery17.json"
+    },
+    {
+      "file": "gallery18.json"
+    },
+    {
+      "file": "gallery19.json"
+    },
+    {
+      "file": "gallery2.json"
+    },
+    {
+      "file": "gallery20.json"
+    },
+    {
+      "file": "gallery21.json"
+    },
+    {
+      "file": "gallery26.json"
+    },
+    {
+      "file": "gallery27.json"
+    },
+    {
+      "file": "gallery28.json"
+    },
+    {
+      "file": "gallery29.json"
+    },
+    {
+      "file": "gallery3.json"
+    },
+    {
+      "file": "gallery30.json"
+    },
+    {
+      "file": "gallery31.json"
+    },
+    {
+      "file": "gallery32.json"
+    },
+    {
+      "file": "gallery33.json"
+    },
+    {
+      "file": "gallery34.json"
+    },
+    {
+      "file": "gallery35.json"
+    },
+    {
+      "file": "gallery36.json"
+    },
+    {
+      "file": "gallery37.json"
+    },
+    {
+      "file": "gallery38.json"
+    },
+    {
+      "file": "gallery39.json"
+    },
+    {
+      "file": "gallery4.json"
+    },
+    {
+      "file": "gallery40.json"
+    },
+    {
+      "file": "gallery41.json"
+    },
+    {
+      "file": "gallery42.json"
+    },
+    {
+      "file": "gallery43.json"
+    },
+    {
+      "file": "gallery44.json"
+    },
+    {
+      "file": "gallery45.json"
+    },
+    {
+      "file": "gallery46.json"
+    },
+    {
+      "file": "gallery47.json"
+    },
+    {
+      "file": "gallery48.json"
+    },
+    {
+      "file": "gallery49.json"
+    },
+    {
+      "file": "gallery5.json"
+    },
+    {
+      "file": "gallery50.json"
+    },
+    {
+      "file": "gallery51.json"
+    },
+    {
+      "file": "gallery52.json"
+    },
+    {
+      "file": "gallery53.json"
+    },
+    {
+      "file": "gallery54.json"
+    },
+    {
+      "file": "gallery55.json"
+    },
+    {
+      "file": "gallery56.json"
+    },
+    {
+      "file": "gallery57.json"
+    },
+    {
+      "file": "gallery58.json"
+    },
+    {
+      "file": "gallery59.json"
+    },
+    {
+      "file": "gallery6.json"
+    },
+    {
+      "file": "gallery60.json"
+    },
+    {
+      "file": "gallery61.json"
+    },
+    {
+      "file": "gallery62.json"
+    },
+    {
+      "file": "gallery63.json"
+    },
+    {
+      "file": "gallery64.json"
+    },
+    {
+      "file": "gallery65.json"
+    },
+    {
+      "file": "gallery66.json"
+    },
+    {
+      "file": "gallery67.json"
+    },
+    {
+      "file": "gallery68.json"
+    },
+    {
+      "file": "gallery69.json"
+    },
+    {
+      "file": "gallery7.json"
+    },
+    {
+      "file": "gallery70.json"
+    },
+    {
+      "file": "gallery71.json"
+    },
+    {
+      "file": "gallery72.json"
+    },
+    {
+      "file": "gallery73.json"
+    },
+    {
+      "file": "gallery74.json"
+    },
+    {
+      "file": "gallery75.json"
+    },
+    {
+      "file": "gallery76.json"
+    },
+    {
+      "file": "gallery77.json"
+    },
+    {
+      "file": "gallery78.json"
+    },
+    {
+      "file": "gallery79.json"
+    },
+    {
+      "file": "gallery8.json"
+    },
+    {
+      "file": "gallery80.json"
+    },
+    {
+      "file": "gallery81.json"
+    },
+    {
+      "file": "gallery82.json"
+    },
+    {
+      "file": "gallery83.json"
+    },
+    {
+      "file": "gallery84.json"
+    },
+    {
+      "file": "gallery85.json"
+    },
+    {
+      "file": "gallery86.json"
+    },
+    {
+      "file": "gallery87.json"
+    },
+    {
+      "file": "gallery88.json"
+    },
+    {
+      "file": "gallery89.json"
+    },
+    {
+      "file": "gallery9.json"
+    },
+    {
+      "file": "gallery90.json"
+    },
+    {
+      "file": "gallery91.json"
+    },
+    {
+      "file": "gallery92.json"
+    },
+    {
+      "file": "gallery93.json"
+    },
+    {
+      "file": "gallery94.json"
+    },
+    {
+      "file": "gallery95.json"
+    },
+    {
+      "file": "gallery96.json"
+    },
+    {
+      "file": "gallery97.json"
+    },
+    {
+      "file": "gallery98.json"
+    },
+    {
+      "file": "gallery99.json"
+    }
+  ],
+  "location": [
+    {
+      "name": "Times Square",
+      "title": "Times Square",
+      "file": "location1.json"
+    },
+    {
+      "name": "Bryant Park",
+      "title": "Bryant Park",
+      "file": "location2.json"
+    },
+    {
+      "name": "The Empire State Building",
+      "title": "The Empire State Building",
+      "file": "location3.json"
+    }
+  ],
+  "offer": [
+    {
+      "name": "Free Continental Breakfast",
+      "title": "Free Continental Breakfast",
+      "file": "offer1.json"
+    },
+    {
+      "name": "AARP Member Discount",
+      "title": "AARP Member Discount",
+      "file": "offer2.json"
+    },
+    {
+      "name": "AAA Discount",
+      "title": "AAA Discount",
+      "file": "offer3.json"
+    },
+    {
+      "name": "Nonrefundable Rate",
+      "title": "Nonrefundable Rate",
+      "file": "offer4.json"
+    }
+  ],
   "review": [
+    {
+      "name": "Ryan A",
+      "title": "Ryan A",
+      "file": "review1.json"
+    },
     {
       "name": "Michael S",
       "title": "Michael S",
@@ -12,381 +390,6 @@
       "name": "Richard C",
       "title": "Richard C",
       "file": "review3.json"
-    },
-    {
-      "name": "Ryan A",
-      "title": "Ryan A",
-      "file": "review1.json"
-    }
-  ],
-  "offer": [
-    {
-      "name": "AARP Member Discount",
-      "title": "AARP Member Discount",
-      "file": "offer2.json"
-    },
-    {
-      "name": "Free Continental Breakfast",
-      "title": "Free Continental Breakfast",
-      "file": "offer1.json"
-    },
-    {
-      "name": "Nonrefundable Rate",
-      "title": "Nonrefundable Rate",
-      "file": "offer4.json"
-    },
-    {
-      "name": "AAA Discount",
-      "title": "AAA Discount",
-      "file": "offer3.json"
-    }
-  ],
-  "location": [
-    {
-      "name": "Bryant Park",
-      "title": "Bryant Park",
-      "file": "location2.json"
-    },
-    {
-      "name": "Times Square",
-      "title": "Times Square",
-      "file": "location1.json"
-    },
-    {
-      "name": "The Empire State Building",
-      "title": "The Empire State Building",
-      "file": "location3.json"
-    }
-  ],
-  "gallery": [
-    {
-      "file": "gallery21.json"
-    },
-    {
-      "file": "gallery97.json"
-    },
-    {
-      "file": "gallery103.json"
-    },
-    {
-      "file": "gallery10.json"
-    },
-    {
-      "file": "gallery57.json"
-    },
-    {
-      "file": "gallery88.json"
-    },
-    {
-      "file": "gallery59.json"
-    },
-    {
-      "file": "gallery30.json"
-    },
-    {
-      "file": "gallery82.json"
-    },
-    {
-      "file": "gallery81.json"
-    },
-    {
-      "file": "gallery33.json"
-    },
-    {
-      "file": "gallery100.json"
-    },
-    {
-      "file": "gallery11.json"
-    },
-    {
-      "file": "gallery73.json"
-    },
-    {
-      "file": "gallery3.json"
-    },
-    {
-      "file": "gallery36.json"
-    },
-    {
-      "file": "gallery53.json"
-    },
-    {
-      "file": "gallery45.json"
-    },
-    {
-      "file": "gallery79.json"
-    },
-    {
-      "file": "gallery54.json"
-    },
-    {
-      "file": "gallery71.json"
-    },
-    {
-      "file": "gallery4.json"
-    },
-    {
-      "file": "gallery67.json"
-    },
-    {
-      "file": "gallery9.json"
-    },
-    {
-      "file": "gallery104.json"
-    },
-    {
-      "file": "gallery7.json"
-    },
-    {
-      "file": "gallery12.json"
-    },
-    {
-      "file": "gallery72.json"
-    },
-    {
-      "file": "gallery55.json"
-    },
-    {
-      "file": "gallery35.json"
-    },
-    {
-      "file": "gallery63.json"
-    },
-    {
-      "file": "gallery92.json"
-    },
-    {
-      "file": "gallery68.json"
-    },
-    {
-      "file": "gallery89.json"
-    },
-    {
-      "file": "gallery14.json"
-    },
-    {
-      "file": "gallery78.json"
-    },
-    {
-      "file": "gallery95.json"
-    },
-    {
-      "file": "gallery39.json"
-    },
-    {
-      "file": "gallery62.json"
-    },
-    {
-      "file": "gallery91.json"
-    },
-    {
-      "file": "gallery34.json"
-    },
-    {
-      "file": "gallery105.json"
-    },
-    {
-      "file": "gallery101.json"
-    },
-    {
-      "file": "gallery42.json"
-    },
-    {
-      "file": "gallery40.json"
-    },
-    {
-      "file": "gallery96.json"
-    },
-    {
-      "file": "gallery107.json"
-    },
-    {
-      "file": "gallery46.json"
-    },
-    {
-      "file": "gallery8.json"
-    },
-    {
-      "file": "gallery41.json"
-    },
-    {
-      "file": "gallery47.json"
-    },
-    {
-      "file": "gallery74.json"
-    },
-    {
-      "file": "gallery108.json"
-    },
-    {
-      "file": "gallery75.json"
-    },
-    {
-      "file": "gallery49.json"
-    },
-    {
-      "file": "gallery31.json"
-    },
-    {
-      "file": "gallery69.json"
-    },
-    {
-      "file": "gallery51.json"
-    },
-    {
-      "file": "gallery65.json"
-    },
-    {
-      "file": "gallery32.json"
-    },
-    {
-      "file": "gallery94.json"
-    },
-    {
-      "file": "gallery18.json"
-    },
-    {
-      "file": "gallery2.json"
-    },
-    {
-      "file": "gallery85.json"
-    },
-    {
-      "file": "gallery6.json"
-    },
-    {
-      "file": "gallery50.json"
-    },
-    {
-      "file": "gallery87.json"
-    },
-    {
-      "file": "gallery76.json"
-    },
-    {
-      "file": "gallery5.json"
-    },
-    {
-      "file": "gallery56.json"
-    },
-    {
-      "file": "gallery90.json"
-    },
-    {
-      "file": "gallery70.json"
-    },
-    {
-      "file": "gallery27.json"
-    },
-    {
-      "file": "gallery26.json"
-    },
-    {
-      "file": "gallery86.json"
-    },
-    {
-      "file": "gallery66.json"
-    },
-    {
-      "file": "gallery77.json"
-    },
-    {
-      "file": "gallery28.json"
-    },
-    {
-      "file": "gallery37.json"
-    },
-    {
-      "file": "gallery64.json"
-    },
-    {
-      "file": "gallery16.json"
-    },
-    {
-      "file": "gallery43.json"
-    },
-    {
-      "file": "gallery20.json"
-    },
-    {
-      "file": "gallery80.json"
-    },
-    {
-      "file": "gallery48.json"
-    },
-    {
-      "file": "gallery19.json"
-    },
-    {
-      "file": "gallery98.json"
-    },
-    {
-      "file": "gallery93.json"
-    },
-    {
-      "file": "gallery106.json"
-    },
-    {
-      "file": "gallery13.json"
-    },
-    {
-      "file": "gallery01.json"
-    },
-    {
-      "file": "gallery60.json"
-    },
-    {
-      "file": "gallery17.json"
-    },
-    {
-      "file": "gallery44.json"
-    },
-    {
-      "file": "gallery15.json"
-    },
-    {
-      "file": "gallery99.json"
-    },
-    {
-      "file": "gallery52.json"
-    },
-    {
-      "file": "gallery83.json"
-    },
-    {
-      "file": "gallery102.json"
-    },
-    {
-      "file": "gallery38.json"
-    },
-    {
-      "file": "gallery61.json"
-    },
-    {
-      "file": "gallery84.json"
-    },
-    {
-      "file": "gallery58.json"
-    },
-    {
-      "file": "gallery29.json"
-    }
-  ],
-  "event_spaces": [
-    {
-      "name": "The Club Room",
-      "title": "The Club Room",
-      "file": "event_spaces2.json"
-    },
-    {
-      "name": "The M Bar",
-      "title": "The M Bar",
-      "file": "event_spaces1.json"
-    },
-    {
-      "name": "The Renwick Duplex Penthouse Suite",
-      "title": "The Renwick Duplex Penthouse Suite",
-      "file": "event_spaces3.json"
     }
   ]
 }
