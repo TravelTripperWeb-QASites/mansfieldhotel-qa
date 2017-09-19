@@ -1,0 +1,20 @@
+{% assign links = site.data.navigation.main %}
+
+<nav class="navbar fixed-top navbar-toggleable-md bg-faded navbar-fixed-top">
+
+  <button class="navbar-toggler navbar-toggler-right" name="mobile menu" title="mobile menu" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars" aria-hidden="true"></i></button>
+  <a class="navbar-brand" href="/"><img src="/assets/images/logo.svg" alt="The Mansfield Hotel"/></a>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav m-auto">
+      {% for link in links %}
+        <li class="nav-item{% if page.url == link.url %} active{% endif %}">
+          <a class="nav-link" href="{{ link.url | absolute_url }}">{{ link.title }}{% if page.url == link.url %}<span class="sr-only">(current)</span>{% endif %}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <a href="javascript:void(0);" show-booking-widget class="booknow-resized">Book Now</a>
+
+</nav>

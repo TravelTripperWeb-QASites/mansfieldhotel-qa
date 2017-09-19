@@ -1,5 +1,5 @@
 {
-  "gallery_image": {
+  "image": {
     "url": "https://cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-032143/mansfieldhotel-61.jpg",
     "path": "https://cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-032143/mansfieldhotel-61.jpg",
     "file_type": "image/jpeg",
@@ -17,7 +17,7 @@
     "caption": "bed-rooms",
     "description": "bed-rooms"
   },
-  "image_caption": "bed-rooms",
+  "caption": "bed-rooms",
   "alt_tag": "bed-rooms",
   "category": "rooms"
 }

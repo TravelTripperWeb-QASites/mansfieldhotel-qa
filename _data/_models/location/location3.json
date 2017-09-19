@@ -1,0 +1,23 @@
+{
+  "title": "The Empire State Building",
+  "walk_time": "10",
+  "image": {
+    "url": "https://cdn.traveltripper.io/site-assets/32_786_6929/media/2017-09-18-181118/empire-state-building.jpg",
+    "name": "empire-state-building",
+    "file_name": "empire-state-building.jpg",
+    "file_type": "image/jpeg",
+    "date_added": "2017-09-18 18:11:19",
+    "tags": "",
+    "file_size": 274070,
+    "width": 718,
+    "height": 780,
+    "description": "",
+    "url_large": "//cdn.traveltripper.io/site-assets/32_786_6929/media/2017-09-18-181118/large_empire-state-building.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/32_786_6929/media/2017-09-18-181118/medium_empire-state-building.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/32_786_6929/media/2017-09-18-181118/small_empire-state-building.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/32_786_6929/media/2017-09-18-181118/xsmall_empire-state-building.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/32_786_6929/media/2017-09-18-181118/thumb_empire-state-building.jpg",
+    "path": "https://cdn.traveltripper.io/site-assets/32_786_6929/media/2017-09-18-181118/empire-state-building.jpg",
+    "alt": "The Empire State Building"
+  }
+}

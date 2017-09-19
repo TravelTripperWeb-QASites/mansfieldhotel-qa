@@ -1,5 +1,5 @@
 {
-  "gallery_image": {
+  "image": {
     "url": "https://cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-051521/mansfieldhotel-109.jpg",
     "path": "https://cdn.traveltripper.io/site-assets/32_786_7067/media/2017-09-12-051521/mansfieldhotel-109.jpg",
     "file_type": "image/jpeg",
@@ -17,7 +17,7 @@
     "caption": "room interior",
     "description": "room interior"
   },
-  "image_caption": "room interior",
+  "caption": "room interior",
   "alt_tag": "room interior",
   "category": "rooms"
 }

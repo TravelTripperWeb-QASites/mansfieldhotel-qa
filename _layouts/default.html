@@ -1,36 +1,38 @@
----
----
-
 <!DOCTYPE html>
-
 <html lang="{{ site.active_lang | slice: 0,2 | default: "en" }}" class="no-js">
-  <head>
-    {% include head.html %}
-    {% include head/custom.html %}
-  </head>
 
-  <body>
-    
-    {% if site.data.tracking.analytics.provider and page.analytics != false %}
+<head>
+  {% include head.html %}
+  {% include head/custom.html %}
+</head>
 
-      {% case site.data.tracking.analytics.provider %}
-      {% when "gtm" %}
-        {% include analytics/gtm-body.html %}
-      {% endcase %}
+<body ng-app="rezTrip" rt3-hotel-info="hotelInfo" rt3-rooms-browser="browser" ng-cloak>
 
-    {% endif %}
+  {% if site.data.tracking.analytics.provider and page.analytics != false %}
+    {% case site.data.tracking.analytics.provider %}
+    {% when "gtm" %}
+      {% include analytics/gtm-body.html %}
+    {% endcase %}
+  {% endif %}
 
-    {% include mainnav.html %}
+  {% include navigation-main.html %}
 
-	<div class="package-fluid">
+  <div class="package-fluid">
+    {{ content }}
+  </div>
 
-	    {{content}}
-	    
-	</div>
-
-    {% include scripts.html %}
-	<footer class="footer">
+  <footer class="footer">
+    {% if page.url == '/' %}
       {% include footer/footer-with-map.html %}
-	</footer>
-  </body>
+    {% elsif page.url == '/careers/' or page.url == '/gallery/' or page.url == '/meeting-events/' or page.url == '/privacy-policy/' or page.url == '/room-details/' or page.url == '/rooms/' or page.url == '/special-details/' or page.url == '/specials/' or page.url == '/pagenotfound/' %}
+      {% include footer/newsletter.html %}
+    {% else %}
+      {% include footer/only-info.html %}
+    {% endif %}
+  </footer>
+
+  {% include scripts.html %}
+
+</body>
+
 </html>

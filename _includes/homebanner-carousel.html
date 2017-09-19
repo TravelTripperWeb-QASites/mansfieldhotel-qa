@@ -3,14 +3,63 @@
     <li data-target="#carouselHomebanner" data-slide-to="0" class="active"></li>
     <li data-target="#carouselHomebanner" data-slide-to="1"></li>
     <li data-target="#carouselHomebanner" data-slide-to="2"></li>
+    <li data-target="#carouselHomebanner" data-slide-to="3"></li>
+    <li data-target="#carouselHomebanner" data-slide-to="4"></li>
   </ol>
   <div class="carousel-inner" role="listbox">
     <div class="carousel-item active" style="background: url(/assets/images/homecarousel/01.jpg) no-repeat;"> </div>
-    <div class="carousel-item" style="background: url(/assets/images/homecarousel/01.jpg) no-repeat;"> </div>
-    <div class="carousel-item" style="background: url(/assets/images/homecarousel/01.jpg) no-repeat;"> </div>
+    <div class="carousel-item" style="background: url(/assets/images/homecarousel/02.jpg) no-repeat;"> </div>
+    <div class="carousel-item" style="background: url(/assets/images/homecarousel/03.jpg) no-repeat;"> </div>
+    <div class="carousel-item" style="background: url(/assets/images/homecarousel/04.jpg) no-repeat;"> </div>
+    <div class="carousel-item" style="background: url(/assets/images/homecarousel/05.jpg) no-repeat;"> </div>
   </div>
   <a class="carousel-control-prev" href="#carouselHomebanner" role="button" data-slide="prev"> <i class="fa fa-angle-left" aria-hidden="true"></i> <span class="sr-only">Previous</span> </a> <a class="carousel-control-next" href="#carouselHomebanner" role="button" data-slide="next"> <i class="fa fa-angle-right" aria-hidden="true"></i> <span class="sr-only">Next</span> </a> </div>
-<div class="brg packet-fluid">
+<div class="static-booking-widget">
+  <div class="booking-widget-row" >
+    <div class="rate" >
+      <div class="best-rate">
+        <h2>Best<br>
+          Rate</h2>
+      </div>
+      <div class="tonight-rate" > <i >&nbsp;<span ng-show="browser.isRate">Tonight's Rate</span></i>
+        <h2>&nbsp;<a href="{{site.reztripUrl}}search" target="_blank">[[browser.toNightsRate]]</a></h2>
+      </div>
+    </div>
+    <div class="booking-form">
+      <form id="homeBookNowFrm" action="{{site.reztripUrl}}search?" method="get" class="row" target="_blank">
+        <div class="form-group col-sm-3">
+          <label for="exampleInputEmail1">Arrival</label>
+          <input  class="form-control" id="arrival" name="arrival_date" aria-describedby="emailHelp" placeholder="Arrival">
+        </div>
+        <div class="form-group col-sm-3">
+          <label for="exampleInputEmail1">Departure</label>
+          <input class="form-control" id="departure" name="departure_date" aria-describedby="emailHelp" placeholder="Departure">
+        </div>
+        <div class="form-group col-sm-3">
+          <label for="exampleInputEmail1">Adults</label>
+          <select class="custom-select form-control" aria-label="Adults" name="adults[]" id="input_9" name="q9_adults" required>
+            <option value="1">01 Adult</option>
+            <option value="2">02 Adult</option>
+            <option value="3">03 Adult</option>
+            <option value="4">04 Adult</option>
+          </select>
+        </div>
+        <div class="form-group col-sm-3">
+          <label for="exampleInputEmail1">Children</label>
+          <select class="custom-select form-control" aria-label="Children" name="children[]" id="input_10" name="q10_children"  required>
+            <option value="0">00 Children</option>
+            <option value="1">01 Children</option>
+            <option value="2">02 Children</option>
+            <option value="3">03 Children</option>
+           
+          </select>
+        </div>
+      </form>
+    </div>
+    <div class="book-now-btn"> <a href="javascript:" class="homeBookNowBtn" >Book Now</a> </div>
+  </div>
+</div>
+<!--<div class="brg packet-fluid">
   <div class="bar">
     <div class="slice-2 p-0 hidden-sm-down">
       <div class="red-bg">
@@ -39,4 +88,4 @@
       <div class="booknow"><a href="#">Book Now</a></div>
     </div>
   </div>
-</div>
+</div>--> 
