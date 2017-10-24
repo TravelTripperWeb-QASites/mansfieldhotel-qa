@@ -1,4 +1,7 @@
 {
+  "events": [
+
+  ],
   "event_spaces": [
     {
       "name": "The M Bar",
@@ -15,9 +18,6 @@
       "title": "The Renwick Duplex Penthouse Suite",
       "file": "event_spaces3.json"
     }
-  ],
-  "events": [
-
   ],
   "gallery": [
     {

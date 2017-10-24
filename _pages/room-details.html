@@ -17,7 +17,11 @@ permalink: /room-details/
   				<a href="/gallery/" class="link-btn"><i class="camera"></i><span>View Room Image Gallery</span></a>
   			</div>
   		</div>
-  		<div class="slice-6 p-5 dark-bg">
+      <!--div class="slice-6 p-5 dark-bg" ng-if="room.code == 'PH'">
+         <a class="btn-block" href="tel:2121212">Call To Book</a>
+
+      </div ng-if="room.code != 'PH'"-->
+  		<div class="slice-6 p-5 dark-bg" >
   			<h5 ng-show="room.code !='RDP'"><a  ng-href="{{site.reztripUrl}}search?selected_room_category=[[room.category]]&selected_room=[[room.code]]" target="_blank">[[room.todayRate]]</a> <span>tonight's rate</span></h5>
   			<form action="{{site.reztripUrl}}search?" method="get" >
   			<input type="hidden" name="selected_room" value="[[room.code]]">
