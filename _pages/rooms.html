@@ -28,7 +28,9 @@ permalink: /rooms/
               <h2 ng-bind-html="room.name | renderHTMLCorrectly"></h2>
 			        <p>Tonight's Rate <span class="tonight-rate-link" ><a ng-href="{{site.reztripUrl}}search?selected_room_category=[[room.category]]&selected_room=[[room.code]]" target="_blank">[[room.todayRate]]</a></span></p>
             </div>
-			  <div class="slice-4 p-0"> <a ng-href="{{site.reztripUrl}}search?selected_room_category=[[room.category]]&selected_room=[[room.code]]"  class="active">Book [[room.name | roomOrSuite]]</a> <a ng-href="/room-details/#[[room.name | formatNameForLink]]">[[room.name | roomOrSuite]] Details</a> <a href="/gallery/"><i class="fa fa-camera"></i> Gallery</a> </div>
+			  <div class="slice-4 p-0">
+          <a ng-if="room.code == 'PH'"  href="tel:212.277.8700" class="active">Call TO Book</a>
+         <a ng-if="room.code != 'PH'" ng-href="{{site.reztripUrl}}search?selected_room_category=[[room.category]]&selected_room=[[room.code]]"  class="active">Book [[room.name | roomOrSuite]]</a> <a ng-href="/room-details/#[[room.name | formatNameForLink]]">[[room.name | roomOrSuite]] Details</a> <a href="/gallery/"><i class="fa fa-camera"></i> Gallery</a> </div>
           </div>
         <!--   <div class="slice-4 p-0"><a href="#" class="active">Book Room</a><a href="#">Room Details</a><a href="/gallery/"><i class="fa fa-camera"></i> Gallery</a></div> -->
         </div>
